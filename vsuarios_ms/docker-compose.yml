@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  users_ms:
+    container_name: users_ms
+    restart: always
+    build:
+      context: .
+    ports:
+      - "3000:3000"
+    depends_on:
+      - users_db
+    networks:
+      - app-network
+
+  users_db:
+    container_name: users_db
+    image: mongo
+    ports:
+      - "27017:27017"
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

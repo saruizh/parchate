@@ -1,0 +1,16 @@
+# Node.js dependencies
+node_modules/
+
+# Archivos de configuración locales
+.env
+
+# Archivos de registro y temporales
+*.log
+*.tmp
+
+# Directorio de compilación o distribución
+dist/
+build/
+
+# Otros archivos generados durante la ejecución
+*.pid
