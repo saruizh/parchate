@@ -1,0 +1,24 @@
+version: "3.9"
+
+services:
+  vaca_ms:
+    container_name: vaca_ms
+    image: vaca_app:1.0.0
+    build: ./vaca_ms
+    ports:
+      - 8080:8080
+    environment:
+      - DATABASE_URL=jdbc:postgresql://vaca_db:5432/postgres
+      - DATABASE_USERNAME=root
+      - DATABASE_PASSWORD=vaca1123581321
+    depends_on:
+      - vaca_db
+  vaca_db:
+    container_name: vaca_db
+    image: postgres:12
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: vaca1123581321
+      POSTGRES_DB: vaca
