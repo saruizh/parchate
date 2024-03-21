@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @comentario %>
+
+<div>
+  <%= link_to "Edit this comentario", edit_comentario_path(@comentario) %> |
+  <%= link_to "Back to comentarios", comentarios_path %>
+
+  <%= button_to "Destroy this comentario", @comentario, method: :delete %>
+</div>

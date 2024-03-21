@@ -1,0 +1,1174 @@
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[localhost:27017] servers=[#<Server address=localhost:27017 UNKNOWN>]>
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[localhost:27017] servers=[#<Server address=localhost:27017 UNKNOWN>]>
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+Started GET "/" for ::1 at 2024-03-11 01:25:13 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby32/lib/ruby/gems/3.2.0/gems/railties-7.1.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby32/lib/ruby/gems/3.2.0/gems/railties-7.1.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.1ms | Allocations: 431)
+Completed 200 OK in 466ms (Views: 110.4ms | MongoDB: 0.0ms | Allocations: 9970)
+
+
+Started GET "/plans" for ::1 at 2024-03-11 01:25:45 -0500
+Processing by PlansController#index as HTML
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Waiting for up to 3.00 seconds for servers to be scanned: #<Cluster topology=Unknown[localhost:27017] servers=[#<Server address=localhost:27017 UNKNOWN>]>
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+Completed 500 Internal Server Error in 1600ms (MongoDB: 0.0ms | Allocations: 9940)
+
+
+  
+Mongo::Error::NoServerAvailable (No primary_preferred server is available in cluster: #<Cluster topology=Unknown[localhost:27017] servers=[#<Server address=localhost:27017 UNKNOWN>]> with timeout=1, LT=0.015):
+  
+app/controllers/plans_controller.rb:8:in `index'
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+Started GET "/favicon.ico" for ::1 at 2024-03-11 01:25:49 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: EOFError: end of file reached (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+Started GET "/" for 172.18.0.1 at 2024-03-11 06:59:11 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-7.1.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-7.1.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.6ms | Allocations: 375)
+Completed 200 OK in 529ms (Views: 132.5ms | MongoDB: 0.0ms | Allocations: 8113)
+
+
+Started GET "/" for 172.18.0.1 at 2024-03-11 07:02:10 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-7.1.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-7.1.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.4ms | Allocations: 375)
+Completed 200 OK in 171ms (Views: 40.9ms | MongoDB: 0.0ms | Allocations: 3892)
+
+
+Started GET "/plans" for 172.18.0.1 at 2024-03-11 07:02:16 +0000
+Processing by PlansController#index as HTML
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server mongodb:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[mongodb:27017] servers=[#<Server address=mongodb:27017 UNKNOWN>]>
+MONGODB | Waiting for up to 29.50 seconds for servers to be scanned: #<Cluster topology=Unknown[mongodb:27017] servers=[#<Server address=mongodb:27017 UNKNOWN>]>
+MONGODB | Waiting for up to 29.00 seconds for servers to be scanned: #<Cluster topology=Unknown[mongodb:27017] servers=[#<Server address=mongodb:27017 UNKNOWN>]>
+MONGODB | Waiting for up to 28.49 seconds for servers to be scanned: #<Cluster topology=Unknown[mongodb:27017] servers=[#<Server address=mongodb:27017 UNKNOWN>]>
+MONGODB | Waiting for up to 27.99 seconds for servers to be scanned: #<Cluster topology=Unknown[mongodb:27017] servers=[#<Server address=mongodb:27017 UNKNOWN>]>
+MONGODB | Waiting for up to 27.49 seconds for servers to be scanned: #<Cluster topology=Unknown[mongodb:27017] servers=[#<Server address=mongodb:27017 UNKNOWN>]>
+MONGODB | Waiting for up to 26.99 seconds for servers to be scanned: #<Cluster topology=Unknown[mongodb:27017] servers=[#<Server address=mongodb:27017 UNKNOWN>]>
+MONGODB | Waiting for up to 26.49 seconds for servers to be scanned: #<Cluster topology=Unknown[mongodb:27017] servers=[#<Server address=mongodb:27017 UNKNOWN>]>
+MONGODB | Waiting for up to 25.99 seconds for servers to be scanned: #<Cluster topology=Unknown[mongodb:27017] servers=[#<Server address=mongodb:27017 UNKNOWN>]>
+MONGODB | Waiting for up to 25.49 seconds for servers to be scanned: #<Cluster topology=Unknown[mongodb:27017] servers=[#<Server address=mongodb:27017 UNKNOWN>]>
+MONGODB | Waiting for up to 24.98 seconds for servers to be scanned: #<Cluster topology=Unknown[mongodb:27017] servers=[#<Server address=mongodb:27017 UNKNOWN>]>
+MONGODB | Waiting for up to 24.48 seconds for servers to be scanned: #<Cluster topology=Unknown[mongodb:27017] servers=[#<Server address=mongodb:27017 UNKNOWN>]>
+MONGODB | Waiting for up to 23.98 seconds for servers to be scanned: #<Cluster topology=Unknown[mongodb:27017] servers=[#<Server address=mongodb:27017 UNKNOWN>]>
+MONGODB | Waiting for up to 23.47 seconds for servers to be scanned: #<Cluster topology=Unknown[mongodb:27017] servers=[#<Server address=mongodb:27017 UNKNOWN>]>
+MONGODB | Waiting for up to 22.96 seconds for servers to be scanned: #<Cluster topology=Unknown[mongodb:27017] servers=[#<Server address=mongodb:27017 UNKNOWN>]>
+MONGODB | Waiting for up to 22.46 seconds for servers to be scanned: #<Cluster topology=Unknown[mongodb:27017] servers=[#<Server address=mongodb:27017 UNKNOWN>]>
+MONGODB | Error checking mongodb:27017: SocketError: getaddrinfo: Temporary failure in name resolution
+MONGODB | Server description for mongodb:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking mongodb:27017: SocketError: getaddrinfo: Temporary failure in name resolution
+MONGODB | Server description for mongodb:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking mongodb:27017: SocketError: getaddrinfo: Temporary failure in name resolution
+MONGODB | Server description for mongodb:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+Started GET "/" for 172.18.0.1 at 2024-03-11 07:02:50 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-7.1.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-7.1.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.2ms | Allocations: 13)
+Completed 200 OK in 9ms (Views: 8.2ms | MongoDB: 0.0ms | Allocations: 189)
+
+
+MONGODB | Error checking mongodb:27017: SocketError: getaddrinfo: Temporary failure in name resolution
+MONGODB | Server description for mongodb:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+Started GET "/plans" for 172.18.0.1 at 2024-03-11 07:02:53 +0000
+Processing by PlansController#index as HTML
+Completed 500 Internal Server Error in 38134ms (MongoDB: 0.0ms | Allocations: 11319)
+
+
+  
+Mongo::Error::NoServerAvailable (No primary_preferred server is available in cluster: #<Cluster topology=Unknown[mongodb:27017] servers=[#<Server address=mongodb:27017 UNKNOWN>]> with timeout=30, LT=0.015):
+  
+app/controllers/plans_controller.rb:8:in `index'
+MONGODB | Error checking mongodb:27017: SocketError: getaddrinfo: Temporary failure in name resolution
+MONGODB | Server description for mongodb:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking mongodb:27017: SocketError: getaddrinfo: Temporary failure in name resolution
+MONGODB | Server description for mongodb:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking mongodb:27017: SocketError: getaddrinfo: Temporary failure in name resolution
+MONGODB | Server description for mongodb:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+Completed 500 Internal Server Error in 30001ms (MongoDB: 0.0ms | Allocations: 285672)
+
+
+  
+Mongo::Error::NoServerAvailable (No primary_preferred server is available in cluster: #<Cluster topology=Unknown[mongodb:27017] servers=[#<Server address=mongodb:27017 UNKNOWN>]> with timeout=30, LT=0.015):
+  
+app/controllers/plans_controller.rb:8:in `index'
+Started GET "/plans" for 172.18.0.1 at 2024-03-11 07:03:24 +0000
+Processing by PlansController#index as HTML
+MONGODB | Error checking mongodb:27017: SocketError: getaddrinfo: Temporary failure in name resolution
+MONGODB | Server description for mongodb:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking mongodb:27017: SocketError: getaddrinfo: Temporary failure in name resolution
+MONGODB | Server description for mongodb:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking mongodb:27017: SocketError: getaddrinfo: Temporary failure in name resolution
+MONGODB | Server description for mongodb:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking mongodb:27017: SocketError: getaddrinfo: Temporary failure in name resolution
+MONGODB | Server description for mongodb:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+Completed 500 Internal Server Error in 30001ms (MongoDB: 0.0ms | Allocations: 1321)
+
+
+  
+Mongo::Error::NoServerAvailable (No primary_preferred server is available in cluster: #<Cluster topology=Unknown[mongodb:27017] servers=[#<Server address=mongodb:27017 UNKNOWN>]> with timeout=30, LT=0.015):
+  
+app/controllers/plans_controller.rb:8:in `index'
+MONGODB | Error checking mongodb:27017: SocketError: getaddrinfo: Temporary failure in name resolution
+MONGODB | Server description for mongodb:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking mongodb:27017: SocketError: getaddrinfo: Temporary failure in name resolution
+MONGODB | Server description for mongodb:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking mongodb:27017: SocketError: getaddrinfo: Temporary failure in name resolution
+MONGODB | Server description for mongodb:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking mongodb:27017: SocketError: getaddrinfo: Temporary failure in name resolution
+MONGODB | Server description for mongodb:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking mongodb:27017: SocketError: getaddrinfo: Temporary failure in name resolution
+MONGODB | Server description for mongodb:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking mongodb:27017: SocketError: getaddrinfo: Temporary failure in name resolution
+MONGODB | Server description for mongodb:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking mongodb:27017: SocketError: getaddrinfo: Temporary failure in name resolution
+MONGODB | Server description for mongodb:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking mongodb:27017: SocketError: getaddrinfo: Temporary failure in name resolution
+MONGODB | Server description for mongodb:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking mongodb:27017: SocketError: getaddrinfo: Temporary failure in name resolution
+MONGODB | Server description for mongodb:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking mongodb:27017: SocketError: getaddrinfo: Temporary failure in name resolution
+MONGODB | Server description for mongodb:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking mongodb:27017: SocketError: getaddrinfo: Temporary failure in name resolution
+MONGODB | Server description for mongodb:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking mongodb:27017: SocketError: getaddrinfo: Temporary failure in name resolution
+MONGODB | Server description for mongodb:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking mongodb:27017: SocketError: getaddrinfo: Temporary failure in name resolution
+MONGODB | Server description for mongodb:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+Started GET "/" for 172.18.0.1 at 2024-03-11 07:09:16 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-7.1.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-7.1.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.0ms | Allocations: 375)
+Completed 200 OK in 87ms (Views: 27.0ms | MongoDB: 0.0ms | Allocations: 3890)
+
+
+Started GET "/plans" for 172.18.0.1 at 2024-03-11 07:09:21 +0000
+Processing by PlansController#index as HTML
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server mongodb:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[mongodb:27017] servers=[#<Server address=mongodb:27017 UNKNOWN>]>
+MONGODB | Server description for mongodb:27017 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | mongodb:27017 req:6 conn:1:1 sconn:3 | comentarios_ms_development.find | STARTED | {"find"=>"plans", "filter"=>{}, "$db"=>"comentarios_ms_development", "lsid"=>{"id"=><BSON::Binary:0x9420 type=uuid data=0x8860e57e69e2401c...>}}
+MONGODB | mongodb:27017 req:6 | comentarios_ms_development.find | SUCCEEDED | 0.002s
+Completed 200 OK in 66ms (Views: 29.0ms | MongoDB: 2.4ms | Allocations: 10301)
+
+
+MONGODB | Server description for mongodb:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+Started GET "/plans" for 172.18.0.1 at 2024-03-11 07:10:09 +0000
+Processing by PlansController#index as */*
+MONGODB | mongodb:27017 req:11 conn:1:1 sconn:3 | comentarios_ms_development.find | STARTED | {"find"=>"plans", "filter"=>{}, "$db"=>"comentarios_ms_development", "lsid"=>{"id"=><BSON::Binary:0x9420 type=uuid data=0x8860e57e69e2401c...>}}
+MONGODB | mongodb:27017 req:11 | comentarios_ms_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 6ms (Views: 4.4ms | MongoDB: 0.9ms | Allocations: 633)
+
+
+Started POST "/plans" for 172.18.0.1 at 2024-03-11 07:11:47 +0000
+Processing by PlansController#create as */*
+  Parameters: {"id_usuario"=>1, "id_lugar"=>1, "nombre"=>"test_1", "plan"=>{"id_usuario"=>1, "id_lugar"=>1, "nombre"=>"test_1"}}
+MONGODB | mongodb:27017 req:22 conn:1:1 sconn:3 | comentarios_ms_development.insert | STARTED | {"insert"=>"plans", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65eeaeb343799b0001334bdc'), "id_usuario"=>1, "id_lugar"=>1, "nombre"=>"test_1", "updated_at"=>2024-03-11 07:11:47.303610654 UTC, "created_at"=>2024-03-11 07:11:47.303610654 UTC...
+MONGODB | mongodb:27017 req:22 | comentarios_ms_development.insert | SUCCEEDED | 0.021s
+Completed 201 Created in 113ms (Views: 1.5ms | MongoDB: 21.1ms | Allocations: 4843)
+
+
+Started GET "/plans" for 172.18.0.1 at 2024-03-11 07:11:54 +0000
+Processing by PlansController#index as */*
+  Parameters: {"id_usuario"=>1, "id_lugar"=>1, "nombre"=>"test_1", "plan"=>{"id_usuario"=>1, "id_lugar"=>1, "nombre"=>"test_1"}}
+MONGODB | mongodb:27017 req:24 conn:1:1 sconn:3 | comentarios_ms_development.find | STARTED | {"find"=>"plans", "filter"=>{}, "$db"=>"comentarios_ms_development", "lsid"=>{"id"=><BSON::Binary:0x9420 type=uuid data=0x8860e57e69e2401c...>}}
+MONGODB | mongodb:27017 req:24 | comentarios_ms_development.find | SUCCEEDED | 0.004s
+Completed 200 OK in 8ms (Views: 4.3ms | MongoDB: 3.6ms | Allocations: 807)
+
+
+Started GET "/plans" for 172.18.0.1 at 2024-03-11 21:01:57 +0000
+Processing by PlansController#index as HTML
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server mongodb:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[mongodb:27017] servers=[#<Server address=mongodb:27017 UNKNOWN>]>
+MONGODB | Server description for mongodb:27017 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | mongodb:27017 req:6 conn:1:1 sconn:3 | comentarios_ms_development.find | STARTED | {"find"=>"plans", "filter"=>{}, "$db"=>"comentarios_ms_development", "lsid"=>{"id"=><BSON::Binary:0x9320 type=uuid data=0x4caf5c9facb44a23...>}}
+MONGODB | mongodb:27017 req:6 | comentarios_ms_development.find | SUCCEEDED | 0.004s
+Completed 200 OK in 156ms (Views: 26.1ms | MongoDB: 4.2ms | Allocations: 12935)
+
+
+Started GET "/favicon.ico" for 172.18.0.1 at 2024-03-11 21:01:58 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+MONGODB | Server description for mongodb:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+Started GET "/comentarios" for 172.18.0.1 at 2024-03-11 21:24:51 +0000
+Processing by ComentariosController#index as HTML
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server mongodb:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[mongodb:27017] servers=[#<Server address=mongodb:27017 UNKNOWN>]>
+MONGODB | Server description for mongodb:27017 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | mongodb:27017 req:6 conn:1:1 sconn:3 | comentarios_ms_development.find | STARTED | {"find"=>"comentarios", "filter"=>{}, "$db"=>"comentarios_ms_development", "lsid"=>{"id"=><BSON::Binary:0x9960 type=uuid data=0x406a5ebbfa64472a...>}}
+MONGODB | mongodb:27017 req:6 | comentarios_ms_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 130ms (Views: 22.2ms | MongoDB: 0.8ms | Allocations: 12688)
+
+
+MONGODB | Server description for mongodb:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+Started GET "/plans" for 172.18.0.1 at 2024-03-11 21:45:04 +0000
+Processing by PlansController#index as HTML
+MONGODB | mongodb:27017 req:128 conn:1:1 sconn:3 | comentarios_ms_development.find | STARTED | {"find"=>"plans", "filter"=>{}, "$db"=>"comentarios_ms_development", "lsid"=>{"id"=><BSON::Binary:0x9960 type=uuid data=0x406a5ebbfa64472a...>}}
+MONGODB | mongodb:27017 req:128 | comentarios_ms_development.find | SUCCEEDED | 0.005s
+Completed 200 OK in 57ms (Views: 5.1ms | MongoDB: 5.0ms | Allocations: 6766)
+
+
+Started GET "/plans/1" for 172.18.0.1 at 2024-03-11 21:45:06 +0000
+Processing by PlansController#show as HTML
+  Parameters: {"id"=>"1"}
+MONGODB | mongodb:27017 req:129 conn:1:1 sconn:3 | comentarios_ms_development.find | STARTED | {"find"=>"plans", "filter"=>{"_id"=>"1"}, "$db"=>"comentarios_ms_development", "lsid"=>{"id"=><BSON::Binary:0x9960 type=uuid data=0x406a5ebbfa64472a...>}}
+MONGODB | mongodb:27017 req:129 | comentarios_ms_development.find | SUCCEEDED | 0.003s
+Completed 404 Not Found in 87ms (MongoDB: 2.9ms | Allocations: 2241)
+
+
+  
+Mongoid::Errors::DocumentNotFound (
+message:
+  Document(s) not found for class Plan with id(s) 1.
+summary:
+  When calling Plan.find with an id or array of ids, each parameter must match a document in the database or this error will be raised. The search was for the id(s): 1 ... (1 total) and the following ids were not found: 1.
+resolution:
+  Search for an id that is in the database or set the Mongoid.raise_not_found_error configuration option to false, which will cause nil to be returned instead of raising this error when searching for a single id, or only the matched documents when searching for multiples.):
+  
+app/controllers/plans_controller.rb:44:in `set_plan'
+Started GET "/plans" for 172.18.0.1 at 2024-03-11 21:45:11 +0000
+Processing by PlansController#index as HTML
+MONGODB | mongodb:27017 req:130 conn:1:1 sconn:3 | comentarios_ms_development.find | STARTED | {"find"=>"plans", "filter"=>{}, "$db"=>"comentarios_ms_development", "lsid"=>{"id"=><BSON::Binary:0x9960 type=uuid data=0x406a5ebbfa64472a...>}}
+MONGODB | mongodb:27017 req:130 | comentarios_ms_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 4ms (Views: 3.4ms | MongoDB: 0.7ms | Allocations: 776)
+
+
+Started GET "/plans/65eeaeb343799b0001334bdc" for 172.18.0.1 at 2024-03-11 21:45:37 +0000
+Processing by PlansController#show as HTML
+  Parameters: {"id"=>"65eeaeb343799b0001334bdc"}
+MONGODB | mongodb:27017 req:134 conn:1:1 sconn:3 | comentarios_ms_development.find | STARTED | {"find"=>"plans", "filter"=>{"_id"=>BSON::ObjectId('65eeaeb343799b0001334bdc')}, "$db"=>"comentarios_ms_development", "lsid"=>{"id"=><BSON::Binary:0x9960 type=uuid data=0x406a5ebbfa64472a...>}}
+MONGODB | mongodb:27017 req:134 | comentarios_ms_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 5ms (Views: 0.7ms | MongoDB: 0.7ms | Allocations: 876)
+
+
+Started GET "/plans/65eeaeb343799b0001334bdc" for 172.18.0.1 at 2024-03-11 22:00:01 +0000
+Processing by PlansController#show as HTML
+  Parameters: {"id"=>"65eeaeb343799b0001334bdc"}
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server mongodb:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[mongodb:27017] servers=[#<Server address=mongodb:27017 UNKNOWN>]>
+MONGODB | Server description for mongodb:27017 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | mongodb:27017 req:6 conn:1:1 sconn:3 | comentarios_ms_development.find | STARTED | {"find"=>"plans", "filter"=>{"_id"=>BSON::ObjectId('65eeaeb343799b0001334bdc')}, "$db"=>"comentarios_ms_development", "lsid"=>{"id"=><BSON::Binary:0x9940 type=uuid data=0x1df55667e15c4eff...>}}
+MONGODB | mongodb:27017 req:6 | comentarios_ms_development.find | SUCCEEDED | 0.001s
+Completed 404 Not Found in 110ms (MongoDB: 0.9ms | Allocations: 11842)
+
+
+  
+Mongoid::Errors::DocumentNotFound (
+message:
+  Document(s) not found for class Plan with id(s) 65eeaeb343799b0001334bdc.
+summary:
+  When calling Plan.find with an id or array of ids, each parameter must match a document in the database or this error will be raised. The search was for the id(s): 65eeaeb343799b0001334bdc ... (1 total) and the following ids were not found: 65eeaeb343799b0001334bdc.
+resolution:
+  Search for an id that is in the database or set the Mongoid.raise_not_found_error configuration option to false, which will cause nil to be returned instead of raising this error when searching for a single id, or only the matched documents when searching for multiples.):
+  
+app/controllers/plans_controller.rb:44:in `set_plan'
+Started GET "/plans" for 172.18.0.1 at 2024-03-11 22:00:06 +0000
+Processing by PlansController#index as HTML
+MONGODB | mongodb:27017 req:7 conn:1:1 sconn:3 | comentarios_ms_development.find | STARTED | {"find"=>"plans", "filter"=>{}, "$db"=>"comentarios_ms_development", "lsid"=>{"id"=><BSON::Binary:0x9940 type=uuid data=0x1df55667e15c4eff...>}}
+MONGODB | mongodb:27017 req:7 | comentarios_ms_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 5ms (Views: 4.0ms | MongoDB: 0.8ms | Allocations: 839)
+
+
+MONGODB | Server description for mongodb:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+Started GET "/comentarios" for 172.18.0.1 at 2024-03-11 22:03:12 +0000
+Processing by ComentariosController#index as */*
+  Parameters: {"id_plan"=>1, "nickname"=>"Tester", "comentario"=>"Test de comentario 1", "rating"=>5}
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server mongodb:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[mongodb:27017] servers=[#<Server address=mongodb:27017 UNKNOWN>]>
+MONGODB | Server description for mongodb:27017 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | mongodb:27017 req:6 conn:1:1 sconn:3 | comentarios_ms_development.find | STARTED | {"find"=>"comentarios", "filter"=>{}, "$db"=>"comentarios_ms_development", "lsid"=>{"id"=><BSON::Binary:0x9920 type=uuid data=0x7fdbd255b86a4b8a...>}}
+MONGODB | mongodb:27017 req:6 | comentarios_ms_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 60ms (Views: 23.7ms | MongoDB: 1.0ms | Allocations: 6760)
+
+
+Started POST "/comentarios" for 172.18.0.1 at 2024-03-11 22:03:18 +0000
+Processing by ComentariosController#create as */*
+  Parameters: {"id_plan"=>1, "nickname"=>"Tester", "comentario"=>"Test de comentario 1", "rating"=>5}
+Completed 500 Internal Server Error in 1ms (MongoDB: 0.0ms | Allocations: 152)
+
+
+  
+NoMethodError (undefined method `permit' for "Test de comentario 1":String):
+  
+app/controllers/comentarios_controller.rb:49:in `comentario_params'
+app/controllers/comentarios_controller.rb:18:in `create'
+MONGODB | Server description for mongodb:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+Started POST "/plans" for 172.18.0.1 at 2024-03-11 22:10:35 +0000
+Processing by PlansController#create as */*
+  Parameters: {"id_usuario"=>1, "id_lugar"=>1, "nombre"=>"Test1", "plan"=>{"id_usuario"=>1, "id_lugar"=>1, "nombre"=>"Test1"}}
+MONGODB | mongodb:27017 req:51 conn:1:1 sconn:3 | comentarios_ms_development.insert | STARTED | {"insert"=>"plans", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65ef815b46e86f0001320560'), "id_usuario"=>1, "id_lugar"=>1, "nombre"=>"Test1", "updated_at"=>2024-03-11 22:10:35.35373155 UTC, "created_at"=>2024-03-11 22:10:35.35373155 UTC}],...
+MONGODB | mongodb:27017 req:51 | comentarios_ms_development.insert | SUCCEEDED | 0.022s
+Completed 201 Created in 59ms (Views: 3.2ms | MongoDB: 22.5ms | Allocations: 3181)
+
+
+Started POST "/comentarios" for 172.18.0.1 at 2024-03-11 22:14:41 +0000
+Processing by ComentariosController#create as */*
+  Parameters: {"id_plan"=>1, "nickname"=>"Tester", "comentario"=>"Test de comentario", "rating"=>5}
+Completed 500 Internal Server Error in 1ms (MongoDB: 0.0ms | Allocations: 101)
+
+
+  
+NoMethodError (undefined method `permit' for "Test de comentario":String):
+  
+app/controllers/comentarios_controller.rb:49:in `comentario_params'
+app/controllers/comentarios_controller.rb:18:in `create'
+Started GET "/comentarios" for 172.18.0.1 at 2024-03-11 22:15:54 +0000
+  
+NameError (uninitialized constant Comentario::Text):
+  
+app/models/comentario.rb:6:in `<class:Comentario>'
+app/models/comentario.rb:1:in `<main>'
+Started GET "/comentarios" for 172.18.0.1 at 2024-03-11 22:16:02 +0000
+Processing by ComentariosController#index as */*
+Overwriting existing field id_plan in class Comentario.
+Overwriting existing field nickname in class Comentario.
+Completed 500 Internal Server Error in 50ms (MongoDB: 0.0ms | Allocations: 2705)
+
+
+  
+NameError (uninitialized constant Comentario::Text):
+  
+app/models/comentario.rb:6:in `<class:Comentario>'
+app/models/comentario.rb:1:in `<main>'
+app/controllers/comentarios_controller.rb:6:in `index'
+Started GET "/plans" for 172.18.0.1 at 2024-03-11 22:16:08 +0000
+Processing by PlansController#index as */*
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server mongodb:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[mongodb:27017] servers=[#<Server address=mongodb:27017 UNKNOWN>]>
+MONGODB | Server description for mongodb:27017 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | mongodb:27017 req:6 conn:1:1 sconn:3 | comentarios_ms_development.find | STARTED | {"find"=>"plans", "filter"=>{}, "$db"=>"comentarios_ms_development", "lsid"=>{"id"=><BSON::Binary:0x10080 type=uuid data=0xe1821d862e614382...>}}
+MONGODB | mongodb:27017 req:6 | comentarios_ms_development.find | SUCCEEDED | 0.004s
+Completed 200 OK in 91ms (Views: 31.8ms | MongoDB: 4.1ms | Allocations: 10582)
+
+
+Started GET "/comentarios" for 172.18.0.1 at 2024-03-11 22:16:15 +0000
+Processing by ComentariosController#index as */*
+Overwriting existing field id_plan in class Comentario.
+Overwriting existing field nickname in class Comentario.
+Completed 500 Internal Server Error in 24ms (MongoDB: 0.0ms | Allocations: 467)
+
+
+  
+NameError (uninitialized constant Comentario::Text):
+  
+app/models/comentario.rb:6:in `<class:Comentario>'
+app/models/comentario.rb:1:in `<main>'
+app/controllers/comentarios_controller.rb:6:in `index'
+MONGODB | Server description for mongodb:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+Started GET "/plans" for 172.18.0.1 at 2024-03-11 22:16:46 +0000
+Processing by PlansController#index as HTML
+MONGODB | mongodb:27017 req:10 conn:1:1 sconn:3 | comentarios_ms_development.find | STARTED | {"find"=>"plans", "filter"=>{}, "$db"=>"comentarios_ms_development", "lsid"=>{"id"=><BSON::Binary:0x10080 type=uuid data=0xe1821d862e614382...>}}
+MONGODB | mongodb:27017 req:10 | comentarios_ms_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 5ms (Views: 3.8ms | MongoDB: 0.9ms | Allocations: 774)
+
+
+Started GET "/comentarios" for 172.18.0.1 at 2024-03-11 22:17:04 +0000
+Processing by ComentariosController#index as HTML
+Overwriting existing field id_plan in class Comentario.
+Overwriting existing field nickname in class Comentario.
+Completed 500 Internal Server Error in 30ms (MongoDB: 0.0ms | Allocations: 1227)
+
+
+  
+NameError (uninitialized constant Comentario::Text):
+  
+app/models/comentario.rb:6:in `<class:Comentario>'
+app/models/comentario.rb:1:in `<main>'
+app/controllers/comentarios_controller.rb:6:in `index'
+Started GET "/" for 172.18.0.1 at 2024-03-11 22:19:30 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-7.1.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-7.1.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.2ms | Allocations: 375)
+Completed 200 OK in 426ms (Views: 134.0ms | MongoDB: 0.0ms | Allocations: 8067)
+
+
+Started GET "/plans" for 172.18.0.1 at 2024-03-11 22:19:43 +0000
+Processing by PlansController#index as HTML
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server mongodb:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[mongodb:27017] servers=[#<Server address=mongodb:27017 UNKNOWN>]>
+MONGODB | Server description for mongodb:27017 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | mongodb:27017 req:6 conn:1:1 sconn:3 | comentarios_ms_development.find | STARTED | {"find"=>"plans", "filter"=>{}, "$db"=>"comentarios_ms_development", "lsid"=>{"id"=><BSON::Binary:0x10080 type=uuid data=0x7e86fddfa070494b...>}}
+MONGODB | mongodb:27017 req:6 | comentarios_ms_development.find | SUCCEEDED | 0.005s
+Completed 200 OK in 202ms (Views: 69.8ms | MongoDB: 4.9ms | Allocations: 10747)
+
+
+Started GET "/comentarios" for 172.18.0.1 at 2024-03-11 22:19:51 +0000
+Processing by ComentariosController#index as HTML
+MONGODB | mongodb:27017 req:7 conn:1:1 sconn:3 | comentarios_ms_development.find | STARTED | {"find"=>"comentarios", "filter"=>{}, "$db"=>"comentarios_ms_development", "lsid"=>{"id"=><BSON::Binary:0x10080 type=uuid data=0x7e86fddfa070494b...>}}
+MONGODB | mongodb:27017 req:7 | comentarios_ms_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 169ms (Views: 6.5ms | MongoDB: 0.9ms | Allocations: 6604)
+
+
+MONGODB | Server description for mongodb:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+Started GET "/comentarios" for 172.18.0.1 at 2024-03-11 22:19:58 +0000
+Processing by ComentariosController#index as */*
+MONGODB | mongodb:27017 req:9 conn:1:1 sconn:3 | comentarios_ms_development.find | STARTED | {"find"=>"comentarios", "filter"=>{}, "$db"=>"comentarios_ms_development", "lsid"=>{"id"=><BSON::Binary:0x10080 type=uuid data=0x7e86fddfa070494b...>}}
+MONGODB | mongodb:27017 req:9 | comentarios_ms_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 20ms (Views: 17.9ms | MongoDB: 1.2ms | Allocations: 621)
+
+
+Started POST "/comentarios" for 172.18.0.1 at 2024-03-11 22:20:23 +0000
+Processing by ComentariosController#create as */*
+  Parameters: {"id_plan"=>1, "nickname"=>"Tester", "comentario"=>"Test de comentario", "rating"=>5}
+Completed 500 Internal Server Error in 1ms (MongoDB: 0.0ms | Allocations: 149)
+
+
+  
+NoMethodError (undefined method `permit' for "Test de comentario":String):
+  
+app/controllers/comentarios_controller.rb:49:in `comentario_params'
+app/controllers/comentarios_controller.rb:18:in `create'
+Started POST "/comentarios" for 172.18.0.1 at 2024-03-11 22:23:41 +0000
+Processing by ComentariosController#create as */*
+  Parameters: {"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        \n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          \n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      \n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n      \n      \n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  ", "comentario"=>{}}
+Completed 400 Bad Request in 1ms (MongoDB: 0.0ms | Allocations: 122)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: comentario):
+  
+app/controllers/comentarios_controller.rb:49:in `comentario_params'
+app/controllers/comentarios_controller.rb:18:in `create'
+Started POST "/comentarios" for 172.18.0.1 at 2024-03-11 22:24:04 +0000
+Processing by ComentariosController#create as */*
+  Parameters: {"comentario"=>{"id_plan"=>1, "nickname"=>"ejemplo", "comentario"=>"Este es un comentario de ejemplo", "rating"=>5}}
+MONGODB | mongodb:27017 req:35 conn:1:1 sconn:3 | comentarios_ms_development.insert | STARTED | {"insert"=>"comentarios", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65ef84846ac6e100014ea33e'), "id_plan"=>1, "nickname"=>"ejemplo", "comentario"=>"Este es un comentario de ejemplo", "rating"=>5, "updated_at"=>2024-03-11 22:24:04.80929550...
+MONGODB | mongodb:27017 req:35 | comentarios_ms_development.insert | SUCCEEDED | 0.019s
+Completed 201 Created in 144ms (Views: 3.2ms | MongoDB: 19.1ms | Allocations: 4904)
+
+
+Started GET "/comentarios" for 172.18.0.1 at 2024-03-11 22:24:22 +0000
+Processing by ComentariosController#index as */*
+  Parameters: {"comentario"=>{"id_plan"=>1, "nickname"=>"ejemplo", "comentario"=>"Este es un comentario de ejemplo", "rating"=>5}}
+MONGODB | mongodb:27017 req:37 conn:1:1 sconn:3 | comentarios_ms_development.find | STARTED | {"find"=>"comentarios", "filter"=>{}, "$db"=>"comentarios_ms_development", "lsid"=>{"id"=><BSON::Binary:0x10080 type=uuid data=0x7e86fddfa070494b...>}}
+MONGODB | mongodb:27017 req:37 | comentarios_ms_development.find | SUCCEEDED | 0.003s
+Completed 200 OK in 14ms (Views: 9.1ms | MongoDB: 2.7ms | Allocations: 783)
+
+
+Started GET "/comentarios/65ef84846ac6e100014ea33e" for 172.18.0.1 at 2024-03-11 22:24:32 +0000
+Processing by ComentariosController#show as */*
+  Parameters: {"comentario"=>{"id_plan"=>1, "nickname"=>"ejemplo", "comentario"=>"Este es un comentario de ejemplo", "rating"=>5}, "id"=>"65ef84846ac6e100014ea33e"}
+MONGODB | mongodb:27017 req:39 conn:1:1 sconn:3 | comentarios_ms_development.find | STARTED | {"find"=>"comentarios", "filter"=>{"_id"=>BSON::ObjectId('65ef84846ac6e100014ea33e')}, "$db"=>"comentarios_ms_development", "lsid"=>{"id"=><BSON::Binary:0x10080 type=uuid data=0x7e86fddfa070494b...>}}
+MONGODB | mongodb:27017 req:39 | comentarios_ms_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 7ms (Views: 0.5ms | MongoDB: 0.9ms | Allocations: 972)
+
+
+Started PUT "/comentarios/65ef84846ac6e100014ea33e" for 172.18.0.1 at 2024-03-11 22:24:48 +0000
+Processing by ComentariosController#update as */*
+  Parameters: {"comentario"=>{"id_plan"=>1, "nickname"=>"ejemplo", "comentario"=>"Este es un comentario de ejemplo editado", "rating"=>5}, "id"=>"65ef84846ac6e100014ea33e"}
+MONGODB | mongodb:27017 req:42 conn:1:1 sconn:3 | comentarios_ms_development.find | STARTED | {"find"=>"comentarios", "filter"=>{"_id"=>BSON::ObjectId('65ef84846ac6e100014ea33e')}, "$db"=>"comentarios_ms_development", "lsid"=>{"id"=><BSON::Binary:0x10080 type=uuid data=0x7e86fddfa070494b...>}}
+MONGODB | mongodb:27017 req:42 | comentarios_ms_development.find | SUCCEEDED | 0.001s
+MONGODB | mongodb:27017 req:43 conn:1:1 sconn:3 | comentarios_ms_development.update | STARTED | {"update"=>"comentarios", "ordered"=>true, "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('65ef84846ac6e100014ea33e')}, "u"=>{"$set"=>{"comentario"=>"Este es un comentario de ejemplo editado", "updated_at"=>2024-03-11 22:24:49.042894922 UTC}}}], "$db"=>"com...
+MONGODB | mongodb:27017 req:43 | comentarios_ms_development.update | SUCCEEDED | 0.007s
+Completed 200 OK in 17ms (Views: 0.4ms | MongoDB: 7.8ms | Allocations: 2063)
+
+
+Started DELETE "/comentarios/65ef84846ac6e100014ea33e" for 172.18.0.1 at 2024-03-11 22:24:54 +0000
+Processing by ComentariosController#destroy as */*
+  Parameters: {"comentario"=>{"id_plan"=>1, "nickname"=>"ejemplo", "comentario"=>"Este es un comentario de ejemplo editado", "rating"=>5}, "id"=>"65ef84846ac6e100014ea33e"}
+MONGODB | mongodb:27017 req:44 conn:1:1 sconn:3 | comentarios_ms_development.find | STARTED | {"find"=>"comentarios", "filter"=>{"_id"=>BSON::ObjectId('65ef84846ac6e100014ea33e')}, "$db"=>"comentarios_ms_development", "lsid"=>{"id"=><BSON::Binary:0x10080 type=uuid data=0x7e86fddfa070494b...>}}
+MONGODB | mongodb:27017 req:44 | comentarios_ms_development.find | SUCCEEDED | 0.001s
+MONGODB | mongodb:27017 req:45 conn:1:1 sconn:3 | comentarios_ms_development.delete | STARTED | {"delete"=>"comentarios", "ordered"=>true, "deletes"=>[{"q"=>{"_id"=>BSON::ObjectId('65ef84846ac6e100014ea33e')}, "limit"=>1}], "$db"=>"comentarios_ms_development", "lsid"=>{"id"=><BSON::Binary:0x10080 type=uuid data=0x7e86fddfa070494b...>}}
+MONGODB | mongodb:27017 req:45 | comentarios_ms_development.delete | SUCCEEDED | 0.008s
+Completed 204 No Content in 18ms (MongoDB: 9.0ms | Allocations: 1418)
+
+
+Started POST "/comentarios" for 172.18.0.1 at 2024-03-11 22:25:16 +0000
+Processing by ComentariosController#create as */*
+  Parameters: {"comentario"=>{"id_plan"=>1, "nickname"=>"ejemplo", "comentario"=>"Este es un comentario de ejemplo mal", "rating"=>11}}
+Completed 422 Unprocessable Entity in 4ms (Views: 2.9ms | MongoDB: 0.0ms | Allocations: 828)
+
+
+Started GET "/" for 172.18.0.1 at 2024-03-11 22:32:52 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-7.1.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-7.1.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.6ms | Allocations: 375)
+Completed 200 OK in 219ms (Views: 57.1ms | MongoDB: 0.0ms | Allocations: 3890)
+
+
+Started GET "/comentarios" for 172.18.0.1 at 2024-03-11 22:33:33 +0000
+Processing by ComentariosController#index as */*
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server mongodb:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[mongodb:27017] servers=[#<Server address=mongodb:27017 UNKNOWN>]>
+MONGODB | Server description for mongodb:27017 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | mongodb:27017 req:6 conn:1:1 sconn:3 | comentarios_ms_development.find | STARTED | {"find"=>"comentarios", "filter"=>{}, "$db"=>"comentarios_ms_development", "lsid"=>{"id"=><BSON::Binary:0x10100 type=uuid data=0x636f1377167548b6...>}}
+MONGODB | mongodb:27017 req:6 | comentarios_ms_development.find | SUCCEEDED | 0.004s
+Completed 200 OK in 479ms (Views: 351.3ms | MongoDB: 4.0ms | Allocations: 10532)
+
+
+MONGODB | Server description for mongodb:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+Started POST "/comentarios" for 172.18.0.1 at 2024-03-11 22:33:57 +0000
+Processing by ComentariosController#create as */*
+  Parameters: {"comentario"=>{"id_plan"=>1, "nickname"=>"Tester", "comentario"=>"Este es un comentario de ejemplo", "rating"=>5}}
+MONGODB | mongodb:27017 req:9 conn:1:1 sconn:3 | comentarios_ms_development.insert | STARTED | {"insert"=>"comentarios", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65ef86d56ac6e10001029ea8'), "id_plan"=>1, "nickname"=>"Tester", "comentario"=>"Este es un comentario de ejemplo", "rating"=>5, "updated_at"=>2024-03-11 22:33:57.42310171 ...
+MONGODB | mongodb:27017 req:9 | comentarios_ms_development.insert | SUCCEEDED | 0.002s
+Completed 201 Created in 29ms (Views: 4.0ms | MongoDB: 1.7ms | Allocations: 3205)
+
+
+Started GET "/comentarios/65ef86d56ac6e10001029ea8" for 172.18.0.1 at 2024-03-11 22:34:10 +0000
+Processing by ComentariosController#show as */*
+  Parameters: {"comentario"=>{"id_plan"=>1, "nickname"=>"Tester", "comentario"=>"Este es un comentario de ejemplo", "rating"=>5}, "id"=>"65ef86d56ac6e10001029ea8"}
+MONGODB | mongodb:27017 req:11 conn:1:1 sconn:3 | comentarios_ms_development.find | STARTED | {"find"=>"comentarios", "filter"=>{"_id"=>BSON::ObjectId('65ef86d56ac6e10001029ea8')}, "$db"=>"comentarios_ms_development", "lsid"=>{"id"=><BSON::Binary:0x10100 type=uuid data=0x636f1377167548b6...>}}
+MONGODB | mongodb:27017 req:11 | comentarios_ms_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 10ms (Views: 0.7ms | MongoDB: 1.0ms | Allocations: 1018)
+
+
+Started PUT "/comentarios/65ef86d56ac6e10001029ea8" for 172.18.0.1 at 2024-03-11 22:34:26 +0000
+Processing by ComentariosController#update as */*
+  Parameters: {"comentario"=>{"id_plan"=>1, "nickname"=>"Tester", "comentario"=>"Este es un comentario de ejemplo modificado", "rating"=>5}, "id"=>"65ef86d56ac6e10001029ea8"}
+MONGODB | mongodb:27017 req:14 conn:1:1 sconn:3 | comentarios_ms_development.find | STARTED | {"find"=>"comentarios", "filter"=>{"_id"=>BSON::ObjectId('65ef86d56ac6e10001029ea8')}, "$db"=>"comentarios_ms_development", "lsid"=>{"id"=><BSON::Binary:0x10100 type=uuid data=0x636f1377167548b6...>}}
+MONGODB | mongodb:27017 req:14 | comentarios_ms_development.find | SUCCEEDED | 0.001s
+MONGODB | mongodb:27017 req:15 conn:1:1 sconn:3 | comentarios_ms_development.update | STARTED | {"update"=>"comentarios", "ordered"=>true, "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('65ef86d56ac6e10001029ea8')}, "u"=>{"$set"=>{"comentario"=>"Este es un comentario de ejemplo modificado", "updated_at"=>2024-03-11 22:34:26.957662714 UTC}}}], "$db"=>"...
+MONGODB | mongodb:27017 req:15 | comentarios_ms_development.update | SUCCEEDED | 0.001s
+Completed 200 OK in 18ms (Views: 1.8ms | MongoDB: 1.9ms | Allocations: 2069)
+
+
+Started DELETE "/comentarios/65ef86d56ac6e10001029ea8" for 172.18.0.1 at 2024-03-11 22:34:36 +0000
+Processing by ComentariosController#destroy as */*
+  Parameters: {"comentario"=>{"id_plan"=>1, "nickname"=>"Tester", "comentario"=>"Este es un comentario de ejemplo modificado", "rating"=>5}, "id"=>"65ef86d56ac6e10001029ea8"}
+MONGODB | mongodb:27017 req:17 conn:1:1 sconn:3 | comentarios_ms_development.find | STARTED | {"find"=>"comentarios", "filter"=>{"_id"=>BSON::ObjectId('65ef86d56ac6e10001029ea8')}, "$db"=>"comentarios_ms_development", "lsid"=>{"id"=><BSON::Binary:0x10100 type=uuid data=0x636f1377167548b6...>}}
+MONGODB | mongodb:27017 req:17 | comentarios_ms_development.find | SUCCEEDED | 0.001s
+MONGODB | mongodb:27017 req:18 conn:1:1 sconn:3 | comentarios_ms_development.delete | STARTED | {"delete"=>"comentarios", "ordered"=>true, "deletes"=>[{"q"=>{"_id"=>BSON::ObjectId('65ef86d56ac6e10001029ea8')}, "limit"=>1}], "$db"=>"comentarios_ms_development", "lsid"=>{"id"=><BSON::Binary:0x10100 type=uuid data=0x636f1377167548b6...>}}
+MONGODB | mongodb:27017 req:18 | comentarios_ms_development.delete | SUCCEEDED | 0.001s
+Completed 204 No Content in 13ms (MongoDB: 1.7ms | Allocations: 1417)
+
+
+Started GET "/comentarios/65ef86d56ac6e10001029ea8" for 172.18.0.1 at 2024-03-11 22:34:41 +0000
+Processing by ComentariosController#show as */*
+  Parameters: {"comentario"=>{"id_plan"=>1, "nickname"=>"Tester", "comentario"=>"Este es un comentario de ejemplo modificado", "rating"=>5}, "id"=>"65ef86d56ac6e10001029ea8"}
+MONGODB | mongodb:27017 req:19 conn:1:1 sconn:3 | comentarios_ms_development.find | STARTED | {"find"=>"comentarios", "filter"=>{"_id"=>BSON::ObjectId('65ef86d56ac6e10001029ea8')}, "$db"=>"comentarios_ms_development", "lsid"=>{"id"=><BSON::Binary:0x10100 type=uuid data=0x636f1377167548b6...>}}
+MONGODB | mongodb:27017 req:19 | comentarios_ms_development.find | SUCCEEDED | 0.005s
+Completed 404 Not Found in 16ms (MongoDB: 5.1ms | Allocations: 1082)
+
+
+  
+Mongoid::Errors::DocumentNotFound (
+message:
+  Document(s) not found for class Comentario with id(s) 65ef86d56ac6e10001029ea8.
+summary:
+  When calling Comentario.find with an id or array of ids, each parameter must match a document in the database or this error will be raised. The search was for the id(s): 65ef86d56ac6e10001029ea8 ... (1 total) and the following ids were not found: 65ef86d56ac6e10001029ea8.
+resolution:
+  Search for an id that is in the database or set the Mongoid.raise_not_found_error configuration option to false, which will cause nil to be returned instead of raising this error when searching for a single id, or only the matched documents when searching for multiples.):
+  
+app/controllers/comentarios_controller.rb:44:in `set_comentario'
+Started GET "/comentarios" for 172.18.0.1 at 2024-03-11 22:34:47 +0000
+Processing by ComentariosController#index as */*
+  Parameters: {"comentario"=>{"id_plan"=>1, "nickname"=>"Tester", "comentario"=>"Este es un comentario de ejemplo modificado", "rating"=>5}}
+MONGODB | mongodb:27017 req:21 conn:1:1 sconn:3 | comentarios_ms_development.find | STARTED | {"find"=>"comentarios", "filter"=>{}, "$db"=>"comentarios_ms_development", "lsid"=>{"id"=><BSON::Binary:0x10100 type=uuid data=0x636f1377167548b6...>}}
+MONGODB | mongodb:27017 req:21 | comentarios_ms_development.find | SUCCEEDED | 0.002s
+Completed 200 OK in 16ms (Views: 13.5ms | MongoDB: 2.3ms | Allocations: 620)
+
+
+Started POST "/comentarios" for 172.18.0.1 at 2024-03-11 22:35:09 +0000
+Processing by ComentariosController#create as */*
+  Parameters: {"comentario"=>{"id_plan"=>1, "nickname"=>"Tester", "comentario"=>"Este es un comentario de ejemplo mal", "rating"=>20}}
+Completed 422 Unprocessable Entity in 11ms (Views: 9.2ms | MongoDB: 0.0ms | Allocations: 722)
+
+
