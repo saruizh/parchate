@@ -1,0 +1,20 @@
+development:
+  clients:
+    default:
+      database: comentarios_ms_development
+      hosts:
+        - "mongodb:27017"
+
+test:
+  clients:
+    default:
+      database: comentarios_ms_test
+      hosts:
+        - "mongodb:27018"
+
+production:
+  clients:
+    default:
+      database: comentarios_ms_production
+      hosts:
+        - "mongodb:27017"
