@@ -103,7 +103,7 @@ services:
       - users_db
     networks:
       - users-network
-  ##MBase de datos en postgreSQL para microservicio en Javascript
+  ##Base de datos en postgreSQL para microservicio en Javascript
   users_db:
     container_name: users_db
     image: mongo
@@ -112,15 +112,19 @@ services:
     networks:
       - users-network
 
+  ##Creación de API_Gateway
+  api_gateway:
+    build: ./API_Gateway
+    ports:
+      - "5000:5000"
+
 networks:
   users-network:
     driver: bridge
   planes-network:
     driver: bridge
-  
-  
 
-
+#Poner el api gateway en la red
 
 
 
