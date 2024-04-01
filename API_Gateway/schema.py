@@ -9,24 +9,24 @@ from resolvers import register_user, login_user, get_user_profile, logout_user, 
 ##Agrego Mutaciones para microservicio Usuarios
 class RegisterMutation(graphene.Mutation):
     class Arguments:
-        id_plan = graphene.Int(required=True)
+        idPlan = graphene.Int(required=True)
         nickname = graphene.String(required=True)
         comentario = graphene.String(required=True)
         rating = graphene.Int(required=True)
 
     response = graphene.String()
-    def mutate(self, info, id_plan, nickname, comentario, rating):
-        response = create_comentario(info, id_plan, nickname, comentario, rating)
+    def mutate(self, info, idPlan, nickname, comentario, rating):
+        response = create_comentario(info, idPlan, nickname, comentario, rating)
         return CreateComentarioMutation(response=response)
 
 class UpdateComentarioMutation(graphene.Mutation):
     class Arguments:
-        id_comentario = graphene.String(required=True)
+        idComentario = graphene.String(required=True)
         comentario = graphene.String(required=True)
 
     response = graphene.String()
-    def mutate(self, info, id_comentario, comentario):
-        response = editar_comentario(info, id_comentario, comentario)
+    def mutate(self, info, idComentario, comentario):
+        response = editar_comentario(info, idComentario, comentario)
         return UpdateComentarioMutation(response=response)
 
 class UpdateRatingMutation(graphene.Mutation):
