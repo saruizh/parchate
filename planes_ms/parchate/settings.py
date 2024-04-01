@@ -78,11 +78,11 @@ WSGI_APPLICATION = 'parchate.wsgi.application'
 DATABASES = {
     'default': {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": "parchatedb",
+        "NAME": "planes-db",
         "USER": "postgres",
-        "PASSWORD": "ZBAamn35462",
-        "HOST": "localhost",
-        "PORT": "5433",
+        "PASSWORD": "123456",
+        "HOST": "planes_db",
+        "PORT": "5432",
     }
 }
 
@@ -115,7 +115,7 @@ TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
-USE_TZ = True
+
 
 
 # Static files (CSS, JavaScript, Images)

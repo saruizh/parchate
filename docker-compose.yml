@@ -19,6 +19,8 @@ services:
     image: "mongo:latest"
     ports:
       - "27017:27017"
+ 
+      
   
   ##Microservicio planes hecho en Python
   planes_ms:
@@ -30,13 +32,12 @@ services:
     ports:
       - "8000:8000"
     environment:
-      - POSTGRES_NAME=ms-planes
+      - POSTGRES_NAME=planes-db
       - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=ZBAamn35462
+      - POSTGRES_PASSWORD=123456
     depends_on:
       - planes_db
-    networks:
-      - planes-network
+
   ##Base de datos en postgreSQL para microservicio Python
   planes_db:
     image: postgres:latest
@@ -46,50 +47,49 @@ services:
       - ./data/db:/var/lib/postgresql/data
     environment:
       - DATABASE_HOST=127.0.0.1
-      - POSTGRES_DB=ms-planes
+      - POSTGRES_DB=planes-db
       - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=ZBAamn35462
+      - POSTGRES_PASSWORD=123456
     ports:
-      - "5433:5432" #Se cambia de puerto en base de datos de microservicio
-    networks:
-      - planes-network
+      - "5432:5432" #Se cambia de puerto en base de datos de microservicio
+
   
-  ##Administrador de Base de datos en postgreSQL para microservicio Python
-  #pgadmin:
-  #  image: dpage/pgadmin4
-  #  container_name: pgadmin
-  #  environment:
-  #    - PGADMIN_DEFAULT_EMAIL=admin@admin.com
-  #    - PGADMIN_DEFAULT_PASSWORD=admin
-  #  ports:
-  #    - "80:80"
-  #  depends_on:
-  #    - planes_db
+#Administrador de Base de datos en postgreSQL para microservicio Python
+#  pgadmin:
+#    image: dpage/pgadmin4
+#    container_name: pgadmin
+#    environment:
+#      - PGADMIN_DEFAULT_EMAIL=admin@admin.com
+#      - PGADMIN_DEFAULT_PASSWORD=admin
+#    ports:
+#      - "80:80"
+#    depends_on:
+#      - planes_db
 
 
   ##Microservicio vaca hecho en java
-  vaca_ms:
-    container_name: vaca_ms
-    image: vaca_app:1.0.0
-    build: ./vaca_ms
-    ports:
-      - 8080:8080
-    environment:
-      - DATABASE_URL=jdbc:postgresql://vaca_db:5432/postgres
-      - DATABASE_USERNAME=root
-      - DATABASE_PASSWORD=vaca1123581321
-    depends_on:
-      - vaca_db
+#  vaca_ms:
+#    container_name: vaca_ms
+#    image: vaca_app:1.0.0
+#    build: ./vaca_ms
+#    ports:
+#      - 8080:8080
+#    environment:
+#      - DATABASE_URL=jdbc:postgresql://vaca_db:5432/postgres
+#      - DATABASE_USERNAME=root
+#      - DATABASE_PASSWORD=vaca1123581321
+#    depends_on:
+#      - vaca_db
   ##Base de datos en postgreSQL para microservicio java
-  vaca_db:
-    container_name: vaca_db
-    image: postgres:12
-    ports:
-      - 5432:5432
-    environment:
-      POSTGRES_USER: root
-      POSTGRES_PASSWORD: vaca1123581321
-      POSTGRES_DB: vaca
+#  vaca_db:
+#    container_name: vaca_db
+#    image: postgres:12
+#    ports:
+#      - 5433:5433
+#    environment:
+#      POSTGRES_USER: root
+#      POSTGRES_PASSWORD: vaca1123581321
+#      POSTGRES_DB: vaca
 
   ##Microservicio users hecho en Javascript
   users_ms:
@@ -116,13 +116,18 @@ services:
   api_gateway:
     build: ./API_Gateway
     ports:
-      - "5000:5000"
+      - "5003:5000"
+    environment:
+      - USERS_MS_URL=http://host.docker.internal:3000/parchate/user/
+      - PLANES_MS_URL=http://host.docker.internal:8000/parchate/planes/
+    depends_on:
+      - users_ms
+      - planes_ms  
 
 networks:
   users-network:
     driver: bridge
-  planes-network:
-    driver: bridge
+
 
 #Poner el api gateway en la red
 
