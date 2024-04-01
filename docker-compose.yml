@@ -12,117 +12,123 @@ services:
       - .:/comentarios_ms/app
     ports:
       - "3000:3000"
-    depends_on:
+    depends_on: 
       - comentarios_db
   ##Base de datos en Mongo para microservicio Ruby
   comentarios_db:
     image: "mongo:latest"
     ports:
       - "27017:27017"
+    # networks:
+    #   - comentarios-network
   
-  ##Microservicio planes hecho en Python
-  planes_ms:
-    build: ./planes_ms
-    container_name: planes_ms
-    command: python manage.py runserver 0.0.0.0:8000
-    volumes:
-      - .:/planes_ms/code
-    ports:
-      - "8000:8000"
-    environment:
-      - POSTGRES_NAME=ms-planes
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=ZBAamn35462
-    depends_on:
-      - planes_db
-    networks:
-      - planes-network
-  ##Base de datos en postgreSQL para microservicio Python
-  planes_db:
-    image: postgres:latest
-    restart: always
-    container_name: planes_db
-    volumes:
-      - ./data/db:/var/lib/postgresql/data
-    environment:
-      - DATABASE_HOST=127.0.0.1
-      - POSTGRES_DB=ms-planes
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=ZBAamn35462
-    ports:
-      - "5433:5432" #Se cambia de puerto en base de datos de microservicio
-    networks:
-      - planes-network
+  # ##Microservicio planes hecho en Python
+  # planes_ms:
+  #   build: ./planes_ms
+  #   container_name: planes_ms
+  #   command: python manage.py runserver 0.0.0.0:8000
+  #   volumes:
+  #     - .:/planes_ms/code
+  #   ports:
+  #     - "8000:8000"
+  #   environment:
+  #     - POSTGRES_NAME=ms-planes
+  #     - POSTGRES_USER=postgres
+  #     - POSTGRES_PASSWORD=ZBAamn35462
+  #   depends_on:
+  #     - planes_db
+  #   networks:
+  #     - planes-network
+  # ##Base de datos en postgreSQL para microservicio Python
+  # planes_db:
+  #   image: postgres:latest
+  #   restart: always
+  #   container_name: planes_db
+  #   volumes:
+  #     - ./data/db:/var/lib/postgresql/data
+  #   environment:
+  #     - DATABASE_HOST=127.0.0.1
+  #     - POSTGRES_DB=ms-planes
+  #     - POSTGRES_USER=postgres
+  #     - POSTGRES_PASSWORD=ZBAamn35462
+  #   ports:
+  #     - "5433:5432" #Se cambia de puerto en base de datos de microservicio
+  #   networks:
+  #     - planes-network
   
-  ##Administrador de Base de datos en postgreSQL para microservicio Python
-  #pgadmin:
-  #  image: dpage/pgadmin4
-  #  container_name: pgadmin
-  #  environment:
-  #    - PGADMIN_DEFAULT_EMAIL=admin@admin.com
-  #    - PGADMIN_DEFAULT_PASSWORD=admin
-  #  ports:
-  #    - "80:80"
-  #  depends_on:
-  #    - planes_db
+  # ##Administrador de Base de datos en postgreSQL para microservicio Python
+  # #pgadmin:
+  # #  image: dpage/pgadmin4
+  # #  container_name: pgadmin
+  # #  environment:
+  # #    - PGADMIN_DEFAULT_EMAIL=admin@admin.com
+  # #    - PGADMIN_DEFAULT_PASSWORD=admin
+  # #  ports:
+  # #    - "80:80"
+  # #  depends_on:
+  # #    - planes_db
 
 
-  ##Microservicio vaca hecho en java
-  vaca_ms:
-    container_name: vaca_ms
-    image: vaca_app:1.0.0
-    build: ./vaca_ms
-    ports:
-      - 8080:8080
-    environment:
-      - DATABASE_URL=jdbc:postgresql://vaca_db:5432/postgres
-      - DATABASE_USERNAME=root
-      - DATABASE_PASSWORD=vaca1123581321
-    depends_on:
-      - vaca_db
-  ##Base de datos en postgreSQL para microservicio java
-  vaca_db:
-    container_name: vaca_db
-    image: postgres:12
-    ports:
-      - 5432:5432
-    environment:
-      POSTGRES_USER: root
-      POSTGRES_PASSWORD: vaca1123581321
-      POSTGRES_DB: vaca
+  # ##Microservicio vaca hecho en java
+  # vaca_ms:
+  #   container_name: vaca_ms
+  #   image: vaca_app:1.0.0
+  #   build: ./vaca_ms
+  #   ports:
+  #     - 8080:8080
+  #   environment:
+  #     - DATABASE_URL=jdbc:postgresql://vaca_db:5432/postgres
+  #     - DATABASE_USERNAME=root
+  #     - DATABASE_PASSWORD=vaca1123581321
+  #   depends_on:
+  #     - vaca_db
+  # ##Base de datos en postgreSQL para microservicio java
+  # vaca_db:
+  #   container_name: vaca_db
+  #   image: postgres:12
+  #   ports:
+  #     - 5432:5432
+  #   environment:
+  #     POSTGRES_USER: root
+  #     POSTGRES_PASSWORD: vaca1123581321
+  #     POSTGRES_DB: vaca
 
-  ##Microservicio users hecho en Javascript
-  users_ms:
-    container_name: users_ms
-    restart: always
-    build:
-      context: ./vsuarios_ms
-    ports:
-      - "3001:3000"
-    depends_on:
-      - users_db
-    networks:
-      - users-network
-  ##Base de datos en postgreSQL para microservicio en Javascript
-  users_db:
-    container_name: users_db
-    image: mongo
-    ports:
-      - "27020:27017"
-    networks:
-      - users-network
+  # ##Microservicio users hecho en Javascript
+  # users_ms:
+  #   container_name: users_ms
+  #   restart: always
+  #   build:
+  #     context: ./vsuarios_ms
+  #   ports:
+  #     - "3001:3000"
+  #   depends_on:
+  #     - users_db
+  #   networks:
+  #     - users-network
+  # ##Base de datos en postgreSQL para microservicio en Javascript
+  # users_db:
+  #   container_name: users_db
+  #   image: mongo
+  #   ports:
+  #     - "27020:27017"
+  #   networks:
+  #     - users-network
 
   ##Creación de API_Gateway
   api_gateway:
     build: ./API_Gateway
     ports:
       - "5000:5000"
+    environment:
+      - COMENTARIOS_MS_URL=http://host.docker.internal:3000/comentarios
+    depends_on:
+      - comentarios_ms
 
-networks:
-  users-network:
-    driver: bridge
-  planes-network:
-    driver: bridge
+# networks:
+#   comentarios-network:
+#     driver: bridge
+#   planes-network:
+#     driver: bridge
 
 #Poner el api gateway en la red
 
