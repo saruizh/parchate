@@ -19,8 +19,8 @@ services:
     image: "mongo:latest"
     ports:
       - "27017:27017"
-    # networks:
-    #   - comentarios-network
+    networks:
+      - users-network
   
   # ##Microservicio planes hecho en Python
   # planes_ms:
@@ -120,13 +120,13 @@ services:
     ports:
       - "5000:5000"
     environment:
-      - COMENTARIOS_MS_URL=http://host.docker.internal:3000/comentarios
+      - COMENTARIOS_MS_URL=http://host.docker.internal:3000/comentarios/
     depends_on:
       - comentarios_ms
 
-# networks:
-#   comentarios-network:
-#     driver: bridge
+networks:
+  users-network:
+    driver: bridge
 #   planes-network:
 #     driver: bridge
 

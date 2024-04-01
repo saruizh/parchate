@@ -3,7 +3,7 @@ import os
 # ##Se definen url's principales para cada microservicio:
 # url_users='http://localhost:3001/parchate/user/'
 # url_vaca='http://localhost:8080/parchate/vaca/'
-url_comentarios=os.environ.get('COMENTARIOS_MS_URL','host.docker.internal:3000/comentarios')
+url_comentarios=os.environ.get('COMENTARIOS_MS_URL','host.docker.internal:3000/comentarios/')
 
 
 

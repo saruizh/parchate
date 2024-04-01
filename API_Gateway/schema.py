@@ -76,43 +76,43 @@ from resolvers import create_comentario, get_comentario, editar_comentario, edit
 
 class CreateComentarioMutation(graphene.Mutation):
     class Arguments:
-        id_plan = graphene.Int(required=True)
+        idPlan = graphene.Int(required=True)
         nickname = graphene.String(required=True)
         comentario = graphene.String(required=True)
         rating = graphene.Int(required=True)
 
     response = graphene.String()
-    def mutate(self, info, id_plan, nickname, comentario, rating):
-        response = create_comentario(info, id_plan, nickname, comentario, rating)
+    def mutate(self, info, idPlan, nickname, comentario, rating):
+        response = create_comentario(info, idPlan, nickname, comentario, rating)
         return CreateComentarioMutation(response=response)
 
 class UpdateComentarioMutation(graphene.Mutation):
     class Arguments:
-        id_comentario = graphene.String(required=True)
+        idComentario = graphene.String(required=True)
         comentario = graphene.String(required=True)
 
     response = graphene.String()
-    def mutate(self, info, id_comentario, comentario):
-        response = editar_comentario(info, id_comentario, comentario)
+    def mutate(self, info, idComentario, comentario):
+        response = editar_comentario(info, idComentario, comentario)
         return UpdateComentarioMutation(response=response)
 
 class UpdateRatingMutation(graphene.Mutation):
     class Arguments:
-        id_comentario = graphene.String(required=True)
+        idComentario = graphene.String(required=True)
         rating = graphene.Int(required=True)
 
     response = graphene.String()
-    def mutate(self, info, id_comentario, rating):
-        response = editar_rating(info, id_comentario, rating)
+    def mutate(self, info, idComentario, rating):
+        response = editar_rating(info, idComentario, rating)
         return UpdateRatingMutation(response=response)
 
 class EliminarComentarioMutation(graphene.Mutation):
     class Arguments:
-        id_comentario = graphene.String(required=True)
+        idComentario = graphene.String(required=True)
 
     response = graphene.String()
-    def mutate(self, info, id_comentario):
-        response = eliminar_comentario(info, id_vaca)
+    def mutate(self, info, idComentario):
+        response = eliminar_comentario(info, idComentario)
         return EliminarComentarioMutation(response=response)
 
 # ##Agrego Mutaciones para microservicio planes
@@ -133,7 +133,7 @@ class Mutation(graphene.ObjectType):
 
 # ##Se crean las querys (Solicitudes get)
 class Query(ObjectType):
-    comentario_info = graphene.String(id_comentario = graphene.String(required=True))
+    comentario_info = graphene.String(idComentario = graphene.String(required=True))
 #     user_profile = graphene.String()
 #     vaca_info = graphene.String(id_vaca=graphene.Int(required=True))
 
@@ -145,8 +145,8 @@ class Query(ObjectType):
 #         response = get_vaca(info, id_vaca)
 #         return response
 
-    def resolve_comentario_info(self, id_comentario):
-        response = get_comentario(info, id_comentario)
+    def resolve_comentario_info(self, idComentario):
+        response = get_comentario(info, idComentario)
         return response
 
 schema = graphene.Schema(query=Query, mutation=Mutation)
