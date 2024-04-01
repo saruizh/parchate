@@ -96,8 +96,8 @@ def eliminar_ciudad(info,id):
     response = requests.delete(url_planes + 'ciudades/' + str(id))
     return response.json()
 
-def create_ciudad(info, user, plan):
-    response = requests.post(url_planes, json={'user': user, 'plan': plan})
+def create_parche(info, user, plan):
+    response = requests.post(url_planes + 'parches/', json={'user': user, 'plan': plan})
     return response.json()
 
 

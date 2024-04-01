@@ -2,7 +2,7 @@
 import graphene
 from graphene import ObjectType, Schema
 from graphene.types.datetime import DateTime
-from resolvers import register_user, login_user, get_user_profile, logout_user, create_vaca, get_vaca, abonar_vaca, eliminar_vaca
+from resolvers import register_user, login_user, get_user_profile, logout_user, create_vaca, get_vaca, abonar_vaca, eliminar_vaca, create_plan, get_planes, get_plan, eliminar_plan, create_ciudad, get_ciudades, get_ciudad, eliminar_ciudad, create_lugar, get_lugares, get_lugar, eliminar_lugar, create_parche
 
 
 ##Agrego Mutaciones para microservicio Usuarios
@@ -77,8 +77,49 @@ class EliminarVacaMutation(graphene.Mutation):
 
 
 ##Agrego Mutaciones para microservicio planes
+class PlanMutation(graphene.Mutation):
+    class Arguments:
+        name = graphene.String(required=True)
+        date = DateTime(required=True)
+        chat_link = graphene.String(required=True)
+        user_admin = graphene.Int(required=True)
+        place = graphene.Int(required=True)
 
+    response = graphene.String()
+    def mutate(self, info, name, date, chat_link, user_admin, place):
+        response = create_plan(info, name, date, chat_link, user_admin, place)
+        return PlanMutation(response=response)
+    
+class LugarMutation(graphene.Mutation):
+    class Arguments:
+        name = graphene.String(required=True)
+        hood = graphene.String(required=True)
+        address = graphene.String(required=True)
+        city = graphene.Int(required=True)
 
+    response = graphene.String()
+    def mutate(self, info, name, hood, address, city):
+        response = create_lugar(info, name, hood, address, city)
+        return LugarMutation(response=response)
+class CiudadMutation(graphene.Mutation):
+    class Arguments:
+        name = graphene.String(required=True)
+
+    response = graphene.String()
+    def mutate(self, info, name):
+        response = create_ciudad(info, name)
+        return CiudadMutation(response=response)
+
+class ParcheMutation(graphene.Mutation):
+    class Arguments:
+        user = graphene.Int(required=True)
+        plan = graphene.Int(required=True)
+
+    response = graphene.String()
+    def mutate(self, info, user, plan):
+        response = create_parche(info, user, plan)
+        return ParcheMutation(response=response)
+    
 ##Se agregan todas las mutaciones
 class Mutation(graphene.ObjectType):
     register_user = RegisterMutation.Field()
@@ -87,6 +128,10 @@ class Mutation(graphene.ObjectType):
     create_vaca = CreateVacaMutation.Field()
     update_vaca = UpdateVacaMutation.Field()
     eliminar_vaca = EliminarVacaMutation.Field()
+    plan = PlanMutation.Field()
+    lugar = LugarMutation.Field()
+    ciudad = CiudadMutation.Field()
+    parche = ParcheMutation.Field()
 
 ##Se crean las querys (Solicitudes get)
 class Query(ObjectType):
