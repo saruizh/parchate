@@ -3,6 +3,7 @@ import requests
 ##Se definen url's principales para cada microservicio:
 url_users='http://localhost:3001/parchate/user/'
 url_vaca='http://localhost:8080/parchate/vaca/'
+url_planes='http://localhost:5432/parchate/planes/ms-planes/'
 
 
 
@@ -34,7 +35,7 @@ def get_vaca(info,id_vaca):
     return response.json()
 
 def abonar_vaca(info,id_vaca,montototal):
-    response = request.put(url_vaca+'abonar', json={'id_vaca':id_vaca,'montototal':montototal})
+    response = requests.put(url_vaca+'abonar', json={'id_vaca':id_vaca,'montototal':montototal})
     return response.json()
 
 def eliminar_vaca(info,id_vaca):
@@ -46,5 +47,21 @@ def eliminar_vaca(info,id_vaca):
 
 
 ##resolvers para el microservicio planes
+
+def create_plan(info, name, date, chat_link, user_admin, place):
+    response = requests.post(url_planes, json={'name': name})
+    return response.json()
+
+def get_planes(info,id_vaca):
+    response = requests.get(url_planes)
+    return response.json()
+
+def abonar_vaca(info,id_vaca,montototal):
+    response = requests.put(url_planes+'abonar', json={'id_vaca':id_vaca,'montototal':montototal})
+    return response.json()
+
+def eliminar_ciudad(info,id):
+    response = requests.delete(url_planes+'eliminarCiudad/'+str(id))
+    return response.json()
 
 

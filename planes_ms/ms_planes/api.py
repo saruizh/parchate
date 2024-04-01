@@ -1,12 +1,9 @@
 from .models import User, Planes, Lugar, Ciudad, Parcharme
 from rest_framework import viewsets, permissions
 from rest_framework.response import Response
-from .serializers import UserSerializer, PlanesSerializer, LugarSerializer, CiudadSerializer, ParcharmeSerializer
+from .serializers import PlanesSerializer, LugarSerializer, CiudadSerializer, ParcharmeSerializer
 
-class UserViewSet(viewsets.ModelViewSet):
-    queryset = User.objects.all()
-    permission_classes = [permissions.AllowAny]
-    serializer_class = UserSerializer
+
 
 
 class PlanesViewSet(viewsets.ModelViewSet):

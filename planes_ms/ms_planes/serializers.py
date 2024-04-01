@@ -1,11 +1,8 @@
 from rest_framework import serializers
-from .models import User, Planes, Lugar, Ciudad, Parcharme
+from .models import Planes, Lugar, Ciudad, Parcharme
 
 
-class UserSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = User
-        fields = '__all__'
+
 
 class PlanesSerializer(serializers.ModelSerializer):
     class Meta:
