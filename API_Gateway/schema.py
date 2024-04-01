@@ -9,28 +9,27 @@ from resolvers import register_user, login_user, get_user_profile, logout_user, 
 ##Agrego Mutaciones para microservicio Usuarios
 class RegisterMutation(graphene.Mutation):
     class Arguments:
-        email = graphene.String(required=True)
-        username = graphene.String(required=True)
-        password = graphene.String(required=True)
+        id_plan = graphene.Int(required=True)
+        nickname = graphene.String(required=True)
+        comentario = graphene.String(required=True)
+        rating = graphene.Int(required=True)
 
     response = graphene.String()
+    def mutate(self, info, id_plan, nickname, comentario, rating):
+        response = create_comentario(info, id_plan, nickname, comentario, rating)
+        return CreateComentarioMutation(response=response)
 
-    def mutate(self, info, email, username, password):
-        response = register_user(info, email, username, password)
-        return RegisterMutation(response=response)
-
-class LoginMutation(graphene.Mutation):
+class UpdateComentarioMutation(graphene.Mutation):
     class Arguments:
-        email = graphene.String(required=True)
-        password = graphene.String(required=True)
+        id_comentario = graphene.String(required=True)
+        comentario = graphene.String(required=True)
 
     response = graphene.String()
-    
-    def mutate(self, info, email, password):
-        response = login_user(info, email, password)
-        return LoginMutation(response=response)
+    def mutate(self, info, id_comentario, comentario):
+        response = editar_comentario(info, id_comentario, comentario)
+        return UpdateComentarioMutation(response=response)
 
-class LogoutMutation(graphene.Mutation):
+class UpdateRatingMutation(graphene.Mutation):
     class Arguments:
         None
     response = graphene.String() 
@@ -57,7 +56,7 @@ class CreateVacaMutation(graphene.Mutation):
         response = create_vaca(info, idPlan, nombreVaca, fecha_limite_iso, montoTotal, Alcance)
         return CreateVacaMutation(response=response)
 
-class UpdateVacaMutation(graphene.Mutation):
+class EliminarComentarioMutation(graphene.Mutation):
     class Arguments:
         idVaca = graphene.Int(required=True)
         montoTotal = graphene.Float(required=True)
