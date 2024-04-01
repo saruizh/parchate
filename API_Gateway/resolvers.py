@@ -49,19 +49,58 @@ def eliminar_vaca(info,id_vaca):
 ##resolvers para el microservicio planes
 
 def create_plan(info, name, date, chat_link, user_admin, place):
+    response = requests.post(url_planes, json={'name': name, 'date': date, 'chat_link': chat_link, 'user_admin': user_admin, 'place': place})
+    return response.json()
+
+def get_planes(info):
+    response = requests.get(url_planes + 'planes/')
+    return response.json()
+
+def get_plan(info,id):
+    response = requests.get(url_planes + 'planes/' + str(id))
+    return response.json()
+
+def eliminar_plan(info,id):
+    response = requests.delete(url_planes + 'planes/' + str(id))
+    return response.json()
+
+def create_lugar(info, name, hood, address, city):
+    response = requests.post(url_planes, json={'name': name, 'hood': hood, 'address': address, 'city': city})
+    return response.json()
+
+def get_lugares(info):
+    response = requests.get(url_planes + 'lugares/')
+    return response.json()
+
+def get_lugar(info,id):
+    response = requests.get(url_planes + 'lugares/' + str(id))
+    return response.json()
+
+def eliminar_lugar(info,id):
+    response = requests.delete(url_planes + 'lugares/' + str(id))
+    return response.json()
+
+def create_ciudad(info, name):
     response = requests.post(url_planes, json={'name': name})
     return response.json()
 
-def get_planes(info,id_vaca):
-    response = requests.get(url_planes)
+def get_ciudades(info):
+    response = requests.get(url_planes + 'ciudades/')
     return response.json()
 
-def abonar_vaca(info,id_vaca,montototal):
-    response = requests.put(url_planes+'abonar', json={'id_vaca':id_vaca,'montototal':montototal})
+def get_ciudad(info,id):
+    response = requests.get(url_planes + 'ciudades/' + str(id))
     return response.json()
 
 def eliminar_ciudad(info,id):
-    response = requests.delete(url_planes+'eliminarCiudad/'+str(id))
+    response = requests.delete(url_planes + 'ciudades/' + str(id))
     return response.json()
+
+def create_ciudad(info, user, plan):
+    response = requests.post(url_planes, json={'user': user, 'plan': plan})
+    return response.json()
+
+
+
 
 
