@@ -8,6 +8,12 @@ mutation {
   }
 }
 
+mutation {
+  loginUser(email: "saruizh@unal.edu.co", password: "123456789") {
+    response
+  }
+}
+
 
 
 //Microservicio vaca

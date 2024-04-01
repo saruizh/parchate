@@ -5,54 +5,54 @@ services:
 ####Agregando microservicios:
 
   ##Microservicio comentarios_ms Ruby
-  comentarios_ms:
-    build: ./comentarios_ms
-    command: bash -c "rm -f comentarios_ms/tmp/pids/server.pid && bundle exec rails s -b '0.0.0.0'"
-    volumes:
-      - .:/comentarios_ms/app
-    ports:
-      - "3000:3000"
-    depends_on:
-      - comentarios_db
+  #comentarios_ms:
+  #  build: ./comentarios_ms
+  #  command: bash -c "rm -f comentarios_ms/tmp/pids/server.pid && bundle exec rails s -b '0.0.0.0'"
+  #  volumes:
+  #    - .:/comentarios_ms/app
+  #  ports:
+  #    - "3000:3000"
+  #  depends_on:
+  #    - comentarios_db
   ##Base de datos en Mongo para microservicio Ruby
-  comentarios_db:
-    image: "mongo:latest"
-    ports:
-      - "27017:27017"
+  #comentarios_db:
+  #  image: "mongo:latest"
+  #  ports:
+  #    - "27017:27017"
   
   ##Microservicio planes hecho en Python
-  planes_ms:
-    build: ./planes_ms
-    container_name: planes_ms
-    command: python manage.py runserver 0.0.0.0:8000
-    volumes:
-      - .:/planes_ms/code
-    ports:
-      - "8000:8000"
-    environment:
-      - POSTGRES_NAME=ms-planes
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=ZBAamn35462
-    depends_on:
-      - planes_db
-    networks:
-      - planes-network
+  #planes_ms:
+  #  build: ./planes_ms
+  #  container_name: planes_ms
+  #  command: python manage.py runserver 0.0.0.0:8000
+  #  volumes:
+  #    - .:/planes_ms/code
+  #  ports:
+  #    - "8000:8000"
+  #  environment:
+  #    - POSTGRES_NAME=ms-planes
+  #    - POSTGRES_USER=postgres
+  #    - POSTGRES_PASSWORD=ZBAamn35462
+  #  depends_on:
+  #    - planes_db
+  #  networks:
+  #    - planes-network
   ##Base de datos en postgreSQL para microservicio Python
-  planes_db:
-    image: postgres:latest
-    restart: always
-    container_name: planes_db
-    volumes:
-      - ./data/db:/var/lib/postgresql/data
-    environment:
-      - DATABASE_HOST=127.0.0.1
-      - POSTGRES_DB=ms-planes
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=ZBAamn35462
-    ports:
-      - "5433:5432" #Se cambia de puerto en base de datos de microservicio
-    networks:
-      - planes-network
+  #planes_db:
+  #  image: postgres:latest
+  #  restart: always
+  #  container_name: planes_db
+  #  volumes:
+  #    - ./data/db:/var/lib/postgresql/data
+  #  environment:
+  #    - DATABASE_HOST=127.0.0.1
+  #    - POSTGRES_DB=ms-planes
+  #    - POSTGRES_USER=postgres
+  #    - POSTGRES_PASSWORD=ZBAamn35462
+  #  ports:
+  #    - "5433:5432" #Se cambia de puerto en base de datos de microservicio
+  #  networks:
+  #    - planes-network
   
   ##Administrador de Base de datos en postgreSQL para microservicio Python
   #pgadmin:
@@ -98,7 +98,7 @@ services:
     build:
       context: ./vsuarios_ms
     ports:
-      - "3001:3000"
+      - "3000:3000"
     depends_on:
       - users_db
     networks:
@@ -108,7 +108,7 @@ services:
     container_name: users_db
     image: mongo
     ports:
-      - "27020:27017"
+      - "27017:27017"
     networks:
       - users-network
 
@@ -117,14 +117,17 @@ services:
     build: ./API_Gateway
     ports:
       - "5000:5000"
+    environment:
+    - vaca_ms_URL=http://host.docker.internal:8080/parchate/vaca/
+    - users_ms_URL=http://host.docker.internal:3000/parchate/user/
+    depends_on:
+      - vaca_ms
+      - users_ms
 
 networks:
   users-network:
     driver: bridge
-  planes-network:
-    driver: bridge
-
-#Poner el api gateway en la red
-
+#  planes-network:
+#    driver: bridge
 
 

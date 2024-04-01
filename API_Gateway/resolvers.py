@@ -1,9 +1,9 @@
 import requests
+import os
 
 ##Se definen url's principales para cada microservicio:
-url_users='http://localhost:3001/parchate/user/'
-url_vaca='http://localhost:8080/parchate/vaca/'
-
+url_users=os.environ.get("users_ms_URL", "host.docker.internal:3000/parchate/user/")
+url_vaca=os.environ.get("vaca_ms_URL", "host.docker.internal:8080/parchate/vaca/")
 
 
 ##resolvers para el microservicio de usuarios
@@ -26,7 +26,7 @@ def logout_user(info):
 
 ##resolvers para el microservicio vaca
 def create_vaca(info,idPlan,nombreVaca,fechaLimite,montoTotal,Alcance):
-    response = requests.post(url_vaca+'crear/', json={'idPlan': idPlan,'nombreVaca': nombreVaca, 'fechaLimite': fechaLimite,'montoTotal': montoTotal,'Alcance':Alcance})
+    response = requests.post(url_vaca+'crear', json={'idPlan': idPlan,'nombreVaca': nombreVaca, 'fechaLimite': fechaLimite,'montoTotal': montoTotal,'Alcance':Alcance})
     return response.json()
 
 def get_vaca(info,id_vaca):

@@ -45,11 +45,12 @@ class CreateVacaMutation(graphene.Mutation):
         nombreVaca = graphene.String(required=True)
         fechaLimite = DateTime(required=False)
         montoTotal = graphene.Float(required=True)
-        Alcance = graphene.String(required=True)
+        Alcance = graphene.Int(required=True)
 
     response = graphene.String()
     def mutate(self, info, idPlan, nombreVaca, fechaLimite, montoTotal, Alcance):
-        response = create_vaca(info, idPlan, nombreVaca, fechaLimite, montoTotal, Alcance)
+        fecha_limite_iso = fechaLimite.isoformat() if fechaLimite else None   
+        response = create_vaca(info, idPlan, nombreVaca, fecha_limite_iso, montoTotal, Alcance)
         return CreateVacaMutation(response=response)
 
 class UpdateVacaMutation(graphene.Mutation):
@@ -84,7 +85,7 @@ class Mutation(graphene.ObjectType):
     register_user = RegisterMutation.Field()
     login_user = LoginMutation.Field()
     logout_user = LogoutMutation.Field()
-    create_vaca = CreateVacaMutation.Field()
+    createVaca = CreateVacaMutation.Field()
     update_vaca = UpdateVacaMutation.Field()
     eliminar_vaca = EliminarVacaMutation.Field()
 
