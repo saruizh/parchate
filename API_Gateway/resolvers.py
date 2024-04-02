@@ -4,7 +4,7 @@ import os
 ##Se definen url's principales para cada microservicio:
 url_users='http://localhost:3001/parchate/user/'
 url_vaca='http://localhost:8080/parchate/vaca/'
-url_planes=os.environ.get('PLANES_MS_URL', 'host.docker.internal:8000/parchate/ms-planes/') # 'http://localhost:5432/parchate/ms-planes/'
+url_planes = os.environ.get('PLANES_MS_URL', 'host.docker.internal:8000/parchate/ms-planes/') # 'http://localhost:5432/parchate/ms-planes/'
 
 
 
@@ -50,7 +50,7 @@ def eliminar_vaca(info,id_vaca):
 ##resolvers para el microservicio planes
 
 def create_plan(info, name, date, chat_link, user_admin, place):
-    response = requests.post(url_planes, json={'name': name, 'date': date, 'chat_link': chat_link, 'user_admin': user_admin, 'place': place})
+    response = requests.post(url_planes + 'planes/', json={'name': name, 'date': date, 'chat_link': chat_link, 'user_admin': user_admin, 'place': place})
     return response.json()
 
 def get_planes(info):
@@ -66,39 +66,43 @@ def eliminar_plan(info,id):
     return response.json()
 
 def create_lugar(info, name, hood, address, city):
-    response = requests.post(url_planes, json={'name': name, 'hood': hood, 'address': address, 'city': city})
+    response = requests.post(url_planes+'lugares/', json={'name': name, 'hood': hood, 'address': address, 'city': city})
     return response.json()
 
 def get_lugares(info):
-    response = requests.get(url_planes + 'lugares/')
+    response = requests.get(url_planes+'lugares/')
     return response.json()
 
 def get_lugar(info,id):
-    response = requests.get(url_planes + 'lugares/' + str(id))
+    response = requests.get(url_planes+'lugares/'+str(id))
     return response.json()
 
 def eliminar_lugar(info,id):
-    response = requests.delete(url_planes + 'lugares/' + str(id))
+    response = requests.delete(url_planes+'lugares/' + str(id))
     return response.json()
 
 def create_ciudad(info, name):
-    response = requests.post(url_planes, json={'name': name})
-    return response.json()
+    response = requests.post(url_planes+'ciudades/', json={'name': name})
+    if response.status_code == 200:
+        return response.json()
+    else:
+        # Manejar el error aquí
+        return {"error": f"Error al crear la ciudad: {response.status_code}, {response.text}"}
 
 def get_ciudades(info):
-    response = requests.get(url_planes + 'ciudades/')
+    response = requests.get(url_planes+'ciudades/')
     return response.json()
 
 def get_ciudad(info,id):
-    response = requests.get(url_planes + 'ciudades/' + str(id))
+    response = requests.get(url_planes+'ciudades/'+str(id))
     return response.json()
 
 def eliminar_ciudad(info,id):
-    response = requests.delete(url_planes + 'ciudades/' + str(id))
+    response = requests.delete(url_planes+'ciudades/'+str(id))
     return response.json()
 
 def create_parche(info, user, plan):
-    response = requests.post(url_planes + 'parches/', json={'user': user, 'plan': plan})
+    response = requests.post(url_planes+'parches/', json={'user': user, 'plan': plan})
     return response.json()
 
 
