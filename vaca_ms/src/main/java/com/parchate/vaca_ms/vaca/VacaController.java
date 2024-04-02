@@ -8,9 +8,35 @@ import org.springframework.web.bind.annotation.*;
 import java.math.BigDecimal;
 import java.util.List;
 
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import org.springframework.amqp.core.Queue;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+
+
+
+
 @RestController
 @RequestMapping("/parchate/vaca")
 public class VacaController {
+    
+    @Autowired
+    private RabbitTemplate rabbitTemplate;
+
+    public class RabbitConfig {
+
+        public static final String ABONAR = "cola_abonar";
+
+        @Bean
+        public Queue abonarQueue() {
+            return new Queue(ABONAR, false);
+        }
+    }
+
     @Autowired
     private VacaRepository vacaRepository;
 
@@ -44,12 +70,16 @@ public class VacaController {
             BigDecimal nuevoMontoTotal = vacaExistente.getMontoTotal().add(cantidad);
             vacaExistente.setMontoTotal(nuevoMontoTotal);
             vacaRepository.save(vacaExistente);
+
+            // Enviar mensaje a RabbitMQ
+            rabbitTemplate.convertAndSend(RabbitConfig.ABONAR, "Abono exitoso. Nuevo monto total: " + nuevoMontoTotal);
+
             return ResponseEntity.ok("Abono exitoso. Nuevo monto total: " + nuevoMontoTotal);
         } else {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Vaca no encontrada");
         }
-        
     }
+
 
     @DeleteMapping("/eliminar/{id}")
     public ResponseEntity<?> eliminarVaca(@PathVariable Long id) {

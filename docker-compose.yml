@@ -123,6 +123,17 @@ services:
     depends_on:
       - vaca_ms
       - users_ms
+  
+  ##Creación de cola de mensajería
+  rabbitmq:
+    container_name: rabbitmq
+    image: rabbitmq:3-management
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    environment:
+      RABBITMQ_DEFAULT_USER: saruizh
+      RABBITMQ_DEFAULT_PASS: 1123581321
 
 networks:
   users-network:
