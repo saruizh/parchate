@@ -120,6 +120,8 @@ class ParcheMutation(graphene.Mutation):
     def mutate(self, info, user, plan):
         response = create_parche(info, user, plan)
         return ParcheMutation(response=response)
+
+
     
 ##Se agregan todas las mutaciones
 class Mutation(graphene.ObjectType):
@@ -145,6 +147,30 @@ class Query(ObjectType):
 
     def resolve_vaca_info(self, info, id_vaca):
         response = get_vaca(info, id_vaca)
+        return response
+
+    def resolve_planes(self, info):
+        response = get_planes(info)
+        return response
+
+    def resolve_plan(self, info, id):
+        response = get_plan(info, id)
+        return response
+    
+    def resolve_ciudades(self, info):
+        response = get_ciudades(info)
+        return response
+
+    def resolve_ciudad(self, info, id):
+        response = get_ciudad(info, id)
+        return response
+    
+    def resolve_lugares(self, info):
+        response = get_lugares(info)
+        return response
+    
+    def resolve_lugar(self, info, id):
+        response = get_lugar(info, id)
         return response
 
 schema = graphene.Schema(query=Query, mutation=Mutation)

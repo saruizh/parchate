@@ -11,14 +11,14 @@ services:
     volumes:
       - .:/comentarios_ms/app
     ports:
-      - "3000:3000"
+      - "3001:3000"
     depends_on:
       - comentarios_db
   ##Base de datos en Mongo para microservicio Ruby
   comentarios_db:
     image: "mongo:latest"
     ports:
-      - "27017:27017"
+      - "27020:27017"
  
       
   
@@ -98,7 +98,7 @@ services:
     build:
       context: ./vsuarios_ms
     ports:
-      - "3001:3000"
+      - "3000:3000"
     depends_on:
       - users_db
     networks:
@@ -108,7 +108,7 @@ services:
     container_name: users_db
     image: mongo
     ports:
-      - "27020:27017"
+      - "27017:27017"
     networks:
       - users-network
 
@@ -118,9 +118,10 @@ services:
     ports:
       - "5003:5000"
     environment:
+      - USERS_MS_URL=http://host.docker.internal:3000/parchate/user/
       - PLANES_MS_URL=http://host.docker.internal:8000/parchate/ms-planes/
     depends_on:
-
+      - users_ms    
       - planes_ms  
 
 networks:
