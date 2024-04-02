@@ -1,9 +1,10 @@
 import requests
+import os
 
 ##Se definen url's principales para cada microservicio:
 url_users='http://localhost:3001/parchate/user/'
 url_vaca='http://localhost:8080/parchate/vaca/'
-url_planes='http://localhost:5432/parchate/planes/ms-planes/'
+url_planes=os.environ.get('PLANES_MS_URL', 'host.docker.internal:8000/parchate/ms-planes/') # 'http://localhost:5432/parchate/ms-planes/'
 
 
 

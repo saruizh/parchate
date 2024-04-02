@@ -119,7 +119,7 @@ services:
       - "5003:5000"
     environment:
       - USERS_MS_URL=http://host.docker.internal:3000/parchate/user/
-      - PLANES_MS_URL=http://host.docker.internal:8000/parchate/planes/
+      - PLANES_MS_URL=http://host.docker.internal:8000/parchate/ms-planes/
     depends_on:
       - users_ms
       - planes_ms  

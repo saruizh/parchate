@@ -101,6 +101,7 @@ class LugarMutation(graphene.Mutation):
     def mutate(self, info, name, hood, address, city):
         response = create_lugar(info, name, hood, address, city)
         return LugarMutation(response=response)
+    
 class CiudadMutation(graphene.Mutation):
     class Arguments:
         name = graphene.String(required=True)
@@ -128,10 +129,10 @@ class Mutation(graphene.ObjectType):
     create_vaca = CreateVacaMutation.Field()
     update_vaca = UpdateVacaMutation.Field()
     eliminar_vaca = EliminarVacaMutation.Field()
-    plan = PlanMutation.Field()
-    lugar = LugarMutation.Field()
-    ciudad = CiudadMutation.Field()
-    parche = ParcheMutation.Field()
+    create_plan = PlanMutation.Field()
+    create_lugar = LugarMutation.Field()
+    create_ciudad = CiudadMutation.Field()
+    create_parche = ParcheMutation.Field()
 
 ##Se crean las querys (Solicitudes get)
 class Query(ObjectType):
