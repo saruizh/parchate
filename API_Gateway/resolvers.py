@@ -3,7 +3,7 @@ import os
 # ##Se definen url's principales para cada microservicio:
 # url_users='http://localhost:3001/parchate/user/'
 # url_vaca='http://localhost:8080/parchate/vaca/'
-url_comentarios=os.environ.get('COMENTARIOS_MS_URL','host.docker.internal:3000/comentarios/')
+url_comentarios=os.environ.get('COMENTARIOS_MS_URL','host.docker.internal:3001/comentarios/')
 
 
 
@@ -47,7 +47,12 @@ url_comentarios=os.environ.get('COMENTARIOS_MS_URL','host.docker.internal:3000/c
 
 def create_comentario(info, id_plan, nickname, comentario, rating):
     response = requests.post(url_comentarios, json={'id_plan': id_plan, 'nickname': nickname, 'comentario': comentario,'rating': rating})
-    return response.json()
+    # return response.json()
+    if response.status_code == 200:
+        return response.json()
+    else:
+        # Manejar el error aquí
+        return {"error": f"Error al crear el comentario: {response.status_code}, {response.text}"}
 
 def get_comentario(info, id_comentario):
     response = requests.get(url_comentarios + str(id_comentario))
