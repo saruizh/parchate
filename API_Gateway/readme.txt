@@ -18,6 +18,18 @@ mutation {
   }
 }
 
+mutation{
+  createPlan(name:"Estereo Picnic", date: "2024-04-30", chatLink:"https://wa.me/98765432", userAdmin:1, place:1){
+    response
+  }
+}
+
+mutation{
+  createCiudad(name: "Yopal"){
+    response
+  }
+}
+
 
 
 

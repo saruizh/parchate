@@ -45,11 +45,12 @@ class CreateVacaMutation(graphene.Mutation):
         nombreVaca = graphene.String(required=True)
         fechaLimite = DateTime(required=False)
         montoTotal = graphene.Float(required=True)
-        Alcance = graphene.String(required=True)
+        Alcance = graphene.Int(required=True)
 
     response = graphene.String()
     def mutate(self, info, idPlan, nombreVaca, fechaLimite, montoTotal, Alcance):
-        response = create_vaca(info, idPlan, nombreVaca, fechaLimite, montoTotal, Alcance)
+        fecha_limite_iso = fechaLimite.isoformat() if fechaLimite else None
+        response = create_vaca(info, idPlan, nombreVaca, fecha_limite_iso, montoTotal, Alcance)
         return CreateVacaMutation(response=response)
 
 class UpdateVacaMutation(graphene.Mutation):
@@ -80,14 +81,16 @@ class EliminarVacaMutation(graphene.Mutation):
 class PlanMutation(graphene.Mutation):
     class Arguments:
         name = graphene.String(required=True)
-        date = DateTime(required=True)
+        date = graphene.Date(required=True)
+        
         chat_link = graphene.String(required=True)
         user_admin = graphene.Int(required=True)
         place = graphene.Int(required=True)
 
     response = graphene.String()
     def mutate(self, info, name, date, chat_link, user_admin, place):
-        response = create_plan(info, name, date, chat_link, user_admin, place)
+        fecha_iso = date.isoformat() if date else None
+        response = create_plan(info, name, fecha_iso, chat_link, user_admin, place)
         return PlanMutation(response=response)
     
 class LugarMutation(graphene.Mutation):
@@ -128,7 +131,7 @@ class Mutation(graphene.ObjectType):
     register_user = RegisterMutation.Field()
     login_user = LoginMutation.Field()
     logout_user = LogoutMutation.Field()
-    create_vaca = CreateVacaMutation.Field()
+    createVaca = CreateVacaMutation.Field()
     update_vaca = UpdateVacaMutation.Field()
     eliminar_vaca = EliminarVacaMutation.Field()
     create_plan = PlanMutation.Field()
@@ -140,38 +143,18 @@ class Mutation(graphene.ObjectType):
 class Query(ObjectType):
     user_profile = graphene.String()
     vaca_info = graphene.String(id_vaca=graphene.Int(required=True))
+    plan_info = graphene.String(id=graphene.Int(required=True))
+    planes = graphene.String()
+    ciudad_info = graphene.String(id=graphene.Int(required=True))
+    ciudades = graphene.String()
+    lugar_info = graphene.String(id=graphene.Int(required=True))
+    lugares = graphene.String()
 
-    def resolve_user_profile(self, info):
-        response = get_user_profile(info)
-        return response
 
-    def resolve_vaca_info(self, info, id_vaca):
-        response = get_vaca(info, id_vaca)
-        return response
 
-    def resolve_planes(self, info):
-        response = get_planes(info)
-        return response
-
-    def resolve_plan(self, info, id):
-        response = get_plan(info, id)
-        return response
     
-    def resolve_ciudades(self, info):
-        response = get_ciudades(info)
-        return response
 
-    def resolve_ciudad(self, info, id):
-        response = get_ciudad(info, id)
-        return response
     
-    def resolve_lugares(self, info):
-        response = get_lugares(info)
-        return response
-    
-    def resolve_lugar(self, info, id):
-        response = get_lugar(info, id)
-        return response
 
 schema = graphene.Schema(query=Query, mutation=Mutation)
 

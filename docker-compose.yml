@@ -68,28 +68,28 @@ services:
 
 
   ##Microservicio vaca hecho en java
-#  vaca_ms:
-#    container_name: vaca_ms
-#    image: vaca_app:1.0.0
-#    build: ./vaca_ms
-#    ports:
-#      - 8080:8080
-#    environment:
-#      - DATABASE_URL=jdbc:postgresql://vaca_db:5432/postgres
-#      - DATABASE_USERNAME=root
-#      - DATABASE_PASSWORD=vaca1123581321
-#    depends_on:
-#      - vaca_db
+  vaca_ms:
+    container_name: vaca_ms
+    image: vaca_app:1.0.0
+    build: ./vaca_ms
+    ports:
+      - 8080:8080    
+    environment:
+      - DATABASE_URL=jdbc:postgresql://vaca_db:5432/postgres
+      - DATABASE_USERNAME=root
+      - DATABASE_PASSWORD=vaca1123581321
+    depends_on:
+     - vaca_db
   ##Base de datos en postgreSQL para microservicio java
-#  vaca_db:
-#    container_name: vaca_db
-#    image: postgres:12
-#    ports:
-#      - 5433:5433
-#    environment:
-#      POSTGRES_USER: root
-#      POSTGRES_PASSWORD: vaca1123581321
-#      POSTGRES_DB: vaca
+  vaca_db:
+    container_name: vaca_db
+    image: postgres:12
+    ports:
+      - 5433:5433
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: vaca1123581321
+      POSTGRES_DB: vaca
 
   ##Microservicio users hecho en Javascript
   users_ms:
@@ -118,11 +118,25 @@ services:
     ports:
       - "5003:5000"
     environment:
+      - vaca_ms_URL=http://host.docker.internal:8080/parchate/vaca/
       - USERS_MS_URL=http://host.docker.internal:3000/parchate/user/
       - PLANES_MS_URL=http://host.docker.internal:8000/parchate/ms-planes/
     depends_on:
       - users_ms    
-      - planes_ms  
+      - planes_ms
+      - vaca_ms
+
+
+  ##Creación de cola de mensajería
+  rabbitmq:
+    container_name: rabbitmq
+    image: rabbitmq:3-management
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    environment:
+      RABBITMQ_DEFAULT_USER: saruizh
+      RABBITMQ_DEFAULT_PASS: 1123581321
 
 networks:
   users-network:
