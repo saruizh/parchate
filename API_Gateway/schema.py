@@ -5,6 +5,7 @@ from graphene.types.datetime import DateTime
 from resolvers import register_user, login_user, get_user_profile, logout_user, create_vaca, get_vaca, abonar_vaca, eliminar_vaca, create_plan, get_planes, get_plan, eliminar_plan, create_ciudad, get_ciudades, get_ciudad, eliminar_ciudad, create_lugar, get_lugares, get_lugar, eliminar_lugar, create_parche
 
 
+
 ##Agrego Mutaciones para microservicio Usuarios
 class RegisterMutation(graphene.Mutation):
     class Arguments:
@@ -37,6 +38,9 @@ class LogoutMutation(graphene.Mutation):
         response = logout_user(info)
         return LogoutMutation(response=response)
 
+
+
+
 ##Agrego Mutaciones para microservicio vaca
 
 class CreateVacaMutation(graphene.Mutation):
@@ -55,13 +59,13 @@ class CreateVacaMutation(graphene.Mutation):
 
 class UpdateVacaMutation(graphene.Mutation):
     class Arguments:
-        id_vaca = graphene.Int(required=True)
+        idVaca = graphene.Int(required=True)
         montototal = graphene.Float(required=True)
 
     response = graphene.String()
 
-    def mutate(self, info, id_vaca, montototal):
-        response = abonar_vaca(info, id_vaca, montototal)
+    def mutate(self, info, idVaca, montototal):
+        response = abonar_vaca(info, idVaca, montototal)
         return UpdateVacaMutation(response=response)
 
 class EliminarVacaMutation(graphene.Mutation):
@@ -72,6 +76,9 @@ class EliminarVacaMutation(graphene.Mutation):
     def mutate(self, info, id_vaca):
         response = eliminar_vaca(info, id_vaca)
         return EliminarVacaMutation(response=response)
+
+
+
 
 ##Agrego Mutaciones para microservicio comentarios
 
@@ -131,8 +138,10 @@ class Mutation(graphene.ObjectType):
     register_user = RegisterMutation.Field()
     login_user = LoginMutation.Field()
     logout_user = LogoutMutation.Field()
+    
     createVaca = CreateVacaMutation.Field()
-    update_vaca = UpdateVacaMutation.Field()
+    updateVaca = UpdateVacaMutation.Field()
+    
     eliminar_vaca = EliminarVacaMutation.Field()
     create_plan = PlanMutation.Field()
     create_lugar = LugarMutation.Field()
@@ -142,7 +151,13 @@ class Mutation(graphene.ObjectType):
 ##Se crean las querys (Solicitudes get)
 class Query(ObjectType):
     user_profile = graphene.String()
+    
+
     vaca_info = graphene.String(id_vaca=graphene.Int(required=True))
+    def query_vaca_info(self, info, id_vaca):
+        return get_vaca(info, id_vaca)
+    
+
     plan_info = graphene.String(id=graphene.Int(required=True))
     planes = graphene.String()
     ciudad_info = graphene.String(id=graphene.Int(required=True))
@@ -150,11 +165,6 @@ class Query(ObjectType):
     lugar_info = graphene.String(id=graphene.Int(required=True))
     lugares = graphene.String()
 
-
-
-    
-
-    
 
 schema = graphene.Schema(query=Query, mutation=Mutation)
 

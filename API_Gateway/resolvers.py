@@ -7,7 +7,6 @@ url_vaca=os.environ.get("vaca_ms_URL", "host.docker.internal:8080/parchate/vaca/
 url_planes = os.environ.get('PLANES_MS_URL', 'host.docker.internal:8000/parchate/ms-planes/') # 'http://localhost:5432/parchate/ms-planes/'
 
 
-
 ##resolvers para el microservicio de usuarios
 def register_user(info, email, username, password):
     response = requests.post(url_users+'register/', json={'email': email,'username': username, 'password': password})
