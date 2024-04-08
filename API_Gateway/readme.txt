@@ -18,13 +18,16 @@ mutation {
   }
 }
 
+query {
+  getVaca(idVaca:1)
+}
+
+
+
 mutation {
   updateVaca(idVaca: 1, montototal: 10000.0) {
     response
   }
-}
-query {
-  getVaca(idVaca:1)
 }
 
 
