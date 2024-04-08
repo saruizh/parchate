@@ -60,13 +60,15 @@ class CreateVacaMutation(graphene.Mutation):
 class UpdateVacaMutation(graphene.Mutation):
     class Arguments:
         idVaca = graphene.Int(required=True)
-        montototal = graphene.Float(required=True)
+        montoTotal = graphene.Float(required=True)
 
     response = graphene.String()
 
-    def mutate(self, info, idVaca, montototal):
-        response = abonar_vaca(info, idVaca, montototal)
+    def mutate(self, info, idVaca, montoTotal):
+        response = abonar_vaca(info, idVaca, montoTotal)
         return UpdateVacaMutation(response=response)
+
+
 
 class EliminarVacaMutation(graphene.Mutation):
     class Arguments:
@@ -150,20 +152,18 @@ class Mutation(graphene.ObjectType):
 
 ##Se crean las querys (Solicitudes get)
 class Query(ObjectType):
-    user_profile = graphene.String()
+    #user_profile = graphene.String()
     
-
-    vaca_info = graphene.String(id_vaca=graphene.Int(required=True))
-    def query_vaca_info(self, info, id_vaca):
-        return get_vaca(info, id_vaca)
+    getVaca = graphene.JSONString(idVaca=graphene.Int(required=True))
+    def resolve_getVaca(self, info, idVaca):
+        return get_vaca(info, idVaca)
     
-
-    plan_info = graphene.String(id=graphene.Int(required=True))
-    planes = graphene.String()
-    ciudad_info = graphene.String(id=graphene.Int(required=True))
-    ciudades = graphene.String()
-    lugar_info = graphene.String(id=graphene.Int(required=True))
-    lugares = graphene.String()
+    #plan_info = graphene.String(id=graphene.Int(required=True))
+    #planes = graphene.String()
+    #ciudad_info = graphene.String(id=graphene.Int(required=True))
+    #ciudades = graphene.String()
+    #lugar_info = graphene.String(id=graphene.Int(required=True))
+    #lugares = graphene.String()
 
 
 schema = graphene.Schema(query=Query, mutation=Mutation)

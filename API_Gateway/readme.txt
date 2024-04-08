@@ -23,13 +23,15 @@ mutation {
     response
   }
 }
-
-
-
-
 query {
-  vacaInfo(idVaca:1)
+  getVaca(idVaca:1)
 }
+
+
+
+
+
+
 
 
 

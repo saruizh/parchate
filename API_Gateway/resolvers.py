@@ -1,4 +1,5 @@
 import requests
+import json
 import os
 
 ##Se definen url's principales para cada microservicio:
@@ -25,18 +26,21 @@ def logout_user(info):
     return response.json()
 
 
+
 ##resolvers para el microservicio vaca
 def create_vaca(info,idPlan,nombreVaca,fechaLimite,montoTotal,Alcance):
     response = requests.post(url_vaca+'crear', json={'idPlan': idPlan,'nombreVaca': nombreVaca, 'fechaLimite': fechaLimite,'montoTotal': montoTotal,'Alcance':Alcance})
     return response.json()
 
-def get_vaca(info,id_vaca):
-    response = requests.get(url_vaca+'buscar/'+str(id_vaca))
+def get_vaca(info,idVaca):
+    response = requests.get(url_vaca+'buscar/'+str(idVaca))
+    return response.json()
+    
+
+def abonar_vaca(info,idVaca,montoTotal):
+    response = requests.put(url_vaca+'abonar', json={'id':idVaca,'montoTotal':montoTotal})
     return response.json()
 
-def abonar_vaca(info,id_vaca,montototal):
-    response = requests.put(url_vaca+'abonar', json={'id_vaca':id_vaca,'montototal':montototal})
-    return response.json()
 
 def eliminar_vaca(info,id_vaca):
     response = requests.delete(url_vaca+'eliminar/'+str(id_vaca))
