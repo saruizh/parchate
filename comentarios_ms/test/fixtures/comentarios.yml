@@ -3,11 +3,11 @@
 one:
   id_plan: 1
   nickname: MyString
-  comentario: MyText
+  cuerpo: MyText
   rating: 1
 
 two:
   id_plan: 1
   nickname: MyString
-  comentario: MyText
+  cuerpo: MyText
   rating: 1

@@ -14,7 +14,7 @@ RUN bundle install
 COPY . .
 
 # Expone el puerto 3000 para que pueda ser accesible desde fuera del contenedor
-EXPOSE 3001
+EXPOSE 3000
 
 # Comando para iniciar el servidor Rails
 CMD ["rails", "server", "-b", "0.0.0.0"]

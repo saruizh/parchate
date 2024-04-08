@@ -11,14 +11,14 @@ services:
     volumes:
       - .:/comentarios_ms/app
     ports:
-      - "3001:3000"
+      - "3000:3000"
     depends_on: 
       - comentarios_db
   ##Base de datos en Mongo para microservicio Ruby
   comentarios_db:
     image: "mongo:latest"
     ports:
-      - "27018:27017"
+      - "27017:27017"
     # networks:
     #   - users-network
   
@@ -120,7 +120,7 @@ services:
     ports:
       - "5000:5000"
     environment:
-      - COMENTARIOS_MS_URL=http://host.docker.internal:3001/comentarios/
+      - COMENTARIOS_MS_URL=http://host.docker.internal:3000/comentarios/
     depends_on:
       - comentarios_ms
 

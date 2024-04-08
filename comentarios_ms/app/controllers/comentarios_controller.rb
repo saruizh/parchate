@@ -1,6 +1,6 @@
 class ComentariosController < ApplicationController
   before_action :set_comentario, only: %i[ show edit update destroy ]
-
+  skip_before_action :verify_authenticity_token, only: [:create]
   # GET /comentarios or /comentarios.json
   def index
     @comentarios = Comentario.all
@@ -65,6 +65,13 @@ class ComentariosController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def comentario_params
-      params.require(:comentario).permit(:id_plan, :nickname, :comentario, :rating)
+      puts params.inspect
+      if params[:comentario]
+        params.require(:comentario).permit(:id_plan, :nickname, :cuerpo, :rating)
+      else
+        params.permit(:id_plan, :nickname, :cuerpo, :rating)
+      end
     end
 end
+
+

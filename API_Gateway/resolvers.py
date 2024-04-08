@@ -3,7 +3,7 @@ import os
 # ##Se definen url's principales para cada microservicio:
 # url_users='http://localhost:3001/parchate/user/'
 # url_vaca='http://localhost:8080/parchate/vaca/'
-url_comentarios=os.environ.get('COMENTARIOS_MS_URL','host.docker.internal:3001/comentarios/')
+url_comentarios=os.environ.get('COMENTARIOS_MS_URL','host.docker.internal:3000/comentarios/')
 
 
 
@@ -45,25 +45,20 @@ url_comentarios=os.environ.get('COMENTARIOS_MS_URL','host.docker.internal:3001/c
 
 ##resolvers para el microservicio comentarios
 
-def create_comentario(info, id_plan, nickname, comentario, rating):
-    response = requests.post(url_comentarios, json={'id_plan': id_plan, 'nickname': nickname, 'comentario': comentario,'rating': rating})
-    # return response.json()
-    if response.status_code == 200:
-        return response.json()
-    else:
-        # Manejar el error aquí
-        return {"error": f"Error al crear el comentario: {response.status_code}, {response.text}"}
+def create_comentario(info, id_plan, nickname, cuerpo, rating):
+    response = requests.post(url_comentarios, json={'id_plan': id_plan, 'nickname': nickname, 'cuerpo': cuerpo,'rating': rating})
+    return response.json()
 
 def get_comentario(info, id_comentario):
     response = requests.get(url_comentarios + str(id_comentario))
     return response.json()
 
-def editar_comentario(info, id_comentario, comentario):
-    response = request.put(url_comentarios , json={'id_comentario':id_comentario,'comentario':comentario})
+def editar_comentario(info, id_comentario, cuerpo):
+    response = requests.put(url_comentarios + str(id_comentario), json={'cuerpo':cuerpo})
     return response.json()
 
 def editar_rating(info, id_comentario, rating):
-    response = request.put(url_comentarios , json={'id_comentario':id_comentario,'rating':rating})
+    response = requests.put(url_comentarios + str(id_comentario), json={'rating':rating})
     return response.json()    
 
 def eliminar_comentario(info, id_comentario):

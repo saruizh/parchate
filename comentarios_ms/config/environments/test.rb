@@ -12,7 +12,7 @@ Rails.application.configure do
   config.enable_reloading = false
 
   # Se agrega para que funcione la API Gateway
-  config.hosts << "host.docker.internal:3001"
+  config.hosts << "host.docker.internal:3000"
   
   # Eager loading loads your entire application. When running a single test locally,
   # this is usually not necessary, and can slow down your test suite. However, it's

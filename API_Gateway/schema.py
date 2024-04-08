@@ -78,22 +78,22 @@ class CreateComentarioMutation(graphene.Mutation):
     class Arguments:
         idPlan = graphene.Int(required=True)
         nickname = graphene.String(required=True)
-        comentario = graphene.String(required=True)
+        cuerpo = graphene.String(required=True)
         rating = graphene.Int(required=True)
 
     response = graphene.String()
-    def mutate(self, info, idPlan, nickname, comentario, rating):
-        response = create_comentario(info, idPlan, nickname, comentario, rating)
+    def mutate(self, info, idPlan, nickname, cuerpo, rating):
+        response = create_comentario(info, idPlan, nickname, cuerpo, rating)
         return CreateComentarioMutation(response=response)
 
 class UpdateComentarioMutation(graphene.Mutation):
     class Arguments:
         idComentario = graphene.String(required=True)
-        comentario = graphene.String(required=True)
+        cuerpo = graphene.String(required=True)
 
     response = graphene.String()
-    def mutate(self, info, idComentario, comentario):
-        response = editar_comentario(info, idComentario, comentario)
+    def mutate(self, info, idComentario, cuerpo):
+        response = editar_comentario(info, idComentario, cuerpo)
         return UpdateComentarioMutation(response=response)
 
 class UpdateRatingMutation(graphene.Mutation):
