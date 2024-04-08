@@ -18,7 +18,7 @@ Rails.application.configure do
   config.server_timing = true
 
   # Se agrega para que funcione la API Gateway
-  config.hosts << "host.docker.internal:3001"
+  config.hosts << "host.docker.internal:3000"
 
   # Enable/disable caching. By default caching is disabled.
   # Run rails dev:cache to toggle caching.

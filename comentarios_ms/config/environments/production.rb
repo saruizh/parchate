@@ -13,7 +13,7 @@ Rails.application.configure do
   config.eager_load = true
 
   # Se agrega para que funcione la API Gateway
-  config.hosts << "host.docker.internal:3001"
+  config.hosts << "host.docker.internal:3000"
   
   # Full error reports are disabled and caching is turned on.
   config.consider_all_requests_local = false
