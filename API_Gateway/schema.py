@@ -145,7 +145,7 @@ class Query(ObjectType):
 #         response = get_vaca(info, id_vaca)
 #         return response
 
-    def resolve_comentario_info(self, idComentario):
+    def resolve_comentario_info(self, info, idComentario):
         response = get_comentario(info, idComentario)
         return response
 
