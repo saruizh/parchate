@@ -1,17 +1,30 @@
-import express from "express";
-import morgan from "morgan";
-import cookieParser from "cookie-parser";
-
-
-import authRoutes from "./routes/auth.routes.js";
-
+const express = require('express');
+const mongoose = require('mongoose');
+const authRoutes = require('./routes/auth.routes.js');
+const cookieParser = require('cookie-parser');
+const { requireAuth, checkUser } = require('./middlewares/validator.middleware.js');
 
 const app = express();
 
-app.use(morgan('dev'));
+// middleware
+app.use(express.static('public'));
 app.use(express.json());
 app.use(cookieParser());
 
-app.use("/parchate/user",authRoutes);
+// view engine
+app.set('view engine', 'ejs');
 
-export default app;
+// database connection
+// database connection
+const dbURI = 'mongodb://users_db:27017/merndb';
+mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
+  .then((result) => app.listen(3000))
+  .catch((err) => console.log(err));
+
+// routes
+app.get('*', checkUser);
+app.get('/', (req, res) => res.render('home'));
+app.get('/smoothies', requireAuth, (req, res) => res.render('smoothies'));
+app.use(authRoutes);
+
+app.use("/parchate/user",authRoutes);

@@ -1,76 +1,91 @@
-import User from "../models/user.model.js";
-import bcrypt from 'bcryptjs';
-import { createAccesToken } from "../libs/jwt.js";
+const User = require("../models/user.model.js");
+const jwt = require('jsonwebtoken');
 
-export const register = async (req,res)=>{
-    const {email,password,username}=req.body;
-    try {
+// handle errors
+const handleErrors = (err) => {
+  console.log(err.message, err.code);
+  let errors = { email: '', password: '' };
 
-        const passwordHash = await bcrypt.hash(password, 10)
+  // incorrect email
+  if (err.message === 'incorrect email') {
+    errors.email = 'That email is not registered';
+  }
 
-        const newUser = new User({
-            username,
-            email, 
-            password:passwordHash,
-        });
+  // incorrect password
+  if (err.message === 'incorrect password') {
+    errors.password = 'That password is incorrect';
+  }
 
-        const userSaved = await newUser.save();
-        const token = await createAccesToken({ id:userSaved._id });
-        res.cookie('token',token);        
-        res.json({
-            id:userSaved._id,
-            username:userSaved.username,
-            email:userSaved.email,
-            createdAt:userSaved.createdAt,
-            updateAt:userSaved.updatedAt,
-        });    
-    } catch (error) {
-        res.status(500).json({message:error.message});
-    }
-
-};
+  // duplicate email error
+  if (err.code === 11000) {
+    errors.email = 'that email is already registered';
+    return errors;
+  }
 
 
-export const login = async (req,res)=>{
-    const {email,password}=req.body;
-    try {
-        const userFound = await User.findOne({email})
-        if(!userFound) return res.status(400).json({message:"User not found"});
-
-        const isMatch = await bcrypt.compare(password, userFound.password);
-
-        if(!isMatch) return res.status(400).json({message:"Invalid credentials"});
-
-        const token = await createAccesToken({ id: userFound._id });
-        res.cookie('token',token);        
-        res.json({
-            id:userFound._id,
-            username:userFound.username,
-            email:userFound.email,
-            createdAt:userFound.createdAt,
-            updateAt:userFound.updatedAt,
-        });    
-    } catch (error) {
-        res.status(500).json({message:error.message});
-    }
-
-};
-
-export const logout =  (req,res)=>{
-    res.cookie("token","",{
-        expires: new Date(0),
+  // validation errors
+  if (err.message.includes('user validation failed')) {
+    // console.log(err);
+    Object.values(err.errors).forEach(({ properties }) => {
+      // console.log(val);
+      // console.log(properties);
+      errors[properties.path] = properties.message;
     });
-    return res.sendStatus(200);
+  }
+
+  return errors;
 }
-export const profile = async (req,res)=>{
-    const userFound = await User.findById(req.user.id)
-    if(!userFound) return res.status(400).json({message:"User not found"});
-    return res.json({
-        id:userFound._id,
-        username:userFound.username,
-        email:userFound.email,
-        rating:userFound.rating,
-        createdAt:userFound.createdAt,
-        updateAt:userFound.updatedAt,
-    });
+
+// create json web token
+const maxAge = 3 * 24 * 60 * 60;
+const createToken = (id) => {
+  return jwt.sign({ id }, 'net ninja secret', {
+    expiresIn: maxAge
+  });
+};
+
+// controller actions
+module.exports.signup_get = (req, res) => {
+  res.render('signup');
+}
+
+module.exports.login_get = (req, res) => {
+  res.render('login');
+}
+
+module.exports.signup_post = async (req, res) => {
+  const { email, password } = req.body;
+
+  try {
+    const user = await User.create({ email, password });
+    const token = createToken(user._id);
+    res.cookie('jwt', token, { httpOnly: true, maxAge: maxAge * 1000 });
+    res.status(201).json({ user: user._id });
+  }
+  catch(err) {
+    const errors = handleErrors(err);
+    res.status(400).json({ errors });
+  }
+ 
+}
+
+module.exports.login_post = async (req, res) => {
+  const { email, password } = req.body;
+
+  try {
+    const user = await User.login(email, password);
+    const token = createToken(user._id);
+    res.cookie('jwt', token, { httpOnly: true, maxAge: maxAge * 1000 });
+    res.status(200).json({ user: user._id });
+  } 
+  catch (err) {
+    const errors = handleErrors(err);
+    res.status(400).json({ errors });
+  }
+
+}
+
+module.exports.logout_get = (req, res) => {
+  res.cookie('jwt', '', { maxAge: 1 });
+  res.redirect('/');
 }
