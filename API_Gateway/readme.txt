@@ -18,10 +18,6 @@ mutation {
   }
 }
 
-query {
-  getVaca(idVaca:1)
-}
-
 
 
 mutation {
