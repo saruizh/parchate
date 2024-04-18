@@ -164,6 +164,9 @@ class Query(ObjectType):
     getCiudad = graphene.JSONString(idCiudad=graphene.Int(required=True))
     def resolve_getCiudad(self, info, idCiudad):
         return get_ciudad(info, idCiudad)
+    getCiudades = graphene.JSONString()
+    def resolve_getCiudades(self, info):
+        return get_ciudades(info)
     #lugar_info = graphene.String(id=graphene.Int(required=True))
     #lugares = graphene.String()
 

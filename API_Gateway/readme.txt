@@ -47,6 +47,16 @@ mutation{
   }
 }
 
+query {
+  getCiudad(idCiudad:1)
+}
+
+query {
+  getCiudades
+}
+
+
+
 
 
 
