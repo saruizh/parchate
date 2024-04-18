@@ -1,6 +1,15 @@
-FROM node:21.7.0
+FROM node:15
 
 RUN mkdir -p /usr/src/app
+
+RUN sed -i 's/deb.debian.org/archive.debian.org/g' /etc/apt/sources.list
+RUN sed -i 's/security.debian.org/archive.debian.org/g' /etc/apt/sources.list
+RUN echo 'Acquire::Check-Valid-Until "false";' > /etc/apt/apt.conf
+RUN sed -i '/stretch-updates/d' /etc/apt/sources.list
+
+
+RUN apt-get update && \
+    apt-get install -y build-essential python
 
 WORKDIR /usr/src/app
 
@@ -9,6 +18,8 @@ COPY package*.json ./
 RUN npm install
 
 COPY . .
+
+RUN npm rebuild bcrypt --build-from-source
 
 EXPOSE 3000
 
