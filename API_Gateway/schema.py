@@ -113,7 +113,8 @@ class EliminarComentarioMutation(graphene.Mutation):
     response = graphene.String()
     def mutate(self, info, idComentario):
         response = eliminar_comentario(info, idComentario)
-        return EliminarComentarioMutation(response=response)
+        #return EliminarComentarioMutation(response=response)
+        return EliminarComentarioMutation(response="Comentario eliminado correctamente")
 
 # ##Agrego Mutaciones para microservicio planes
 
