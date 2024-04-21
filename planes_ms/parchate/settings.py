@@ -82,7 +82,7 @@ DATABASES = {
         "USER": "postgres",
         "PASSWORD": "123456",
         "HOST": "planes_db",
-        "PORT": "5432",
+        "PORT": "5433",
     }
 }
 
@@ -115,6 +115,9 @@ TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
+USE_L10N = True
+
+USE_TZ = True
 
 
 
@@ -129,4 +132,17 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-AUTH_USER_MODEL = 'auth.User'
+AUTH_USER_MODEL = 'ms_planes.User'
+
+
+GRAPHENE = {
+    "SCHEMA": "parchate.schema.schema",
+    "MIDDLEWARE": [
+        "graphql_jwt.middleware.JSONWebTokenMiddleware",
+    ],
+}
+
+AUTHENTICATION_BACKENDS = [
+    "graphql_jwt.backends.JSONWebTokenBackend",
+    "django.contrib.auth.backends.ModelBackend",
+]

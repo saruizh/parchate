@@ -2,10 +2,7 @@ FROM python:3.11
 
 WORKDIR /app
 
-COPY requirements.txt /app
-COPY app.py /app
-COPY schema.py /app
-COPY resolvers.py /app
+COPY . /app
 
 RUN pip install -r requirements.txt
 # Expongo puerto 5000
