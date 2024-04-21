@@ -4,10 +4,12 @@ class ComentariosController < ApplicationController
   # GET /comentarios or /comentarios.json
   def index
     @comentarios = Comentario.all
+    render json: @comentarios
   end
 
   # GET /comentarios/1 or /comentarios/1.json
   def show
+    render json: @comentario
   end
 
   # GET /comentarios/new
@@ -22,39 +24,27 @@ class ComentariosController < ApplicationController
   # POST /comentarios or /comentarios.json
   def create
     @comentario = Comentario.new(comentario_params)
-
-    respond_to do |format|
-      if @comentario.save
-        format.html { redirect_to comentario_url(@comentario), notice: "Comentario was successfully created." }
-        format.json { render :show, status: :created, location: @comentario }
-      else
-        format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @comentario.errors, status: :unprocessable_entity }
-      end
+  
+    if @comentario.save
+      render json: @comentario, status: :created, location: @comentario
+    else
+      render json: @comentario.errors, status: :unprocessable_entity
     end
   end
 
   # PATCH/PUT /comentarios/1 or /comentarios/1.json
   def update
-    respond_to do |format|
-      if @comentario.update(comentario_params)
-        format.html { redirect_to comentario_url(@comentario), notice: "Comentario was successfully updated." }
-        format.json { render :show, status: :ok, location: @comentario }
-      else
-        format.html { render :edit, status: :unprocessable_entity }
-        format.json { render json: @comentario.errors, status: :unprocessable_entity }
-      end
+    if @comentario.update(comentario_params)
+      render json: @comentario, status: :ok
+    else
+      render json: @comentario.errors, status: :unprocessable_entity
     end
   end
 
   # DELETE /comentarios/1 or /comentarios/1.json
   def destroy
     @comentario.destroy!
-
-    respond_to do |format|
-      format.html { redirect_to comentarios_url, notice: "Comentario was successfully destroyed." }
-      format.json { head :no_content }
-    end
+    render json: { message: 'Comentario successfully deleted' }, status: :ok
   end
 
   private
