@@ -10,7 +10,7 @@ test:
     default:
       database: comentarios_ms_test
       hosts:
-        - "mongodb:27018"
+        - "mongodb:27017"
 
 production:
   clients:
