@@ -22,7 +22,6 @@ def abonar_vaca(info,idVaca,montoTotal):
     response = requests.put(url_vaca+'abonar', json={'id':idVaca,'montoTotal':montoTotal})
     return response.json()
 
-
 def eliminar_vaca(info,id_vaca):
     response = requests.delete(url_vaca+'eliminar/'+str(id_vaca))
     return response.json()

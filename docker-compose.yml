@@ -5,20 +5,20 @@ services:
 ####Agregando microservicios:
 
   #Microservicio comentarios_ms Ruby
-  # comentarios_ms:
-  #   build: ./comentarios_ms
-  #   command: bash -c "rm -f comentarios_ms/tmp/pids/server.pid && bundle exec rails s -b '0.0.0.0'"
-  #   volumes:
-  #     - .:/comentarios_ms/app
-  #   ports:
-  #     - "3001:3000"
-  #   depends_on:
-  #     - comentarios_db
-  # #Base de datos en Mongo para microservicio Ruby
-  # comentarios_db:
-  #   image: "mongo:latest"
-  #   ports:
-  #     - "27020:27017"
+  comentarios_ms:
+    build: ./comentarios_ms
+    command: bash -c "rm -f comentarios_ms/tmp/pids/server.pid && bundle exec rails s -b '0.0.0.0'"
+    volumes:
+      - .:/comentarios_ms/app
+    ports:
+      - "3001:3000"
+    depends_on:
+      - comentarios_db
+   #Base de datos en Mongo para microservicio Ruby
+  comentarios_db:
+    image: "mongo:latest"
+    ports:
+      - "27020:27017"
  
       
   

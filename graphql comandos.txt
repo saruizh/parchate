@@ -1,0 +1,72 @@
+#crear usuario
+mutation{
+  createUser(email:"jortegar@unal.edu.co", username:"jortegar", password:"12345"){
+    appUser{
+      email
+      username
+    }
+  }
+}
+
+#crear plan
+mutation{
+  createPlanes(name:"Estereo Picnic", date:"2024-03-24", chatLink:"chat.com", place:1){
+    plan{
+      name
+      date
+      chatLink
+      place{
+        name
+      }
+    }
+  }
+}
+
+
+
+#crear lugar
+mutation{
+  createLugar(name:"Parque Simon Bolivar", hood:"Teusaquillo", address:"Cr 68 # 53", city:1){
+    lugar{
+      name
+      hood
+      address
+      city{
+        name
+      }
+    }
+  }
+}
+
+#crear ciudad
+mutation{
+  createCiudad(name:"Bogota"){
+    ciudad{
+      name      
+    }
+  }
+}
+
+
+#crear vaca
+mutation {
+  createVaca(idPlan: 1, nombreVaca: "Vamos a brasil", fechaLimite: "2024-04-30T12:00:00", montoTotal: 100000.0, alcance: 10) {
+    response
+  }
+}
+
+#get vaca
+query {
+  vaca(idVaca:303)
+}
+
+#login
+mutation{
+  tokenAuth(username:"jortegar", password:"12345"){
+    token
+  }
+}
+
+
+#header
+{"Authorization":"JWT token" }

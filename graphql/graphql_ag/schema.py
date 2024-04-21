@@ -13,7 +13,7 @@ from graphql_jwt.shortcuts import get_token
 from graphql_jwt.decorators import login_required
 
 
-url_vaca=os.environ.get("vaca_ms_URL", "host.docker.internal:8080/parchate/vaca/")
+
 
 #Mutaciones para microservicio Usuarios
 class AppUserType(DjangoObjectType):
@@ -72,6 +72,30 @@ class CreateVacaMutation(graphene.Mutation):
         fecha_limite_iso = fechaLimite.isoformat() if fechaLimite else None
         response = create_vaca(info, idPlan, nombreVaca, fecha_limite_iso, montoTotal, alcance)
         return CreateVacaMutation(response=response)
+
+class UpdateVacaMutation(graphene.Mutation):
+    class Arguments:
+        idVaca = graphene.Int(required=True)
+        montoTotal = graphene.Float(required=True)
+
+    response = graphene.JSONString()
+
+    def mutate(self, info, idVaca, montoTotal):
+        response = abonar_vaca(info, idVaca, montoTotal)
+        return UpdateVacaMutation(response=response)
+
+
+
+class EliminarVacaMutation(graphene.Mutation):
+    class Arguments:
+        id_vaca = graphene.Int(required=True)
+        
+    response = graphene.JSONString()
+
+    def mutate(self, info, id_vaca):
+        response = eliminar_vaca(info, id_vaca)
+        return EliminarVacaMutation(response=response)
+
 
 
 #Mutaciones para microservicio Planes
@@ -152,6 +176,9 @@ class Mutation(graphene.ObjectType):
     create_ciudad = CreateCiudad.Field()
     create_lugar = CreateLugar.Field()
     create_planes = CreatePlanes.Field()
+    update_vaca = UpdateVacaMutation.Field()
+    eliminar_vaca = EliminarVacaMutation.Field()
+
 
     #Obtener token
     token_auth = ObtainJSONWebToken.Field()
@@ -165,9 +192,9 @@ class Mutation(graphene.ObjectType):
 class Query(graphene.ObjectType):
     app_users = graphene.List(AppUserType)
     logged_user = graphene.Field(AppUserType)
-    ciudades = graphene.List(CiudadType)
-    lugares = graphene.List(LugarType)
-    planes = graphene.List(PlanesType)
+    get_ciudades = graphene.List(CiudadType)
+    get_lugares = graphene.List(LugarType)
+    get_planes = graphene.List(PlanesType)
     vaca = graphene.JSONString(idVaca=graphene.Int(required=True))
 
     def resolve_users(self, info):

@@ -5,21 +5,17 @@ from django.contrib.auth.models import User, AbstractUser
 
 class User(AbstractUser):
     email = models.EmailField(blank=False, max_length=255, verbose_name='email')
-
     USERNAME_FIELD = 'username'
     EMAIL_FIELD = 'email'
 
-
 class Ciudad(models.Model):
     name = models.CharField(max_length = 255)
-
 
 class Lugar(models.Model):
     name = models.CharField(max_length = 255)
     hood = models.CharField(max_length = 255)
     address = models.CharField(max_length = 255)
     city = models.ForeignKey(Ciudad, on_delete = models.CASCADE)
-
     
 class Planes(models.Model):
     name = models.CharField(max_length = 100)
