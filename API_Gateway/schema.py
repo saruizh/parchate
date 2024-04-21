@@ -2,7 +2,7 @@
 import graphene
 from graphene import ObjectType, Schema
 from graphene.types.datetime import DateTime
-from resolvers import register_user, login_user, get_user_profile, logout_user, create_vaca, get_vaca, abonar_vaca, eliminar_vaca, create_plan, get_planes, get_plan, eliminar_plan, create_ciudad, get_ciudades, get_ciudad, eliminar_ciudad, create_lugar, get_lugares, get_lugar, eliminar_lugar, create_parche
+from resolvers import register_user, login_user, get_user_profile, logout_user, create_vaca, get_vaca, abonar_vaca, eliminar_vaca, create_plan, get_planes, get_plan, eliminar_plan, create_ciudad, get_ciudades, get_ciudad, eliminar_ciudad, create_lugar, get_lugares, get_lugar, eliminar_lugar, create_parche, create_comentario, get_comentario, editar_comentario, editar_rating, eliminar_comentario
 
 
 
@@ -84,7 +84,47 @@ class EliminarVacaMutation(graphene.Mutation):
 
 ##Agrego Mutaciones para microservicio comentarios
 
+class CreateComentarioMutation(graphene.Mutation):
+    class Arguments:
+        idPlan = graphene.Int(required=True)
+        nickname = graphene.String(required=True)
+        cuerpo = graphene.String(required=True)
+        rating = graphene.Int(required=True)
 
+    response = graphene.String()
+    def mutate(self, info, idPlan, nickname, cuerpo, rating):
+        response = create_comentario(info, idPlan, nickname, cuerpo, rating)
+        return CreateComentarioMutation(response=response)
+
+class UpdateComentarioMutation(graphene.Mutation):
+    class Arguments:
+        idComentario = graphene.String(required=True)
+        cuerpo = graphene.String(required=True)
+
+    response = graphene.String()
+    def mutate(self, info, idComentario, cuerpo):
+        response = editar_comentario(info, idComentario, cuerpo)
+        return UpdateComentarioMutation(response=response)
+
+class UpdateRatingMutation(graphene.Mutation):
+    class Arguments:
+        idComentario = graphene.String(required=True)
+        rating = graphene.Int(required=True)
+
+    response = graphene.String()
+    def mutate(self, info, idComentario, rating):
+        response = editar_rating(info, idComentario, rating)
+        return UpdateRatingMutation(response=response)
+
+class EliminarComentarioMutation(graphene.Mutation):
+    class Arguments:
+        idComentario = graphene.String(required=True)
+
+    response = graphene.String()
+    def mutate(self, info, idComentario):
+        response = eliminar_comentario(info, idComentario)
+        #return EliminarComentarioMutation(response=response)
+        return EliminarComentarioMutation(response="Comentario eliminado correctamente")
 
 ##Agrego Mutaciones para microservicio planes
 class PlanMutation(graphene.Mutation):
@@ -143,6 +183,11 @@ class Mutation(graphene.ObjectType):
     
     createVaca = CreateVacaMutation.Field()
     updateVaca = UpdateVacaMutation.Field()
+
+    create_comentario = CreateComentarioMutation.Field()
+    update_comentario = UpdateComentarioMutation.Field()
+    update_rating = UpdateRatingMutation.Field()
+    delete_comentario = EliminarComentarioMutation.Field()
     
     eliminar_vaca = EliminarVacaMutation.Field()
     create_plan = PlanMutation.Field()
@@ -153,7 +198,7 @@ class Mutation(graphene.ObjectType):
 ##Se crean las querys (Solicitudes get)
 class Query(ObjectType):
     #user_profile = graphene.String()
-    
+
     getVaca = graphene.JSONString(idVaca=graphene.Int(required=True))
     def resolve_getVaca(self, info, idVaca):
         return get_vaca(info, idVaca)
@@ -161,6 +206,13 @@ class Query(ObjectType):
     #plan_info = graphene.String(id=graphene.Int(required=True))
     #planes = graphene.String()
     #ciudad_info = graphene.String(id=graphene.Int(required=True))
+
+    comentario_info = graphene.String(idComentario = graphene.String(required=True))
+    def resolve_comentario_info(self, info, idComentario):
+        response = get_comentario(info, idComentario)
+        return response
+
+
     getCiudad = graphene.JSONString(idCiudad=graphene.Int(required=True))
     def resolve_getCiudad(self, info, idCiudad):
         return get_ciudad(info, idCiudad)

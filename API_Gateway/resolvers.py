@@ -6,6 +6,7 @@ import os
 url_users=os.environ.get('USERS_MS_URL','host.docker.internal:3000/parchate/user/')
 url_vaca=os.environ.get("vaca_ms_URL", "host.docker.internal:8080/parchate/vaca/")
 url_planes = os.environ.get('PLANES_MS_URL', 'host.docker.internal:8000/parchate/ms-planes/') # 'http://localhost:5432/parchate/ms-planes/'
+url_comentarios=os.environ.get('COMENTARIOS_MS_URL','host.docker.internal:3001/comentarios/') # 'http://localhost:3001/comentarios/'
 
 
 ##resolvers para el microservicio de usuarios
@@ -49,6 +50,25 @@ def eliminar_vaca(info,id_vaca):
 
 ##resolvers para el microservicio comentarios
 
+def create_comentario(info, id_plan, nickname, cuerpo, rating):
+    response = requests.post(url_comentarios, json={'id_plan': id_plan, 'nickname': nickname, 'cuerpo': cuerpo,'rating': rating})
+    return response.json()
+
+def get_comentario(info, id_comentario):
+    response = requests.get(url_comentarios + str(id_comentario))
+    return response.json()
+
+def editar_comentario(info, id_comentario, cuerpo):
+    response = requests.put(url_comentarios + str(id_comentario), json={'cuerpo':cuerpo})
+    return response.json()
+
+def editar_rating(info, id_comentario, rating):
+    response = requests.put(url_comentarios + str(id_comentario), json={'rating':rating})
+    return response.json()    
+
+def eliminar_comentario(info, id_comentario):
+    response = requests.delete(url_comentarios + str(id_comentario))
+    return response.json()
 
 ##resolvers para el microservicio planes
 
