@@ -1,0 +1,41 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12" style="justify-content: center;">
+            <br>
+            <button type="button" class="close text-danger" aria-label="Close" style="float: right;" (click)="cerrarDialogo()">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="container mt-5">
+                <div class="card p-4">
+                    <h2 class="mb-4">Formulario de registro</h2>
+                    <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+                        
+                        <div class="form-group col-md-12">
+                            <label for="NIC_Cedula">NIC:</label>
+                            <input type="text" class="form-control" id="NIC_Cedula" placeholder="NIC" formControlName="NIC_Cedula">
+                        </div>
+
+                        <div class="form-group col-md-12">
+                            <label for="Nombre">Nombre de titular:</label>
+                            <input type="text" class="form-control" id="Nombre" placeholder="Nombre de titular" formControlName="Nombre">
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label for="Celular">Celular:</label>
+                            <input type="text" class="form-control" id="Celular" placeholder="Número de celular" formControlName="Celular">
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label for="Direccion">Dirección:</label>
+                            <input type="text" class="form-control" id="Direccion" placeholder="Dirección" formControlName="Direccion">
+                        </div>
+                        <br>                       
+                        <button type="submit" class="btn btn-outline-primary">Crear registro</button>
+                    </form>
+                </div>
+                <br>
+                <br>
+            </div>
+        </div>
+    </div>
+</div>
+
