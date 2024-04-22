@@ -10,7 +10,7 @@ const iOSLogo = require("../assets/imgs/ios.png");
 const androidLogo = require("../assets/imgs/android.png");
 const twidditRegisterBackground = require("../assets/imgs/twiddit_register_bg.png");
 const twidditLogo = require("../assets/imgs/twiddit_logo.png");
-const twidditFilledLogo = require("../assets/imgs/twiddit_logo.png");
+const twidditFilledLogo = require("../assets/imgs/twidditFilledLogo.png");
 const twidditFilledLogo1 = require("../assets/imgs/twiddit_logo1.png");
 
 // internet imgs

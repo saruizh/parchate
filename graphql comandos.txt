@@ -22,6 +22,25 @@ mutation{
   }
 }
 
+#getplan por id
+query {
+  getPlan(id: 1) {
+    id
+    name
+ 		date
+    place{
+      name
+    }
+  }
+}
+
+#get planes
+query {
+  getPlanes {
+    id
+    name
+  }
+}
 
 
 #crear lugar
@@ -47,8 +66,13 @@ mutation{
   }
 }
 
-
-
+#getciudades
+query {
+  getCiudades {
+    id
+    name
+  }
+}
 
 #crear vaca
 mutation {
@@ -62,12 +86,28 @@ query {
   vaca(idVaca:303)
 }
 
+#update vaca
+mutation {
+  updateVaca(idVaca: 1, montoTotal: 10000.0) {
+    response
+  }
+}
+
 #login
 mutation{
   tokenAuth(username:"jortegar", password:"12345"){
     token
   }
 }
+
+#login react
+export const login = gql`
+  mutation tokenAuth($username: String!, $password: String!) {
+    tokenAuth(username: $username, password: $password) {
+      token
+    }
+  }
+`;
 
 
 #header

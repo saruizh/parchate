@@ -38,7 +38,7 @@ export default function Register (props){
     enabled:false,
     onCompleted:(data) => {
       console.log(data)
-      navigation.navigate("Login")
+      navigation.navigate("Onboarding")
     },
     onError(error){
       console.log(error)

@@ -1,31 +1,57 @@
 import {gql} from "apollo-boost";
 
-export const login=gql `
-query login($email:String!, $password:String!){
-    login(loginBody:{
-        email: $email,
-        password: $password
-      }){
-        message
-        data{
-          accessToken
-          userId
-        }
-    
-    }
-}`;
 
-export const register=gql `
-mutation register($username: String!, $email:String!, $password:String!){
-  register(registerBody:{
-    username:$username
-    email: $email,
-    password: $password,  
-  })
-  {
-  	message  
+
+export const login = gql`
+  mutation tokenAuth($username: String!, $password: String!) {
+    tokenAuth(username: $username, password: $password) {
+      token
+    }
   }
-}`;
+`;
+
+
+// export const login = gql`
+//   query login($email: String!, $password: String!) {
+//     login(loginBody: {
+//       email: $email,
+//       password: $password
+//     }) {
+//       message
+//       data {
+//         accessToken
+//         userId
+//       }
+//     }
+//   }
+// `;
+
+
+
+
+export const register = gql`
+  mutation createUser($username: String!, $email: String!, $password: String!) {
+    createUser(email: $email, username: $username, password: $password) {
+      appUser {
+        email
+        username
+      }
+    }
+  }
+`;
+
+
+// export const register=gql `
+// mutation register($username: String!, $email:String!, $password:String!){
+//   register(registerBody:{
+//     username: $username
+//     email: $email,
+//     password: $password,  
+//   })
+//   {
+//   	message  
+//   }
+// }`;
 
 export const changePassword=gql`
 mutation password($previous: String!, $new: String!, $authorization: String!){

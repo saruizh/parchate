@@ -12,7 +12,7 @@ import { Block, Checkbox, Text, theme } from "galio-framework";
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useLazyQuery } from "@apollo/client";
 import { login } from "../gql/queries";
-
+import { useMutation } from "@apollo/client";
 import { Button, Icon, Input } from "../components";
 import { Images, argonTheme } from "../constants";
 
@@ -20,18 +20,18 @@ const { width, height } = Dimensions.get("screen");
 
 export default function Login (props) {
   const { navigation } = props;
-  const [email, setEmail] = useState("")
+  const [username, setUsername] = useState("")
   const [password, setPassword] = useState("")
 
-  const [runQuery, {data, error}] = useLazyQuery(login, {
+  const [runMutation, {data, error}] = useMutation(login, {
     variables: {
-      email: email, 
+      username: username, 
       password: password
     },
     enabled:false,
     onCompleted:(data) => {
-      storeData("Authorization", data.login.data.accessToken)
-      storeData("UserID", data.login.data.userId)
+      // storeData("Authorization", data.login.data.token)
+      // storeData("UserID", data.login.data.userId)
       console.log(data)  
       navigation.navigate("App")
       
@@ -39,7 +39,8 @@ export default function Login (props) {
     onError(error){
       console.log(error)
     }
-  })
+  }) 
+
 
   const storeData = async (key, value) => {
     try {
@@ -81,7 +82,7 @@ export default function Login (props) {
                       <Input
                         borderless
                         placeholder="Username"
-                        onChangeText={newEmail => setEmail(newEmail)}
+                        onChangeText={newUsername => setUsername(newUsername)}
                         iconContent={
                           <Icon
                             size={16}
@@ -112,7 +113,7 @@ export default function Login (props) {
                     </Block>
                     <Block middle>
                       <Button color="primary" style={styles.createButton} onPress={() => {
-                        runQuery()
+                        runMutation()
                       }}>
                         <Text bold size={14} color={argonTheme.COLORS.WHITE}>
                           LOG IN

@@ -400,7 +400,7 @@ function AppStack(props) {
           fontWeight: "normal",
         },
       }}
-      initialRouteName="Home"
+      initialRouteName="Twiddit"
     >
       <Drawer.Screen
         name="Home"

@@ -195,6 +195,7 @@ class Query(graphene.ObjectType):
     get_ciudades = graphene.List(CiudadType)
     get_lugares = graphene.List(LugarType)
     get_planes = graphene.List(PlanesType)
+    get_plan = graphene.Field(PlanesType, id=graphene.Int())
     vaca = graphene.JSONString(idVaca=graphene.Int(required=True))
 
     def resolve_users(self, info):
@@ -203,20 +204,31 @@ class Query(graphene.ObjectType):
     def resolver_logged_user(self, info):
         return get_user_model().objects.all
     
-    def resolve_ciudades(self, info):
+    def resolve_get_ciudades(self, info):
         return Ciudad.objects.all()
+    
+    def resolve_get_lugares(self, info):
+        return Lugar.objects.all()
     
     def resolve_lugares(self, info):
         return Lugar.objects.all()
+    
+    
     
     def resolve_vaca(self, info, idVaca):
         response = get_vaca(info, idVaca)
         return response
     
     
-    @login_required
+    #@login_required
     def resolve_logged_user(self, info):
         return info.context.user
     
-    def resolve_planes(self, info):
+    def resolve_get_plan(self, info, id):
+        try:
+            return Planes.objects.get(pk=id)
+        except Planes.DoesNotExist:
+            return None
+    
+    def resolve_get_planes(self, info):
         return Planes.objects.all()
