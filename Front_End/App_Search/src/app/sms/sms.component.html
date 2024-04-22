@@ -1,0 +1,168 @@
+<app-header></app-header>
+
+<br>
+
+@if(datos2.length>0){
+    <div class="container" [@fadeInOut]>
+        <div class="row">
+            <div class="col-4" style="justify-content: left;">
+                                
+                <form>
+                    <div class="form-group">
+                        <label for="fechaInicio">Fecha de Inicio:</label>
+                        <input type="date" class="form-control" id="fechaInicio" name="fechaInicio" [(ngModel)]="Fecha_Inicio" required >
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="fechaFin">Fecha de Fin:</label>
+                        <input type="date" class="form-control" id="fechaFin" name="fechaFin" [(ngModel)]="Fecha_Fin" required>
+                    </div>
+                    <br>  
+                </form>
+
+            </div>
+            <div class="col-6" style="justify-content: left;">
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-primary" style="margin-right: 30px;" (click)="downloadExcel()">Descargar base de sms <i class="fa-solid fa-download"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" [@fadeInOut]>
+        <br>
+        <div class="table-responsive">
+            
+            <table>
+                <caption>Ultimos sms enviados</caption>
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">NIC</th>
+                    <th scope="col">Usuario Gestor</th>
+                    <th scope="col">Celular</th>
+                    <th scope="col">Token enviado</th>
+                    <th scope="col">Contenido del Sms</th>
+                    <th scope="col">Error de envío</th>                    
+                    <th scope="col">Habeas Data</th>
+                    <th scope="col">Fecha de Registro</th>
+
+                  </tr>
+                </thead>
+                <tbody>
+                    @for (dato of datos2
+                        .slice((paginaActual - 1) * itemsPorPagina, paginaActual * itemsPorPagina); track dato.id) {
+                        <tr>
+                            <th scope="row">{{dato.NIC_Cedula}}</th>
+                            <td>{{dato.Usuario}}</td>
+                            <td>{{dato.Celular}}</td>
+                            <td>{{dato.Token_sms}}</td>
+                            <td>{{dato.Sms_body}}</td>
+                            <td>{{dato.Error_envio}}</td>
+                            <td>{{dato.Habeas_Data}}</td>
+                            <td>{{dato.Fecha_registro}}</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+            <pagination [(ngModel)]="paginaActual" [totalItems]="datos2.length" [itemsPerPage]="itemsPorPagina"></pagination>
+        
+        </div>
+    </div>
+}
+
+@if(datos2.length==0){
+    <div class="container" [@fadeInOut]>
+        <div class="row">
+            <div class="col-md-5" style="justify-content: left;">
+                <div class="container mt-5">
+                    <div class="card p-4">
+                      <h4 class="mb-4">Envío de Token por sms</h4>
+                      <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+                        <div class="form-group col-md-12">
+                          <label for="NIC_Cedula">NIC:</label>
+                          <input type="text" class="form-control" id="NIC_Cedula" placeholder="NIC" formControlName="NIC_Cedula">
+                        </div>
+                        <div class="form-group col-md-12">
+                          <label for="Celular">Celular:</label>
+                          <input type="text" class="form-control" id="Celular" placeholder="Número de celular" formControlName="Celular">
+                        </div>
+
+                        <div class="form-group col-md-12">
+                          <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="Habeas" formControlName="Habeas">
+                            <label class="form-check-label" for="Habeas">Acepta tratamiento de datos personales</label>
+                          </div>
+                        </div>
+                        <button type="submit" class="btn btn-light">Enviar</button>
+                      </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7" style="justify-content: left;">
+                <div class="container mt-5">
+
+                    <button type="button" class="btn btn-primary" (click)="Nuevoregistro()">Crear nuevo registro <i class="fa-solid fa-user-tie"></i></button>                    
+                    
+                    <br>
+                    @if(datosBase.length==0){
+                        <br>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12" style="justify-content: left;">
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" placeholder="Ingrese NIC" [(ngModel)]="InputNIC" (ngModelChange)="FiltrarNIC()">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-secondary" type="button" (click)="FiltrarNIC()">
+                                                <i class="fa-solid fa-magnifying-glass"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    @if(InputNIC.length>0){
+                    
+                                        <div class="container">
+                                            <br>
+                                            <div class="table-responsive">
+                                                
+                                                <table>
+                                                    <caption>Filtro de NIC</caption>
+                                                    <thead class="thead-dark">
+                                                      <tr>
+                                                        <th scope="col">Nic</th>
+                                                        <th scope="col">Nombre de titular</th>
+                                                        <th scope="col">Dirección de titular</th>
+                                                        <th scope="col">Celular de titular</th>
+                                                        <th scope="col">Celular nuevo</th>
+                                                        <th scope="col">Dirección nueva de titular</th>
+                                                      </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="row">{{datos3.NIC_Cedula}}</th>
+                                                            <td>{{datos3.Nombre}}</td>
+                                                            <td>{{datos3.Direccion}}</td>
+                                                            <td>{{datos3.Celular}}</td>
+                                                            <td>{{datos3.Celular_nuevo}}</td>
+                                                            <td>{{datos3.Direccion_nuevo}}</td>
+                                                        </tr>
+                                                        
+                                                    </tbody>
+                                                </table>
+                                                <pagination [(ngModel)]="paginaActual" [totalItems]="datos2.length" [itemsPerPage]="itemsPorPagina"></pagination>
+                                            </div>
+                                        </div>
+                                    }
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                    }
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+}
+
+<app-footer></app-footer>

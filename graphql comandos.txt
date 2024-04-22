@@ -48,6 +48,8 @@ mutation{
 }
 
 
+
+
 #crear vaca
 mutation {
   createVaca(idPlan: 1, nombreVaca: "Vamos a brasil", fechaLimite: "2024-04-30T12:00:00", montoTotal: 100000.0, alcance: 10) {
