@@ -261,6 +261,21 @@ export const newPlan = gql`
   }
 `;
 
+export const newVaca = gql`
+  mutation createPlanes($name: String!, $date: String!, $chatLink: String!, $place: Int!) {
+    createPlanes(name: $name, date: $date, chatLink: $chatLink, place: $place) {
+      plan {
+        name
+        date
+        chatLink
+        place {
+          name
+        }
+      }
+    }
+  }
+`;
+
 
 // export const newPlan=gql`
 // mutation createTwiddit($userId: Int!, $text:String!, $creationDate:String!, $imageURL1: String!, $imageURL2: String!, $imageURL3: String!, $imageURL4: String!, $communidditsId: String){

@@ -22,6 +22,7 @@ import ViewCommuniddits from "../screens/ViewCommuniddits";
 import NewCommuniddit from "../screens/NewCommuniddit";
 //import Newtwiddit from "../screens/Newtwiddit";
 import Newplan from "../screens/Newplan";
+import Newvaca from "../screens/Newvaca";
 import Notifications from "../screens/Notifications";
 import Reply from "../screens/Reply";
 
@@ -201,6 +202,7 @@ export default function OnboardingStack(props) {
       <Stack.Screen name="ViewCommuniddits" component={ViewCommuniddits} />
       <Stack.Screen name="NewCommuniddit" component={NewCommuniddit} />
       <Stack.Screen name="Newplan" component={Newplan} />
+      <Stack.Screen name="Newvaca" component={Newvaca} />
       <Stack.Screen name="Reply" component={Reply} />
       <Stack.Screen name="Twiddit" component={Twiddit} />
       <Stack.Screen name="Notifications" component={Notifications} />
@@ -343,6 +345,35 @@ export function NewplanStack(props) {
   );
 }
 
+
+export function NewvacaStack(props) {
+  return (
+    <Stack.Navigator
+      screenOptions={{
+        mode: "card",
+        headerShown: "screen",
+      }}
+    >
+      <Stack.Screen
+        name="Crea una Vaca"
+        component={Newvaca}
+        options={{
+          header: ({ navigation, scene }) => (
+            <Header
+              title="Crea una Vaca"
+              search
+              navigation={navigation}
+              scene={scene}
+            />
+          ),
+          cardStyle: { backgroundColor: "#F8F9FE" },
+        }}
+      />
+      
+    </Stack.Navigator>
+  );
+}
+
 export function ReplyStack(props) {
   return (
     <Stack.Navigator
@@ -455,6 +486,13 @@ function AppStack(props) {
       <Drawer.Screen
         name="Newplan"
         component={NewplanStack}
+        options={{
+          headerShown: false,
+        }}
+      />
+      <Drawer.Screen
+        name="Newvaca"
+        component={NewvacaStack}
         options={{
           headerShown: false,
         }}
