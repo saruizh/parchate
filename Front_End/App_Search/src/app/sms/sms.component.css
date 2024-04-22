@@ -1,0 +1,38 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  caption {
+    background-color: #001489; 
+    color: #fff; 
+    padding: 10px; 
+    font-size: 1.5em; 
+    caption-side: top;
+    text-align: center;
+  }
+
+  .card {
+    background-color: #001489;
+    color: #ffffff;
+    max-width: 400px;
+  }
+
+  @media (max-width: 560px) {
+    .card {
+      padding: 1rem;
+    }
+  }

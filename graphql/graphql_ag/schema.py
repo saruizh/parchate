@@ -134,7 +134,7 @@ class CreateLugar(graphene.Mutation):
         address = graphene.String(required=True)
         city = graphene.Int(required=True)
 
-    @login_required
+    #@login_required
     def mutate(self, info, name, hood, address, city):
         ciudad = Ciudad.objects.get(id=city)
         lugar = Lugar(name=name, hood=hood, address=address, city=ciudad)
@@ -151,7 +151,7 @@ class CreatePlanes(graphene.Mutation):
         chat_link = graphene.String(required=True)
         place = graphene.Int(required=True)
 
-    @login_required
+    #@login_required
     def mutate(self, info, name, date, chat_link, place):
         user = info.context.user
         lugar = Lugar.objects.get(id=place)
