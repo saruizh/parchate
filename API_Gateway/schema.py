@@ -57,7 +57,7 @@ class CreateVacaMutation(graphene.Mutation):
         response = create_vaca(info, idPlan, nombreVaca, fecha_limite_iso, montoTotal, Alcance)
         return CreateVacaMutation(response=response)
 
-class EliminarComentarioMutation(graphene.Mutation):
+class UpdateVacaMutation(graphene.Mutation):
     class Arguments:
         idVaca = graphene.Int(required=True)
         montoTotal = graphene.Float(required=True)
