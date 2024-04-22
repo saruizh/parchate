@@ -33,18 +33,18 @@ class Onboarding extends React.Component {
             <Block flex space="around" style={{ zIndex: 2 }}>
               <Block style={styles.title}>
                 <Block>
-                  <Text color="white" size={60}>
-                    Welcome to
+                  <Text color="white" size={50}>
+                    Bienvenido a
                   </Text>
                 </Block>
                 <Block>
-                  <Text color="white" size={60}>
-                    Twiddit
+                  <Text color="white" size={50}>
+                    Parchate
                   </Text>
                 </Block>
                 <Block style={styles.subTitle}>
                   <Text color="white" size={16}>
-                    The perfect mix between reddit and twitter
+                    La nueva forma de parchar
                   </Text>
                 </Block>
               </Block>

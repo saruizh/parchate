@@ -16,16 +16,11 @@ query login($email:String!, $password:String!){
 }`;
 
 export const register=gql `
-mutation register($username: String!, $email:String!, $password:String!, $birthday: String!, $phone: String!, $description: String!){
+mutation register($username: String!, $email:String!, $password:String!){
   register(registerBody:{
     username:$username
     email: $email,
-    password: $password,
-    birthday: $birthday,
-    phone:$phone,
-	  description:$description,  
-    profilePhoto:"https://dummyimage.com/640x360/fff/aaa", 
-	  
+    password: $password,  
   })
   {
   	message  

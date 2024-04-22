@@ -55,12 +55,12 @@ export default function Register (props){
           <Block safe flex middle>
             <Block style={styles.registerContainer}>
               <Block flex={0.25} middle style={styles.socialConnect}>
-                <Image source={Images.twidditFilledLogo} style={styles.logo}/>
+                <Image source={Images.twidditFilledLogo1} style={styles.logo}/>
               </Block>
               <Block flex>
                 <Block flex={0.17} middle>
                   <Text color="#8898AA" size={13}>
-                  Hi there! Welcome to Twiddit!. Let's create your account
+                  Hola! Bienvenido a Parchate. Crea tu cuenta
                   </Text>
                 </Block>
                 <Block flex center>
@@ -117,57 +117,9 @@ export default function Register (props){
                           />
                         }
                       />
-                    </Block>
-                    <Block width={width * 0.8}>
-                      <Input
-                        borderless
-                        placeholder="Birthday"
-                        onChangeText={newBirthday => setBirthday(newBirthday)}
-                        iconContent={
-                          <Icon
-                            size={16}
-                            color={argonTheme.COLORS.ICON}
-                            name="calendar-date"
-                            family="ArgonExtra"
-                            style={styles.inputIcons}
-                          />
-                        }
-                      />
-                    </Block>
-                    <Block width={width * 0.8}>
-                      <Input
-                        borderless
-                        placeholder="Phone"
-                        onChangeText={newPhone => setPhone(newPhone)}
-                        iconContent={
-                          <Icon
-                            size={16}
-                            color={argonTheme.COLORS.ICON}
-                            name="bell"
-                            family="ArgonExtra"
-                            style={styles.inputIcons}
-                          />
-                        }
-                      />
-                    </Block>
-
-                    <Block width={width * 0.8} style={{ marginBottom: 15 }}>
-                      <Input
-                        borderless
-                        placeholder="Description"
-                        onChangeText={newDescription => setDescription(newDescription)}
-                        iconContent={
-                          <Icon
-                            size={16}
-                            color={argonTheme.COLORS.ICON}
-                            name="bell"
-                            family="ArgonExtra"
-                            style={styles.inputIcons}
-                          />
-                        }
-                      />
-                    </Block>
-                    
+                    </Block>                                  
+                 
+                   
                     <Block middle>
                       <Button color="primary" style={styles.createButton} onPress={() => {
                         
@@ -246,6 +198,6 @@ const styles = StyleSheet.create({
   createButton: {
     width: width * 0.5,
     marginTop: 25,
-    backgroundColor: "#d10a30"
+    backgroundColor: "#2E2E2E"
   }
 });

@@ -63,12 +63,12 @@ export default function Login (props) {
           <Block safe flex middle>
             <Block style={styles.registerContainer}>
               <Block flex={0.25} middle style={styles.socialConnect}>
-                <Image source={Images.twidditFilledLogo} style={styles.logo}/>
+                <Image source={Images.twidditFilledLogo1} style={styles.logo}/>
               </Block>
               <Block flex>
                 <Block flex={0.17} middle>
                   <Text color="#8898AA" size={13}>
-                    Welcome back! Let's log you in.
+                    Bienvenido de vuelta! Logeate.
                   </Text>
                 </Block>
                 <Block flex center>
@@ -80,7 +80,7 @@ export default function Login (props) {
                     <Block width={width * 0.8}>
                       <Input
                         borderless
-                        placeholder="Email"
+                        placeholder="Username"
                         onChangeText={newEmail => setEmail(newEmail)}
                         iconContent={
                           <Icon
@@ -187,7 +187,7 @@ const styles = StyleSheet.create({
   createButton: {
     width: width * 0.5,
     marginTop: 25,
-    backgroundColor: "#d10a30"
+    backgroundColor: "#2E2E2E"
   }
 });
 

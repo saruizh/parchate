@@ -11,7 +11,7 @@ import { LogBox } from 'react-native';
 LogBox.ignoreAllLogs();//Ignore all log notifications
 
 const client = new ApolloClient({
-  uri:"http://35.234.252.170:85/graphql",
+  uri:"http://localhost:8000/graphql",
   cache: new InMemoryCache()
 })
 
