@@ -14,7 +14,7 @@ function CustomDrawerContent({
   state,
   ...rest
 }) {
-  const screens = ["Home", "Profile", "Twiddit", "Communiddits","Newtwiddit"];
+  const screens = ["Home", "Profile", "Planes", "Communiddits","Newplan"];
   return (
     <Block
       style={styles.container}

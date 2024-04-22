@@ -246,6 +246,40 @@ mutation createTwiddit($userId: Int!, $text:String!, $creationDate:String!, $ima
   }
 }`
 
+export const newPlan = gql`
+  mutation createPlanes($name: String!, $date: String!, $chatLink: String!, $place: Int!) {
+    createPlanes(name: $name, date: $date, chatLink: $chatLink, place: $place) {
+      plan {
+        name
+        date
+        chatLink
+        place {
+          name
+        }
+      }
+    }
+  }
+`;
+
+
+// export const newPlan=gql`
+// mutation createTwiddit($userId: Int!, $text:String!, $creationDate:String!, $imageURL1: String!, $imageURL2: String!, $imageURL3: String!, $imageURL4: String!, $communidditsId: String){
+//   createTwiddit(twiddit: {
+//     userId: $userId,
+//     text: $text,
+//     creationDate: $creationDate,
+//     imageURL1: $imageURL1,
+//     imageURL2: $imageURL2,
+//     imageURL3: $imageURL3,
+//     imageURL4: $imageURL4,
+//     communidditsId: $communidditsId
+// 	}){
+//     _id
+//     text
+//     retwidditId
+//   }
+// }`
+
 export const newReply=gql`
 mutation createReply($userId: Int!, $text:String!, $twidditId:String!, $creationDate:String!){
   createReply(reply: {

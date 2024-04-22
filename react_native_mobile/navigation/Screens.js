@@ -20,7 +20,8 @@ import Twiddit from "../screens/Twiddit";
 import Communiddits from "../screens/Communiddits";
 import ViewCommuniddits from "../screens/ViewCommuniddits";
 import NewCommuniddit from "../screens/NewCommuniddit";
-import Newtwiddit from "../screens/Newtwiddit";
+//import Newtwiddit from "../screens/Newtwiddit";
+import Newplan from "../screens/Newplan";
 import Notifications from "../screens/Notifications";
 import Reply from "../screens/Reply";
 
@@ -164,7 +165,7 @@ function TwidditStack(props) {
         options={{
           header: ({ navigation, scene }) => (
             <Header
-              title="Twiddits"
+              title="Twiddites"
               options
               navigation={navigation}
               scene={scene}
@@ -199,7 +200,7 @@ export default function OnboardingStack(props) {
       <Stack.Screen name="Communiddits" component={Communiddits} />
       <Stack.Screen name="ViewCommuniddits" component={ViewCommuniddits} />
       <Stack.Screen name="NewCommuniddit" component={NewCommuniddit} />
-      <Stack.Screen name="Newtwiddit" component={Newtwiddit} />
+      <Stack.Screen name="Newplan" component={Newplan} />
       <Stack.Screen name="Reply" component={Reply} />
       <Stack.Screen name="Twiddit" component={Twiddit} />
       <Stack.Screen name="Notifications" component={Notifications} />
@@ -314,7 +315,7 @@ export function NewCommunidditStack(props) {
   );
 }
 
-export function NewtwidditStack(props) {
+export function NewplanStack(props) {
   return (
     <Stack.Navigator
       screenOptions={{
@@ -323,12 +324,12 @@ export function NewtwidditStack(props) {
       }}
     >
       <Stack.Screen
-        name="Newtwiddit"
-        component={Newtwiddit}
+        name="Crea un Plan"
+        component={Newplan}
         options={{
           header: ({ navigation, scene }) => (
             <Header
-              title="Newtwiddit"
+              title="Crea un Plan"
               search
               navigation={navigation}
               scene={scene}
@@ -452,8 +453,8 @@ function AppStack(props) {
         }}
       />
       <Drawer.Screen
-        name="Newtwiddit"
-        component={NewtwidditStack}
+        name="Newplan"
+        component={NewplanStack}
         options={{
           headerShown: false,
         }}

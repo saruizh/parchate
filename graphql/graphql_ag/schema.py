@@ -212,9 +212,7 @@ class Query(graphene.ObjectType):
     
     def resolve_lugares(self, info):
         return Lugar.objects.all()
-    
-    
-    
+      
     def resolve_vaca(self, info, idVaca):
         response = get_vaca(info, idVaca)
         return response
