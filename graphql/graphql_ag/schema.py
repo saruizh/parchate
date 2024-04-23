@@ -8,7 +8,7 @@ from graphene_django import DjangoObjectType
 from django.contrib.auth import get_user_model
 from graphql_ag.models import Ciudad, Lugar, Planes, Parcharme
 from graphql_ag.serializers import PlanesSerializer, LugarSerializer, CiudadSerializer, ParcharmeSerializer
-from graphql_ag.resolvers import create_vaca, get_vaca, abonar_vaca, eliminar_vaca
+from graphql_ag.resolvers import create_vaca, get_vaca, abonar_vaca, eliminar_vaca, create_comentario, get_comentario, editar_comentario, editar_rating, eliminar_comentario
 from graphql_jwt.shortcuts import get_token
 from graphql_jwt.decorators import login_required
 
@@ -37,6 +37,50 @@ class CreateUser(graphene.Mutation):
         new_user.save()
         return CreateUser(app_user=new_user)
 
+#Mutaciones para microservicio Comentarios
+
+class CreateComentarioMutation(graphene.Mutation):
+    class Arguments:
+        idPlan = graphene.Int(required=True)
+        nickname = graphene.String(required=True)
+        cuerpo = graphene.String(required=True)
+        rating = graphene.Int(required=True)
+
+    response = graphene.String()
+    def mutate(self, info, idPlan, nickname, cuerpo, rating):
+        response = create_comentario(info, idPlan, nickname, cuerpo, rating)
+        return CreateComentarioMutation(response=str(response))
+
+class UpdateComentarioMutation(graphene.Mutation):
+    class Arguments:
+        idComentario = graphene.String(required=True)
+        cuerpo = graphene.String(required=True)
+
+    response = graphene.String()
+    def mutate(self, info, idComentario, cuerpo):
+        response = editar_comentario(info, idComentario, cuerpo)
+        return UpdateComentarioMutation(response=str(response))
+
+class UpdateRatingMutation(graphene.Mutation):
+    class Arguments:
+        idComentario = graphene.String(required=True)
+        rating = graphene.Int(required=True)
+
+    response = graphene.String()
+    def mutate(self, info, idComentario, rating):
+        response = editar_rating(info, idComentario, rating)
+        return UpdateRatingMutation(response=str(response))
+
+class EliminarComentarioMutation(graphene.Mutation):
+    class Arguments:
+        idComentario = graphene.String(required=True)
+
+    response = graphene.String()
+    def mutate(self, info, idComentario):
+        response = eliminar_comentario(info, idComentario)
+        #return EliminarComentarioMutation(response=response)
+        return EliminarComentarioMutation(response="Comentario eliminado correctamente")
+
 #Mutaciones para microservicio Vaca
 
 
@@ -58,7 +102,7 @@ class CreateUser(graphene.Mutation):
 #         print(response)  # Imprimir el resultado
 #         return CreateVacaMutation(response=response)
 
-
+#Mutaciones para microservicio Vaca
 class CreateVacaMutation(graphene.Mutation):
     class Arguments:
         idPlan = graphene.Int(required=True)
@@ -171,13 +215,18 @@ class ObtainJSONWebToken(graphql_jwt.JSONWebTokenMutation):
 
 class Mutation(graphene.ObjectType):
 
-    #Mutaciones para microservicio planes
+    
     create_user = CreateUser.Field()
     create_ciudad = CreateCiudad.Field()
     create_lugar = CreateLugar.Field()
     create_planes = CreatePlanes.Field()
     update_vaca = UpdateVacaMutation.Field()
     eliminar_vaca = EliminarVacaMutation.Field()
+
+    create_comentario = CreateComentarioMutation.Field()
+    update_comentario = UpdateComentarioMutation.Field()
+    update_rating = UpdateRatingMutation.Field()
+    delete_comentario = EliminarComentarioMutation.Field()
 
 
     #Obtener token
@@ -197,6 +246,7 @@ class Query(graphene.ObjectType):
     get_planes = graphene.List(PlanesType)
     get_plan = graphene.Field(PlanesType, id=graphene.Int())
     vaca = graphene.JSONString(idVaca=graphene.Int(required=True))
+    comentario_info = graphene.String(idComentario = graphene.String(required=True))
 
     def resolve_users(self, info):
         return get_user_model().objects.all()
@@ -215,6 +265,10 @@ class Query(graphene.ObjectType):
       
     def resolve_vaca(self, info, idVaca):
         response = get_vaca(info, idVaca)
+        return response
+
+    def resolve_comentario_info(self, info, idComentario):
+        response = get_comentario(info, idComentario)
         return response
     
     
