@@ -53,6 +53,16 @@ export const register = gql`
 //   }
 // }`;
 
+
+export const get_lugares = gql`
+  query getLugares {
+    getLugares {
+      id
+      name
+    }
+  }
+`;
+
 export const changePassword=gql`
 mutation password($previous: String!, $new: String!, $authorization: String!){
   password(passwordChangeBody:{
@@ -256,6 +266,20 @@ export const newPlan = gql`
         place {
           name
         }
+      }
+    }
+  }
+`;
+
+export const newVaca = gql`
+  mutation createVaca($id: Int!, $name: String!, $date: String!, $monto: Float!, $alcance: Int!) {
+    createVaca(idPlan: $id, nombreVaca: $name, fechaLimite: $date, montoTotal: $monto, alcance: $alcance) {
+      vaca {
+        idPlan
+        nombreVaca
+        fechaLimite
+        montoTotal
+        alcance 
       }
     }
   }

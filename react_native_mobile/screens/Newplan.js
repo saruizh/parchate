@@ -13,14 +13,15 @@ import {
 
 
 import { Block, Checkbox, Text, theme } from "galio-framework";
+import { Picker } from '@react-native-picker/picker';
 import * as ImagePicker from 'expo-image-picker';
 import * as DocumentPicker from 'expo-document-picker';
 
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useLazyQuery } from "@apollo/client";
 
-import { useMutation } from "@apollo/client";
-import { newPlan } from "../gql/queries";
+import { useMutation, useQuery } from "@apollo/client";
+import { newPlan, get_lugares } from "../gql/queries";
 
 import { Button, Icon, Input } from "../components";
 import { Images, argonTheme } from "../constants";
@@ -34,7 +35,7 @@ export default function NewPlan (props) {
     const [name, setname] = useState();
     const [date,setdate] = useState("");
     const [chatLink,setchatLink] = useState("");
-    const [place,setplace] = useState("");
+    const [place,setplace] = useState(null);
     // const [communidditId,setCommunidditId] = useState(null);
 
     const [singleFile, setSingleFile] = useState(null);
@@ -105,6 +106,11 @@ export default function NewPlan (props) {
       getCommunidditId()
     }, [])
 
+    const { loading, error, data } = useQuery(get_lugares);
+
+    if (loading) return <Text>Cargando...</Text>;
+    if (error) return <Text>Error </Text>;
+
     return (
       
       <Block flex middle>
@@ -138,7 +144,7 @@ export default function NewPlan (props) {
                         }}
                         multiline
                         placeholder="Ponle un nombre a tu plan"
-                        onChangeText={text => settext(text)}
+                        onChangeText={name => setname(name)}
                         iconContent={
                           <Icon
                             size={16}
@@ -159,7 +165,7 @@ export default function NewPlan (props) {
                         }}
                         multiline
                         placeholder="Fecha"
-                        onChangeText={text => settext(text)}
+                        onChangeText={date => setdate(date)}
                         iconContent={
                           <Icon
                             size={16}
@@ -180,7 +186,7 @@ export default function NewPlan (props) {
                         }}
                         multiline
                         placeholder="Link del chat"
-                        onChangeText={text => settext(text)}
+                        onChangeText={chatLink => setchatLink(chatLink)}
                         iconContent={
                           <Icon
                             size={16}
@@ -192,6 +198,15 @@ export default function NewPlan (props) {
                         }
                       />
                     </Block>
+
+                    <Picker
+                      selectedValue={place}
+                      onValueChange={(itemValue, itemIndex) => setplace(itemValue)}
+                    >
+                      {data.places.map((place) => (
+                      <Picker.Item key={lugar.id} label={lugar.name} value={lugar.id} />
+                      ))}
+                    </Picker>
                     <Block width={width * 0.8}>
                       <Input
                         borderless
@@ -200,7 +215,7 @@ export default function NewPlan (props) {
                         }}
                         multiline
                         placeholder="Lugar"
-                        onChangeText={text => settext(text)}
+                        onChangeText={place => setplace(place)}
                         iconContent={
                           <Icon
                             size={16}
@@ -262,7 +277,7 @@ export default function NewPlan (props) {
 const styles = StyleSheet.create({
   registerContainer: {
     width: width * 0.9,
-    height: height * 0.70,
+    height: height * 0.90,
     backgroundColor: "#F4F5F7",
     borderRadius: 4,
     shadowColor: argonTheme.COLORS.BLACK,
@@ -316,6 +331,6 @@ const styles = StyleSheet.create({
   createButton: {
     width: width * 0.5,
     marginTop: 25,
-    backgroundColor: "#d10a30"
+    backgroundColor: "#2E2E2E"
   }
 });

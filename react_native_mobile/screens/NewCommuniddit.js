@@ -11,7 +11,7 @@ import {
 } from "react-native";
 
 
-
+import { Platform } from 'react-native';
 import { Block, Checkbox, Text, theme } from "galio-framework";
 
 import AsyncStorage from '@react-native-async-storage/async-storage';

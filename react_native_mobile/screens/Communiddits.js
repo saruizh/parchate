@@ -4,7 +4,7 @@ import { Block, theme, Text } from 'galio-framework';
 import { communidditsAll, addCommunidditmember, removeCommunidditMember } from "../gql/queries";
 import { useQuery, useLazyQuery, useMutation } from "@apollo/client";
 import AsyncStorage from '@react-native-async-storage/async-storage';
-
+import { Platform } from 'react-native';
 
 
 import { HeaderHeight } from "../constants/utils";
