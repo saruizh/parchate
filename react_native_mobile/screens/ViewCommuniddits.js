@@ -4,6 +4,7 @@ import { Block, theme, Text } from 'galio-framework';
 import { communidditFeedQuery, likesTwiddit,likeTwiddit, deleteLikeTwiddit } from "../gql/queries";
 import { useLazyQuery, useMutation } from "@apollo/client";
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { Platform } from 'react-native';
 
 
 

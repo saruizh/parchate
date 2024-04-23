@@ -109,6 +109,36 @@ export const login = gql`
   }
 `;
 
+#Comentarios
+
+mutation{
+  createComentario(idPlan:1,nickname:"tester",cuerpo:"test 1",rating:5) {
+    response
+  }
+}
+
+mutation{
+  updateRating(idComentario:"662582b570217700017de766",rating:3) {
+    response
+  }
+}
+
+mutation{
+  updateComentario(idComentario:"662582b570217700017de766",cuerpo:"test 2") {
+    response
+  }
+}
+
+mutation{
+  deleteComentario(idComentario:"66258174b4e2d6000103f9d7") {
+    response
+  }
+}
+
+query{
+  comentarioInfo(idComentario:"662582b570217700017de766")
+}
+
 
 #header
 {"Authorization":"JWT token" }

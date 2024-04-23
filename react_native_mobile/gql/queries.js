@@ -53,6 +53,16 @@ export const register = gql`
 //   }
 // }`;
 
+
+export const get_lugares = gql`
+  query getLugares {
+    getLugares {
+      id
+      name
+    }
+  }
+`;
+
 export const changePassword=gql`
 mutation password($previous: String!, $new: String!, $authorization: String!){
   password(passwordChangeBody:{

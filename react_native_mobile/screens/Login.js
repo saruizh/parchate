@@ -30,8 +30,8 @@ export default function Login (props) {
     },
     enabled:false,
     onCompleted:(data) => {
-      // storeData("Authorization", data.login.data.token)
-      // storeData("UserID", data.login.data.userId)
+      storeData("Authorization", data.tokenAuth.token)
+      //storeData("UserID", data.login.data.userId)
       console.log(data)  
       navigation.navigate("App")
       

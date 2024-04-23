@@ -49,17 +49,17 @@ export default function Newvaca (props) {
       }
     }
 
-    const getCommunidditId = async () => {
-      try {
+    // const getCommunidditId = async () => {
+    //   try {
   
-        const value = await AsyncStorage.getItem("communidditId")
-        if(value !== null) {
-          setCommunidditId(JSON.parse(value))
-        }
-      } catch(e) {
-        console.log(e)
-      }
-    }
+    //     const value = await AsyncStorage.getItem("communidditId")
+    //     if(value !== null) {
+    //       setCommunidditId(JSON.parse(value))
+    //     }
+    //   } catch(e) {
+    //     console.log(e)
+    //   }
+    // }
 
     const getUserID = async () => {
       try {
@@ -73,11 +73,7 @@ export default function Newvaca (props) {
         // error reading value
       }
     }
-
-  
-  
-
-    
+   
 
     const [runMutation, {dataModifyVaca, errorModifyVaca}] = useMutation(newVaca, {
       variables: {
@@ -102,7 +98,7 @@ export default function Newvaca (props) {
 
     useEffect(() => {
       getUserID()
-      getCommunidditId()
+      // getCommunidditId()
     }, [])
 
     return (
