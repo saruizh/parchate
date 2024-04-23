@@ -3,18 +3,18 @@ development:
     default:
       database: comentarios_ms_development
       hosts:
-        - "mongodb:27017"
+        - "comentarios_db:27017"
 
 test:
   clients:
     default:
       database: comentarios_ms_test
       hosts:
-        - "mongodb:27018"
+        - "comentarios_db:27017"
 
 production:
   clients:
     default:
       database: comentarios_ms_production
       hosts:
-        - "mongodb:27017"
+        - "comentarios_db:27017"

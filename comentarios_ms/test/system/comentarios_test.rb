@@ -14,7 +14,7 @@ class ComentariosTest < ApplicationSystemTestCase
     visit comentarios_url
     click_on "New comentario"
 
-    fill_in "Comentario", with: @comentario.comentario
+    fill_in "Cuerpo", with: @comentario.cuerpo
     fill_in "Id plan", with: @comentario.id_plan
     fill_in "Nickname", with: @comentario.nickname
     fill_in "Rating", with: @comentario.rating
@@ -28,7 +28,7 @@ class ComentariosTest < ApplicationSystemTestCase
     visit comentario_url(@comentario)
     click_on "Edit this comentario", match: :first
 
-    fill_in "Comentario", with: @comentario.comentario
+    fill_in "Cuerpo", with: @comentario.cuerpo
     fill_in "Id plan", with: @comentario.id_plan
     fill_in "Nickname", with: @comentario.nickname
     fill_in "Rating", with: @comentario.rating

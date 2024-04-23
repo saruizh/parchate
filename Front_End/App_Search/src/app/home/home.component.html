@@ -1,16 +1,34 @@
 <app-header></app-header>
 
-<br>
-<br>
-<br>
+
 <div class="container">
   <div class="row">
-    <div class="col-md-6">
-      <button type="button" class="btn btn-primary btn-block boton-separado">Crear Vaca</button>
-    </div>
-    <div class="col-md-6">
-      <button type="button" class="btn btn-primary btn-block boton-separado">Agregar Monto</button>
-    </div>
+      <div class="col-md-6" style="justify-content: center;">
+          <br>
+          <div class="container mt-5">
+              <div class="card p-4">
+                  <h2 class="mb-4">Abonar al plan</h2>
+                  <!--<form [formGroup]="formulario" (ngSubmit)="onSubmit()"></form>-->
+                  <form>
+
+                      <!--Aca debo cambiar a la lista de planes-->
+                      <div class="form-group col-md-12">
+                          <label for="Plan">Plan:</label>
+                          <input type="text" class="form-control" id="Plan" placeholder="Plan" formControlName="idplan">
+                      </div>
+
+                      <div class="form-group col-md-12">
+                        <label for="montoTotal">Valor a abonar:</label>
+                        <input type="number" class="form-control" id="montoTotal" placeholder="Valor a abonar" formControlName="montoTotal">
+                    </div>
+                      <br>
+                      <button type="submit" class="btn btn-outline-primary">Abonar al plan</button>
+                  </form>
+              </div>
+              <br>
+              <br>
+          </div>
+      </div>
   </div>
 </div>
 

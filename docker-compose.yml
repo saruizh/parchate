@@ -18,7 +18,7 @@ services:
   comentarios_db:
     image: "mongo:latest"
     ports:
-      - "27020:27017"
+      - "27017:27017"
  
       
   
@@ -126,11 +126,13 @@ services:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=123456
       - vaca_ms_URL=http://host.docker.internal:8080/parchate/vaca/
+      - COMENTARIOS_MS_URL=http://host.docker.internal:3001/comentarios/
     #   - USERS_MS_URL=http://host.docker.internal:3000/parchate/user/
     #   - PLANES_MS_URL=http://host.docker.internal:8000/parchate/ms-planes/
     depends_on:
       - users_db
       - vaca_ms
+      - comentarios_ms
       #- users_ms          
       
   #Base de datos en postgreSQL para microservicio Python
