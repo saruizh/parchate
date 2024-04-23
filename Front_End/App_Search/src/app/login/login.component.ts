@@ -10,7 +10,7 @@ import { PopupIncorrectpasswordComponent } from '../popup-incorrectpassword/popu
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [RouterLink,HttpClientModule,ReactiveFormsModule,PopupIncorrectpasswordComponent],
+  imports: [ReactiveFormsModule,RouterLink,HttpClientModule,PopupIncorrectpasswordComponent],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })
@@ -57,7 +57,7 @@ export class LoginComponent{
     } catch (error) {
         this.openIncorrectPasswordDialog();
     }
-}
+  }
 
   openIncorrectPasswordDialog() {
     const dialogref=this.dialog.open(PopupIncorrectpasswordComponent,{

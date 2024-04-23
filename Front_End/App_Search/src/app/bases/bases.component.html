@@ -8,31 +8,27 @@
             <div class="container mt-5">
                 <div class="card p-4">
                     <h2 class="mb-4">Crear plan</h2>
-                    <!--<form [formGroup]="formulario" (ngSubmit)="onSubmit()"></form>-->
-                    <form>
+                    
+                    <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
                         <div class="form-group col-md-12">
                             <label for="Plan">Nombre de plan:</label>
                             <input type="text" class="form-control" id="Plan" placeholder="Plan" formControlName="name">
                         </div>
-  
+
                         <div class="form-group col-md-12">
                             <label for="fecha">Fecha:</label>
-                            <input type="date" class="form-control" id="fecha" pattern="\d{4}-\d{2}-\d{2}" formControlName="fecha">
+                            <input type="date" class="form-control" id="date" formControlName="date">
                         </div>
 
                         <div class="form-group col-md-12">
                             <label for="chatLink">link de Chat:</label>
                             <input type="text" class="form-control" id="chatLink" placeholder="chatLink" formControlName="chatLink">
                         </div>
-
                         <div class="form-group col-md-12">
-                            <label for="opciones">Selecciona una opción:</label>
-                            <select>
-                                @for (lugar of lugares; track lugar) {
-                                    <option [value]="lugar.value">{{lugar.viewValue}}</option>
-                                }
-                            </select>
+                            <label for="lugar">Lugar:</label>
+                            <input type="number" class="form-control" id="place" placeholder="1" formControlName="place">
                         </div>
+                        
                         <br>
                         <button type="submit" class="btn btn-outline-primary">Crear plan</button>
                     </form>

@@ -81,6 +81,23 @@ mutation {
   }
 }
 
+#crear plan
+mutation{
+  createPlanes(name:"Estereo Picnic", date:"2024-03-24", chatLink:"chat.com", place:1){
+    plan{
+      name
+      date
+      chatLink
+      place{
+        name
+      }
+    }
+  }
+}
+
+
+
+
 #get vaca
 query {
   vaca(idVaca:303)

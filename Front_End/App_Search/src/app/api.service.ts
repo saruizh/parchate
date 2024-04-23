@@ -1,9 +1,8 @@
-
 import { Injectable} from '@angular/core';
 import { HttpClient} from '@angular/common/http';
 import {firstValueFrom,} from 'rxjs';
 import { EnroutesService } from './enroutes.service';
-import { Observable } from 'rxjs';
+
 
 
 @Injectable({
@@ -38,7 +37,7 @@ export class ApiService {
     }));
     return response;
   }
-
+  
   async loginer(username: string, password: string) {
     const mutation = `
       mutation tokenAuth($username: String!, $password: String!) {
@@ -57,22 +56,31 @@ export class ApiService {
     return response;
   }
 
-  getLugares(): Observable<any> {
-    const query = `
-      query MyQuery {
-        getLugares {
-          address
-          hood
-          id
-          name
-          city {
-            name
-          }
-        }
+  async createcow(idplanS: string, nombreVaca: string, fechaLimite: Date,montoTotal: number,alcance: number) {
+    const idplan = parseInt(idplanS, 10);
+    
+    const mutation = `
+    mutation createVaca($idplan: Int!,$nombreVaca: String!, $fechaLimite: DateTime!,$montoTotal: Float!,$alcance:Int!){
+      createVaca(idPlan: $idplan, nombreVaca: $nombreVaca, fechaLimite: $fechaLimite, montoTotal: $montoTotal, alcance: $alcance) {
+        response
       }
+    }
     `;
-    return this.httpClient.post(this.apiUrl, { query: query });
+    const response = await firstValueFrom(this.httpClient.post<any>(this.apiUrl, {
+      query: mutation,
+      variables: {
+        idplan,
+        nombreVaca,
+        fechaLimite,
+        montoTotal,
+        alcance
+      }
+    }));
+    console.log(response);
+    return response;
   }
+
+  
 
   
 

@@ -7,23 +7,34 @@
           <br>
           <div class="container mt-5">
               <div class="card p-4">
-                  <h2 class="mb-4">Abonar al plan</h2>
-                  <!--<form [formGroup]="formulario" (ngSubmit)="onSubmit()"></form>-->
-                  <form>
+                  <h2 class="mb-4">Crear vaca</h2>
 
-                      <!--Aca debo cambiar a la lista de planes-->
+                  <form [formGroup]="formulario1" (ngSubmit)="onSubmit()">
                       <div class="form-group col-md-12">
                           <label for="Plan">Plan:</label>
                           <input type="text" class="form-control" id="Plan" placeholder="Plan" formControlName="idplan">
                       </div>
-
                       <div class="form-group col-md-12">
-                        <label for="montoTotal">Valor a abonar:</label>
-                        <input type="number" class="form-control" id="montoTotal" placeholder="Valor a abonar" formControlName="montoTotal">
+                        <label for="vaca">Nombre:</label>
+                        <input type="text" class="form-control" id="Vaca" placeholder="Vaca" formControlName="nombreVaca">
                     </div>
+                    <div class="form-group col-md-12">
+                        <label for="fecha">Fecha límite:</label>
+                        <input type="datetime-local" class="form-control" id="fecha" formControlName="fechaLimite">
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label for="montoTotal">Monto Total:</label>
+                        <input type="number" class="form-control" id="montoTotal" placeholder="100000" formControlName="montoTotal">
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label for="alcance">Alcance:</label>
+                        <input type="number" class="form-control" id="alcance" placeholder="10" formControlName="alcance">
+                    </div>
+
                       <br>
-                      <button type="submit" class="btn btn-outline-primary">Abonar al plan</button>
+                      <button type="submit" class="btn btn-outline-primary">Crear Vaca</button>
                   </form>
+
               </div>
               <br>
               <br>
