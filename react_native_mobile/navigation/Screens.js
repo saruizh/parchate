@@ -22,6 +22,7 @@ import ViewCommuniddits from "../screens/ViewCommuniddits";
 import NewCommuniddit from "../screens/NewCommuniddit";
 //import Newtwiddit from "../screens/Newtwiddit";
 import Newplan from "../screens/Newplan";
+import Lugares from "../screens/Lugares";
 import Newvaca from "../screens/Newvaca";
 import Notifications from "../screens/Notifications";
 import Reply from "../screens/Reply";
@@ -202,6 +203,7 @@ export default function OnboardingStack(props) {
       <Stack.Screen name="ViewCommuniddits" component={ViewCommuniddits} />
       <Stack.Screen name="NewCommuniddit" component={NewCommuniddit} />
       <Stack.Screen name="Newplan" component={Newplan} />
+      <Stack.Screen name="Lugares" component={Lugares} />
       <Stack.Screen name="Newvaca" component={Newvaca} />
       <Stack.Screen name="Reply" component={Reply} />
       <Stack.Screen name="Twiddit" component={Twiddit} />
@@ -332,6 +334,34 @@ export function NewplanStack(props) {
           header: ({ navigation, scene }) => (
             <Header
               title="Crea un Plan"
+              search
+              navigation={navigation}
+              scene={scene}
+            />
+          ),
+          cardStyle: { backgroundColor: "#F8F9FE" },
+        }}
+      />
+      
+    </Stack.Navigator>
+  );
+}
+
+export function LugaresStack(props) {
+  return (
+    <Stack.Navigator
+      screenOptions={{
+        mode: "card",
+        headerShown: "screen",
+      }}
+    >
+      <Stack.Screen
+        name="Crea un Lugar"
+        component={Lugares}
+        options={{
+          header: ({ navigation, scene }) => (
+            <Header
+              title="Crea un Lugar"
               search
               navigation={navigation}
               scene={scene}
@@ -490,6 +520,13 @@ function AppStack(props) {
           headerShown: false,
         }}
       />
+      <Drawer.Screen
+        name="Lugares"
+        component={LugaresStack}
+        options={{
+          headerShown: false,
+        }}
+      />      
       <Drawer.Screen
         name="Newvaca"
         component={NewvacaStack}

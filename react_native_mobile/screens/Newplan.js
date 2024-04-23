@@ -14,17 +14,20 @@ import {
 
 import { Block, Checkbox, Text, theme } from "galio-framework";
 import { Picker } from '@react-native-picker/picker';
+import DateTimePicker from '@react-native-community/datetimepicker';
 import * as ImagePicker from 'expo-image-picker';
 import * as DocumentPicker from 'expo-document-picker';
 
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useLazyQuery } from "@apollo/client";
+import { Platform } from 'react-native';
 
 import { useMutation, useQuery } from "@apollo/client";
 import { newPlan, get_lugares } from "../gql/queries";
 
 import { Button, Icon, Input } from "../components";
 import { Images, argonTheme } from "../constants";
+import { View } from 'react-native';
 
 const { width, height } = Dimensions.get("screen");
 
@@ -33,9 +36,11 @@ export default function NewPlan (props) {
     const { navigation } = props;
     // const [userId,setuserId] = useState();
     const [name, setname] = useState();
-    const [date,setdate] = useState("");
+    const [date,setdate] = useState(new Date());
+    const [show, setShow] = useState(false);
     const [chatLink,setchatLink] = useState("");
     const [place,setplace] = useState(null);
+ 
     // const [communidditId,setCommunidditId] = useState(null);
 
     const [singleFile, setSingleFile] = useState(null);
@@ -73,12 +78,7 @@ export default function NewPlan (props) {
       } catch(e) {
         // error reading value
       }
-    }
-
-  
-  
-
-    
+    }    
 
     const [runMutation, {dataModifyPlan, errorModifyPlan}] = useMutation(newPlan, {
       variables: {
@@ -90,10 +90,7 @@ export default function NewPlan (props) {
       enabled:false,
       onCompleted:(dataModifyPlan) => {
         console.log(dataModifyPlan)  
-        storeData("communidditId", null)
-        navigation.navigate("Twiddit")
-        
-        
+        navigation.navigate("Twiddit")                
       },
       onError(errorModifyPlan){
         console.log(errorModifyPlan)
@@ -155,28 +152,10 @@ export default function NewPlan (props) {
                           />
                         }
                       />
-                    </Block>
-
-                    <Block width={width * 0.8}>
-                      <Input
-                        borderless
-                        style={{
-                          height:70
-                        }}
-                        multiline
-                        placeholder="Fecha"
-                        onChangeText={date => setdate(date)}
-                        iconContent={
-                          <Icon
-                            size={16}
-                            color={argonTheme.COLORS.ICON}
-                            name="ungroup"
-                            family="ArgonExtra"
-                            style={styles.inputIcons}
-                          />
-                        }
-                      />
-                    </Block>
+                    </Block>                  
+                
+                     
+                    
 
                     <Block width={width * 0.8}>
                       <Input
@@ -203,30 +182,35 @@ export default function NewPlan (props) {
                       selectedValue={place}
                       onValueChange={(itemValue, itemIndex) => setplace(itemValue)}
                     >
-                      {data.places.map((place) => (
-                      <Picker.Item key={lugar.id} label={lugar.name} value={lugar.id} />
+                      {data.getLugares.map((place) => (
+                      <Picker.Item key={place.id} label={place.name} value={place.id} />
                       ))}
                     </Picker>
-                    <Block width={width * 0.8}>
-                      <Input
-                        borderless
-                        style={{
-                          height:70
+
+                    <View>
+
+                      <Button color="primary" style={styles.createButton} onPress={() => setShow(true)
+                        }>
+                        <Text bold size={14} color={argonTheme.COLORS.WHITE}>
+                          Escoge una fecha!
+                        </Text>
+                      </Button>
+                      {show && (
+                        <DateTimePicker
+                        testID="dateTimePicker"
+                        value={date}
+                        mode={'date'}
+                        display="default"
+                        onChange={(event, selectedDate) => {
+                          const currentDate = selectedDate || new Date();
+                          setShow(Platform.OS === 'ios');
+                          setdate(currentDate);
                         }}
-                        multiline
-                        placeholder="Lugar"
-                        onChangeText={place => setplace(place)}
-                        iconContent={
-                          <Icon
-                            size={16}
-                            color={argonTheme.COLORS.ICON}
-                            name="ungroup"
-                            family="ArgonExtra"
-                            style={styles.inputIcons}
-                          />
-                        }
                       />
-                    </Block>
+                      )}
+                      <Text>Fecha seleccionada: {date.toLocaleDateString()}</Text>
+                    </View>    
+                    
                     
                       {/* <FlatList
                         data={imageURL}

@@ -63,6 +63,30 @@ export const get_lugares = gql`
   }
 `;
 
+export const get_ciudades = gql`
+  query getCiudades {
+    getCiudades {
+      id
+      name
+    }
+  }
+`;
+
+export const newLugar = gql`
+  mutation createLugar($name: String!, $hood: String!, $address: String!, $city: Int!) {
+    createLugar(name: $name, hood: $hood, address: $address, city: $city) {
+      lugar {
+        name
+        hood
+        address
+        city {
+          name
+        }
+      }
+    }
+  }
+`;
+
 export const changePassword=gql`
 mutation password($previous: String!, $new: String!, $authorization: String!){
   password(passwordChangeBody:{
