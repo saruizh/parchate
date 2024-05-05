@@ -1,8 +1,7 @@
-FROM nginx:latest as prod
-
-COPY --from=build /app/build /usr/share/nginx/html
+FROM nginx:latest
+# Copy the ngnix.conf to the container
 COPY nginx.conf /etc/nginx/nginx.conf
-
-EXPOSE 80/tcp
-
-CMD ["/usr/sbin/nginx", "-g", "daemon off;"]
+# Expose port 80 for Nginx
+EXPOSE 90
+# Start Nginx when the container starts
+CMD ["nginx", "-g", "daemon off;"]
