@@ -1,9 +1,6 @@
 from rest_framework import serializers
 from .models import Planes, Lugar, Ciudad, Parcharme
 
-
-
-
 class PlanesSerializer(serializers.ModelSerializer):
     class Meta:
         model = Planes

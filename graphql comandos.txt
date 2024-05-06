@@ -112,3 +112,23 @@ export const login = gql`
 
 #header
 {"Authorization":"JWT token" }
+
+
+
+
+Servidor phpldap:
+http://localhost:8081/
+
+##Acceso al ldap:
+Login DN: cn=admin,dc=parchate,dc=com
+password: ThisPassword
+
+POST:
+
+http://localhost:8000/ldaplogin/
+
+body:
+{
+    "username":"jortega",
+    "password": "parchate123"
+}

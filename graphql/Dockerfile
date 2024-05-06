@@ -4,6 +4,12 @@ ENV PYTHONUNBUFFERED 1
 RUN mkdir /code
 WORKDIR /code
 COPY requirements.txt /code/
+
+# Instalación de dependencias para python-ldap
+RUN apt-get update && \
+    apt-get install -y libldap2-dev libsasl2-dev python3-dev
+
+
 RUN pip install -r requirements.txt
 
 COPY . /code/
