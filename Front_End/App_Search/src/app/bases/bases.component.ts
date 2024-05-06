@@ -1,8 +1,8 @@
-import {Component,ViewChild,ChangeDetectorRef} from '@angular/core';
+import {Component,ViewChild,ChangeDetectorRef,OnInit} from '@angular/core';
 import { HeaderComponent } from '../header/header.component';
 import { FooterComponent } from '../footer/footer.component';
 import { HttpClient, HttpHeaders} from '@angular/common/http';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule,FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ChecktokenService } from '../checktoken.service';
 import { MatDialog } from '@angular/material/dialog';
