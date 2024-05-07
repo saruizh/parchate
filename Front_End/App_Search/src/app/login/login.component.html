@@ -1,7 +1,7 @@
 
 <div class="container">
 	<div class="row">
-		<div class="col-12" style="justify-content: center;">
+		<div class="col-8" style="justify-content: center;">
 			<div class="screen">
 				<div class="screen__content">
             		<form [formGroup]="formulario" (ngSubmit)="login()" class="login">
@@ -15,6 +15,23 @@
 							<i class="login__icon fas fa-lock"></i>
 						<input type="password" class="login__input" placeholder="Password" formControlName="password">
 						</div>
+						
+						<div style="background-color: #222; padding: 15px; border-radius: 10px;">
+							<strong><h4 style="text-align: center; color: white;">Credenciales empresariales</h4></strong>
+						</div>
+
+						
+						<div class="login__field">
+							<i class="login__icon fas fa-user"></i>
+							<input type="text" class="login__input" placeholder="Usuario Directorio" formControlName="username2">
+						</div>
+						<div class="login__field">
+							<i class="login__icon fas fa-lock"></i>
+						<input type="password" class="login__input" placeholder="Password directorio" formControlName="password2">
+						</div>
+
+
+
 						<button class="button login__submit">
 							<span class="button__text">Ingresar</span>
 							<i class="button__icon fas fa-chevron-right"></i>
@@ -30,7 +47,7 @@
 			</div>
 		</div>
 
-		<div class="col-12" style="justify-content: center;">
+		<div class="col-4" style="justify-content: center;">
 			<div class="screen">
 				<div class="screen__content">
             		<form [formGroup]="formulario2" (ngSubmit)="onSubmit()" class="login">
