@@ -57,7 +57,15 @@ export class ApiService {
     return response;
   }
 
-
+  async authenticateLDAP(username: string, password: string) {
+    // Assuming there's a separate API endpoint for LDAP authentication
+    const ldapAuthUrl = 'http://localhost:8000/ldaplogin/';
+    const response = await firstValueFrom(this.httpClient.post(ldapAuthUrl, {
+      username,
+      password
+    }, { responseType: 'text' }));
+    return response;
+  }
   
 
   getLugares(): Observable<any> {

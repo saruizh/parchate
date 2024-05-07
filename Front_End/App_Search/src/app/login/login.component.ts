@@ -24,7 +24,9 @@ export class LoginComponent{
   constructor(private router: Router,private dialog: MatDialog){
     this.formulario= new FormGroup({
       username: new FormControl(),
-      password: new FormControl()
+      password: new FormControl(),
+      username2: new FormControl(),
+      password2: new FormControl()
     });
 
     this.formulario2= new FormGroup({
@@ -32,6 +34,7 @@ export class LoginComponent{
       username: new FormControl(),
       password: new FormControl()
     })  
+
   }
 
   async onSubmit(){
@@ -46,22 +49,38 @@ export class LoginComponent{
   
   async login() {
     try {
-        const { username, password } = this.formulario.value;
-        const response = await this.ApiService.loginer(username, password);
-        if (response && response.data && response.data.tokenAuth && response.data.tokenAuth.token) {
-          console.log(response);
-            localStorage.setItem('token', response.data.tokenAuth.token);
-            this.router.navigate(['/home']);
-            /*llama otra funcion de ApiService tipo post, esto se puede ver en un dataform*/
-            
-
-        } else {
-          this.openIncorrectPasswordDialog();
+      const { username, password, username2, password2 } = this.formulario.value;
+      
+      // Check if the regular login fields are filled
+      if (username && password) {
+        const regularResponse = await this.ApiService.loginer(username, password);
+        
+        if (regularResponse && regularResponse.data && regularResponse.data.tokenAuth && regularResponse.data.tokenAuth.token) {
+          console.log("Regular authentication successful");
+          localStorage.setItem('token', regularResponse.data.tokenAuth.token);
+          this.router.navigate(['/home']);
+          return; // Exit the function since regular login succeeded
         }
+      }
+      
+      // If regular login failed or LDAP fields are filled, try LDAP authentication
+      if (username2 && password2) {
+        const ldapResponse = await this.ApiService.authenticateLDAP(username2, password2);
+        
+        if (ldapResponse && ldapResponse === '¡Inicio de sesión exitoso!') {
+          console.log("LDAP authentication successful");
+          return; // Exit the function since LDAP login succeeded
+        }
+      }
+      
+      // If neither regular nor LDAP login succeeded, show error message
+      console.log("Login failed");
+      this.openIncorrectPasswordDialog();
     } catch (error) {
-        this.openIncorrectPasswordDialog();
+      console.error("Error during login:", error);
+      this.openIncorrectPasswordDialog();
     }
-}
+  }
 
   openIncorrectPasswordDialog() {
     const dialogref=this.dialog.open(PopupIncorrectpasswordComponent,{
