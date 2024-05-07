@@ -50,35 +50,37 @@ export class LoginComponent{
   async login() {
     try {
       const { username, password, username2, password2 } = this.formulario.value;
-      
+      let regularAuthSuccess = false;
+      let ldapAuthSuccess = false;
+      let regularResponse;
+  
       // Check if the regular login fields are filled
       if (username && password) {
-        const regularResponse = await this.ApiService.loginer(username, password);
-        
+        regularResponse = await this.ApiService.loginer(username, password);
+  
         if (regularResponse && regularResponse.data && regularResponse.data.tokenAuth && regularResponse.data.tokenAuth.token) {
           console.log("Regular authentication successful");
-          localStorage.setItem('token', regularResponse.data.tokenAuth.token);
-          this.router.navigate(['/home']);
-          return; // Exit the function since regular login succeeded
+          regularAuthSuccess = true;
         }
       }
-      
-      // If regular login failed or LDAP fields are filled, try LDAP authentication
+  
+      // If LDAP fields are filled, try LDAP authentication
       if (username2 && password2) {
         const ldapResponse = await this.ApiService.authenticateLDAP(username2, password2);
-        
+  
         if (ldapResponse && ldapResponse === '¡Inicio de sesión exitoso!') {
-          console.log("¡Inicio de sesión exitoso!");
-          return; // Exit the function since LDAP login succeeded
+          console.log("LDAP authentication successful");
+          ldapAuthSuccess = true;
         }
       }
-      
-      // If neither regular nor LDAP login succeeded, show error message
-      console.log("Login failed");
-      this.openIncorrectPasswordDialog();
-    } catch (error) {
-      console.error("Error during login:", error);
-      this.openIncorrectPasswordDialog();
+  
+      // If both authentications are successful, store the token and redirect
+      if (regularAuthSuccess && ldapAuthSuccess) {
+        localStorage.setItem('token', regularResponse.data.tokenAuth.token);
+        this.router.navigate(['/home']);
+      }
+    } catch(error) {
+      console.error('Error al enviar el formulario:', error);
     }
   }
 
@@ -90,7 +92,3 @@ export class LoginComponent{
     });
   }
 }
-
-
-
-
