@@ -26,7 +26,7 @@ export class LoginComponent{
       username: new FormControl(),
       password: new FormControl()
     });
-    
+
     this.formulario2= new FormGroup({
       email: new FormControl(),
       username: new FormControl(),
@@ -49,8 +49,12 @@ export class LoginComponent{
         const { username, password } = this.formulario.value;
         const response = await this.ApiService.loginer(username, password);
         if (response && response.data && response.data.tokenAuth && response.data.tokenAuth.token) {
+          console.log(response);
             localStorage.setItem('token', response.data.tokenAuth.token);
             this.router.navigate(['/home']);
+            /*llama otra funcion de ApiService tipo post, esto se puede ver en un dataform*/
+            
+
         } else {
           this.openIncorrectPasswordDialog();
         }

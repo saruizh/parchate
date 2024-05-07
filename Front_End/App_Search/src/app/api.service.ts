@@ -57,6 +57,9 @@ export class ApiService {
     return response;
   }
 
+
+  
+
   getLugares(): Observable<any> {
     const query = `
       query MyQuery {

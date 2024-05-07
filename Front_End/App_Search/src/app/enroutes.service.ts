@@ -4,6 +4,6 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class EnroutesService {
-  domain: string = 'http://localhost:8000/';
+  domain: string = 'http://localhost:70/';
   constructor() { }
 }
