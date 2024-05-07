@@ -68,7 +68,7 @@ export class LoginComponent{
         const ldapResponse = await this.ApiService.authenticateLDAP(username2, password2);
         
         if (ldapResponse && ldapResponse === '¡Inicio de sesión exitoso!') {
-          console.log("LDAP authentication successful");
+          console.log("¡Inicio de sesión exitoso!");
           return; // Exit the function since LDAP login succeeded
         }
       }
