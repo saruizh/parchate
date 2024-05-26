@@ -192,6 +192,15 @@ services:
       - "8081:80"
     networks:
       - users-network
+  
+  #Front Mobile
+
+  react_native_mobile:
+    build: ./react_native_mobile
+    volumes:
+      - ./react_native_mobile:/app
+    ports:
+      - "19000:19000"
 
 networks:
   users-network:
